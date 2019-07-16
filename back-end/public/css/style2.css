@@ -1,0 +1,625 @@
+.header-slider, .header, .content, .our-team, .rewiev, .contacts, .ask, footer {
+	background-color: #fff;
+}
+.header .container {
+	background-color: #000;
+	font-family: 'PT Sans', sans-serif;
+}
+.header {
+	background-color: #fff;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+}
+.burger-img {
+	width: 16px;
+}
+.menu {
+	width: 500px;
+	margin-top: 20px;
+	list-style: none;
+}
+.nav-menu .menu .menu__item a {
+	width: 20px;
+	height: 23px;
+	margin-left: 20px;
+}
+.login-items {
+	margin-right: 30px;
+	list-style: none;
+}
+.menu__item a, .login-items {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	font-weight: bolder;
+	margin-top: 20px;
+}
+.menu__item a:hover {
+	 color: #fa5255;
+	transition: all ease 1s;
+	text-decoration-line: underline;
+	text-decoration-color: #fa5255;
+}
+
+.burger__img {
+	margin-top: 10px;
+}
+.login {
+	margin-top: 60px;
+	cursor: pointer;
+}
+.login a {
+	color: #fff;
+	font-size: 16px;
+}
+.login__app {
+    padding: 10px 15px;
+    border-radius: 21px;
+    background-color: #267df4;
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+    right: 80px;
+}
+.login__app i {
+	margin-right: 10px;
+	font-size: 20px;
+}
+.main-logo a .name-company {
+	font-weight: bolder;
+	text-decoration: none;
+	color: #fff;
+	background: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	line-height: 55px;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	width: 200px;
+}
+.main-logo a {
+	text-decoration: none;
+}
+/* ////////// */
+
+.paralax .container {
+	background-image: url('https://images7.alphacoders.com/716/716405.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	width: 100%;
+	height: 45vh;
+	background-attachment: fixed;
+}
+
+
+.bg-2 .container {
+	background-image: url('https://images.unsplash.com/photo-1552874031-b9c207ed9292?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+}
+/* //////////// */
+
+.main .container {
+	background: #fff;
+	padding: 30px 0;
+	font-family: 'PT Sans', sans-serif;
+}
+.subscription-title ,.about-title ,.section__title,.calc-title {
+	color: #323232;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 25px 0;
+    font-weight: bolder;
+}
+.subscription {
+	background-color: #fff;
+	width: auto;
+	height: 385px;
+	font-family: 'PT Sans', sans-serif;
+	margin: 0 auto;
+	border-radius: 5px;
+	padding: 100px 0;
+	font-size: 18px;
+	color: #000;
+	border: 2px solid #323232;
+	background-image: url('/images/zlatan-ibrahimovic-png-16.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0% 90%;
+}
+
+.subscription-text {
+    width: auto;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 30px;
+    color: #fff;
+	background-color: #fa5255;}
+	
+.subscription-price {
+    width: auto;
+    margin-left: 70px;
+    margin-top: 13px;
+}
+.btn-sub {
+    cursor: pointer;
+    min-width: 150px;
+    padding: 9px 12px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background: #3da35a;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(56, 100, 38);
+    transition: all 1s;
+    outline: none;
+    margin-left: 64px;
+    margin-top: 10px;
+}
+.btn-sub:hover {
+	box-shadow: 0 0 55px rgb(56, 100, 38);
+}
+path {
+	stroke-dasharray: 99.47578430175781;
+	stroke-dashoffset: -99.47578430175781;
+	fill: transparent;
+}
+.sub__price {
+	color: #689f38;
+	font-size: 50px;
+	font-weight: bolder;
+}
+label {
+	color: #ff6d00;
+	margin-left: 50px;
+	font-size: 20px;
+}
+
+/* about */
+.about .container {
+	
+font-family: 'PT Sans', sans-serif;
+}
+
+
+.about-text{
+	width: 600px;
+	color: grey;
+	text-align: center;
+	margin:  0 auto;
+}
+
+.about-section section {
+	width: 220px;
+	height: 330px;
+	background-color: #000;
+	border-radius: 25px;
+	margin: 20px;
+	padding: 0 10px;
+	
+}
+
+.section__img{
+	width: 70px;
+	margin-top: 20px;
+}
+
+.section__title {
+    font-size: 33px;
+    font-weight: bolder;
+    color: #fff;
+  
+
+
+}
+
+.section__text{
+	color:#fa5255;
+	font-size: 16px;
+}
+
+
+/* /////кальк */
+
+.calc .container {
+	background-color: #fff;
+	padding-top: 50px;
+	font-family: 'PT Sans', sans-serif;
+}
+.calc-money {
+	background-image: url('https://clipart.info/images/ccovers/1510437647Alexandre-Lacazette-Arsenal-2017-18-Png.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: #000;
+	background-position: 100% 80%;
+}
+
+.input__earn {
+	min-width: 200px;
+	color: #fff;
+	padding: 7px 15px;
+	outline: none;
+	border-radius: 5px;
+	font-size: 20px;
+	border:none;
+	background-color: #fa5255;
+}
+.label {
+	color: #fff;
+}
+#select__rate {
+	font-size: px;
+	min-width: 230px;
+	height: 42px;
+	outline: none;
+	background-color: #fa5255;
+	color: #fff;
+}
+.calc form {
+	margin-left: 150px;
+}
+.your-rate {
+	margin: 0 auto;
+}
+.profit__text, .profit__rate, .profit__money {
+	color: #689f38;
+	font-size: 34px;
+}
+.profit__rate, .profit__money {
+	font-size: 35px;
+	color: #689f38;
+}
+/* инфо */
+
+.info .container {
+	background: #fff;
+	font-family: 'PT Sans', sans-serif;
+}
+.table {
+	background-color: #fff;
+	margin: 0 auto;
+}
+.info-text {
+	color: #323232;
+	margin: 40px 0;
+}
+.arrow-top {
+	background-image: url('/images/down-arrow.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 50px;
+	height: 60px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.up {
+	background-image: url('/images/up-arrow.png');
+}
+.table {
+	color: #000;
+	font-size: 20px;
+	background-color: #fff;
+}
+.green {
+	color: #689f38;
+}
+.blue {
+	color: #267df4;
+}
+.tomato {
+	color: tomato;
+}
+.purple {
+	color: purple;
+}
+.brown {
+	color: #795548;
+}
+.red {
+	color: #d32f2f;
+}
+th {
+	background-color: #fff;
+}
+.table-opacity0 {
+	display: none;
+	transition: all ease 1s;
+}
+/* футер */
+
+footer .container {
+	background-color: #000;
+	padding: 15px 0;
+}
+.footer__text {
+	font-size: 20px;
+	color: #fff;
+}
+footer img {
+	width: 60px;
+	margin: 10px;
+}
+.partners {
+	margin: 0 auto;
+}
+
+
+
+@media screen and (max-width:768px){
+	
+	
+	.nav-menu .menu .menu__item a {
+		
+		
+		margin: 10px;
+	}
+
+	.main-logo a .name-company {
+	
+		width: auto;
+	
+	}
+
+	.login__app {
+		margin:  0 200px;
+	}
+
+	.paralax .container {
+	
+		width: 100%;
+		height: 35vh;
+		background-position: center;
+		
+	}
+
+	
+
+	.subscription {
+		
+		height: auto;
+		padding: 52px 15px;
+		font-size: 16px;
+		
+	}
+
+	.subscription-text {
+		margin-left: 350px;
+		margin-top: 0;
+
+		
+	}
+
+	.subscription-price {
+		
+		margin-left: 353px;
+		margin-top: 0;
+	}
+
+	.sub__price {
+		color: #689f38;
+		font-size: 40px;
+		font-weight: bolder;
+	}
+.form-subscription {
+	margin-left: 300px;
+	
+}
+
+.btn-sub {
+   
+    padding: 17px 74px;
+	margin-top: 50px;
+	position: relative;
+	top: 20px;
+}
+.about-section section {
+  
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+.partners {
+    margin: 0 335px;
+}
+
+	
+}
+
+
+@media screen and (max-width:576px){
+	html, body {
+		/* Убирает прокрутку по горизонтале, для мобильной версии */
+		overflow-x: hidden;
+	}
+
+	.login a {
+	
+
+		width: 100%;
+		margin: 0 auto;
+		position: 0;
+		left: 0;
+		border-radius: 0;
+	}
+
+	.subscription {
+	
+		padding: 48px 15px;
+	
+	}
+	.subscription-text {
+		margin-left: 341px;
+		margin-top: 0;
+		font-size: 12px;
+	}
+	.btn-sub {
+		padding: 12px 15px;
+		margin-top: 10px;
+		font-size: 12px;
+		margin-left: 50px;
+	}
+
+	label {
+		color: #ff6d00;
+		margin-left: 0;
+	}
+
+	#select__rate {
+		min-width: 239px;
+		height: 44px;
+		
+	}
+
+	
+.partners {
+    margin: 0px 254px;
+
+}
+}
+
+
+@media screen and (max-width:414px){
+
+
+	.subscription {
+		padding: 10px 10px;
+		height: 500px;
+	}
+	.subscription-title ,.about-title ,.calc-title {
+	
+		font-size: 20px;
+		margin: 15px 0;
+		
+	}
+
+	#select__rate {
+		
+		border-radius: 6px;
+	}
+	
+
+	.subscription-text {
+		margin-left: 212px;
+	}
+
+
+	.subscription-price {
+		margin-left: 218px;
+	
+		
+	}
+	.sub__price {
+		
+		font-size: 25px;
+		
+	}
+	.form-subscription {
+		margin-left: 219px;
+	}
+
+	.btn-sub {
+		
+		margin-left: 0;
+	}
+
+	.about-text {
+		width: auto;
+		
+	}
+
+	.partners {
+		margin: 0px 182px;
+	}
+
+	
+}
+
+
+
+@media screen and (max-width:375px){
+	.btn-sub {
+		padding: 12px 5px;
+		font-size: 10px;
+
+	}
+
+	.about-section section {
+		
+		height: 272px;
+	
+		margin: 10px auto;
+		padding: 0 10px;
+	}
+
+	.section__text {
+		color: #fa5255;
+		font-size: 14px;
+	}
+
+	.section__title {
+		font-size: 25px;
+	
+	}
+	
+	.subscription-text {
+		
+		font-size: 10px;
+	}
+	.calc form {
+		margin-left: 53px;
+	}
+
+	.partners {
+		margin: 0px 163px;
+	}
+}
+
+
+
+@media screen and (max-width:320px){
+	.subscription-title ,.about-title ,.calc-title {
+	
+		font-size: 15px;
+	}
+
+	.subscription {
+		padding: 10px 10px;
+		height: 350px;
+	}
+
+	.subscription-text {
+		font-size: 10px;
+		margin: 0 auto;
+	}
+
+	.subscription-price {
+		margin: 0 70px;
+	}
+
+	.sub__price {
+		font-size: 24px;
+	}
+
+	.form-subscription {
+		margin: 0 70px;
+	}
+
+	.btn-sub {
+		padding: 15px 17px;
+		font-size: 10px;
+		margin-left: 16px;
+	}
+
+	.calc form {
+		margin-left: 25px;
+	}
+	.partners {
+		margin: 0px 136px;
+	}
+}
