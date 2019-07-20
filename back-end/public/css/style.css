@@ -544,8 +544,8 @@ article {
 	margin-top: 40px;
 }
 .basketball, .football, .other, .hockey {
-	background-image: url('/images/basket.jpg');
-	background-size: cover;
+	background-image: url('/images/lakers.jpg');
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 350px;
@@ -574,8 +574,9 @@ article {
 	top: -150px;
 }
 .other {
-	background-image: url('https://i.pinimg.com/564x/cb/10/a5/cb10a57d052fdb53ddc084a59e2930f9.jpg');
-	background-size: contain;
+	background-image: url('https://i.pinimg.com/564x/11/72/e5/1172e5096af6cb078825a91cb741e9ee.jpg');
+	background-size: cover;
+	background-position: center;
 	margin: 0 auto;
 	top: -323px;
 	left: 1px;
@@ -636,7 +637,7 @@ article {
 	overflow: hidden;
 	background-color: #000;
 	border-radius: 10px;
-	padding: 15px 25px;
+	padding: 8px 25px;
 	color: #fff;
 }
 .slider-left, .slider-right {
@@ -668,7 +669,7 @@ article {
 }
 .slider__text {
 	width: 470px;
-	margin-top: 20px;
+	margin-top: 23px;
 	font-size: 18px;
 }
 .slider-photo {
@@ -816,26 +817,31 @@ footer img {
 	position: relative;
 }
 .modal-registr, .modal-login {
-	background-color: #fff;
-	margin: 0 auto;
+	background-color: #000;
+	margin: 100px auto;
 	font-family: 'Roboto', sans-serif;
 	border-radius: 7px;
+	color: #fff;
+
+
 }
 .modal-login {
 	width: 500px;
+	margin-top: 100px;
+	
 }
 .modal-registr {
 	width: 800px;
-	border: 1px solid blue;
 	transition: all ease 1s;
-	height: 535px;
+	height: 630px;
 	margin-left: 0;
+
 }
 .modal-left, .modal-right {
 	width: 50%;
-	background-color: #fff;
 	float: left;
 	max-height: 535px;
+	
 }
 .modal-right {
 	overflow-y: scroll;
@@ -851,7 +857,7 @@ footer img {
 .form-title {
 	font-size: 28px;
 	font-weight: bold;
-	color: #b3b3b3;
+	color: #fff;
 }
 .form-registr input, .modal-login input {
 	outline: none;
@@ -860,12 +866,22 @@ footer img {
 	padding: 4px 25px;
 	font-size: 16px;
 	border: 1px solid #b9b9b9;
+	background: #fff;
+	border-radius: 6px;
+	height: 50px;
+
+}
+
+.modal-login input {
+	width: 300px;
 }
 .input__login, .input__pass, .input__email {
 	width: 350px;
+  height: 50px;
 	background: url('/images/iconfinder_key_309058.png') no-repeat;
 	background-color: #fff;
 	background-position-y: 50%;
+	border-radius: 6px;
 }
 .input__login {
 	background: url('/images/iconfinder_87_111095.png') no-repeat;
@@ -881,6 +897,10 @@ footer img {
 }
 .close {
 	font-size: 30px;
+	color: #ffde0c;
+	position: relative;
+	left: 0;
+	top: -6px;
 }
 .close:hover {
 	color: red;
@@ -902,9 +922,7 @@ footer img {
 }
 /* модальные окна  вход ,обертка*/
 
-.modal-login {
-	margin: 0 auto;
-}
+
 /* чипсы */
 
 .chips {
@@ -1427,6 +1445,41 @@ footer img {
 	footer img {
 		width: 60px;
 	}
+
+	.modal-registr {
+		width: 800px;
+		transition: all ease 1s;
+		height: 560px;
+		margin-left: 0;
+		margin-top: 120px;
+	}
+
+	.modal-login {
+	
+		margin-top: 120px;
+		height: 400px;
+		width: 400px;
+		
+	}
+
+	.modal-login input {
+		width: 80%;
+		
+	}
+	.btn-reg ,.btn-login {
+		margin: 0 auto;
+		width: 90%;
+		padding: 10px 10px;
+	}
+	 .btn-login {
+		margin-top: 50px;
+	
+	}
+	
+	label {
+	
+	margin-bottom: 0;
+	}
 }
 @media screen and (max-width:414px) {
 	.header {
@@ -1636,6 +1689,16 @@ footer img {
 	.partners {
 		margin: 0 176px;
 	}
+	.modal-registr {
+	
+		margin-left: 0;
+		
+	}
+	.modal-wrap ,.wrap-login  {
+		
+		margin-left: -8px;
+	}
+
 }
 @media screen and (max-width:375px) {
 	.menu {
@@ -1654,9 +1717,7 @@ footer img {
 	.btn-pay {
 		padding: 10px 55px;
 	}
-	/* .super-bet .btn-pay {
-    padding: 16px 69px;
-} */
+
 	.super-bet .service-title {
 		font-size: 34px;
 	}
@@ -1711,6 +1772,84 @@ footer img {
 	.partners {
 		margin: 0 158px;
 	}
+	.modal-wrap, .wrap-login {
+		margin-left: 0;
+	}
+
+	
+	.modal-login {
+		width: auto;
+	}
+
+		.modal-registr {
+			height: 580px;
+			margin-top: 20px;
+		}
+
+	.modal-wrap {
+		margin-left: 0;
+		margin: 0 auto;
+		width: 330px;
+		height: 687px;
+	}
+	.form-title {
+		margin-right: 0;
+	}
+	label {
+		margin-bottom: 0rem;
+		margin-right: 67px;
+	}
+
+	.form-registr input, .modal-login input {
+		
+		width: auto;
+	}
+	.form-registr {
+		margin-right: 65px;
+	}
+
+	
+	.btn-reg, .btn-login {	
+		width: 70%;
+		
+	}
+
+	.close {
+	font-size: 40px;
+		left: -73px;
+		z-index: 999;
+		top: -6px;
+	}
+	.wrap-login .close {
+		left: 0;
+	}
+	.input__checkbox {
+	 position: relative;
+	 top: 50px;
+	 left: 130px;
+	}
+	label {
+		margin-right: 0;
+	}
+
+  .btn-reg {
+	
+	margin-left: 47px;
+	}
+
+	.modal-left .form-title {
+		margin-right: 65px;
+	}
+
+
+	@media screen and (max-width:360px){
+		.modal-registr {
+			margin-top: 20px;
+		}
+
+	}
+
+
 }
 @media screen and (max-width:320px) {
 	.menu {
@@ -1843,4 +1982,44 @@ footer img {
 		margin-bottom: 0;
 		font-size: 9px;
 	}
+	.modal-registr {
+		margin-top: 0;
+	}
+	.modal-login {
+		margin-top: 10px;
+		height: 400px;
+		
+	}
+	.btn-reg, .btn-login {
+		width: 100%;
+	}
+	.read__rules {
+		margin-right: 40px;
+	}
+	.modal-left .form-title {
+		margin-right: 91px;
+	}
+	.form-registr input {
+		width: auto;
+		margin-right: 32px;
+	}
+	.btn-reg {
+		width: 70%;
+		margin-left: 33px;
+	}
+	.modal-wrap {
+		width: 300px;
+	}
+	
+	.wrap-registr {
+	
+		left: -5px;
+		
+	}
+
+	button.close {
+		position: relative;
+		left: -101px;
+	}
+	
 }

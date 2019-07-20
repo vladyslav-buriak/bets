@@ -305,7 +305,7 @@ formLogin.addEventListener('submit', (event) => {
 		if (result.ok) {
 			chips('Вход успешен');
 			setCookie('token', result.token, 1);
-			location.href = 'cabinet';
+			location.href = 'welcome';
 		}
 	}).catch((error) => {
 		console.log(error)

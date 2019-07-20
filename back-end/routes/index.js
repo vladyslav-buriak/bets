@@ -37,6 +37,12 @@ router.get('/cabinet', accessControll, (req, res) => {
   res.render('cabinet', { user });
 });
 
+router.get('/welcome', accessControll, (req, res) => {
+  // find user by token
+  session.map(u => { if (u.token == req.cookies.token) user = u })
+  res.render('welcome', { user });
+});
+
 
 
 router.post('/api/register', async function (req, res) {
@@ -84,6 +90,16 @@ router.post('/api/auth', async function (req, res) {
   }
 
 });
+
+router.get('/logout', (req, res, next) => { next() }, function (req, res) {
+  session= session.filter((user)=>{
+    return user.token!=req.cookies.token;
+  })
+  console.log(session,'session');
+  const _isLoged = isLoged(req.cookies.token,session);
+  res.render('index', { showReg: false, _isLoged });
+});
+
 
 
 
