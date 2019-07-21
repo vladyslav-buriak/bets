@@ -14,6 +14,7 @@ body {
 .container {
 	position: relative;
 	padding: 0 15px;
+	font-family: 'PT Sans', sans-serif;
 }
 .header, .header-slider, .content, .our-team {
 	background-color: #fff;
@@ -28,7 +29,6 @@ body {
 }
 .header .container {
 	background-color: #000;
-	font-family: 'PT Sans', sans-serif;
 	padding: 20px 0;
 }
 .menu {
@@ -159,7 +159,6 @@ body {
 	background-image: url('/images/bg-6.jpg');
 }
 .slogan {
-	font-family: "Varela Round";
 	font-size: 65px;
 	font-weight: bolder;
 	text-transform: uppercase;
@@ -178,7 +177,6 @@ body {
 }
 .slogan__text {
 	color: #fff;
-	font-family: Lato;
 	font-size: 20px;
 	font-weight: 400;
 	width: 100%;
@@ -225,7 +223,6 @@ body {
 }
 .content .container {
 	background-color: #000;
-	font-family: 'PT Sans', sans-serif;
 }
 .header-slider .particles-js-canvas-el {
 	position: absolute;
@@ -274,7 +271,6 @@ body {
 	font-weight: 300;
 	line-height: 22px;
 	text-align: justify;
-	font-family: 'Roboto', sans-serif;
 	margin-left: 40px;
 	margin-top: 70px;
 	width: 270px;
@@ -423,9 +419,7 @@ section .service__text span {
 }
 /* ///////////////// our team */
 
-.our-team {
-	font-family: Lato;
-}
+
 .team-title {
 	margin-top: 60px;
 	font-size: 34px;
@@ -482,7 +476,6 @@ section .service__text span {
 	/* background-image: url('/images/Services_Background\ \(1\).png'); */
 	background-repeat: no-repeat;
 	padding: 100px;
-	font-family: 'PT Sans', sans-serif;
 	background-color: #fbfbfb;
 }
 .statistic-text {
@@ -716,13 +709,10 @@ article {
 }
 /* аск */
 
-.ask {
-	font-family: 'PT Sans', sans-serif;
-}
+
 .ask-text {
 	font-size: 32px;
 	margin: 50px 0;
-	font-family: Lato;
 	font-weight: bold;
 	color: #323232;
 }
@@ -780,7 +770,6 @@ footer .container {
 	background-color: #fbfbfb;
 	width: 100%;
 	color: #000;
-	font-family: Lato;
 }
 .partners {
 	margin: 0 auto;
@@ -819,7 +808,6 @@ footer img {
 .modal-registr, .modal-login {
 	background-color: #000;
 	margin: 100px auto;
-	font-family: 'Roboto', sans-serif;
 	border-radius: 7px;
 	color: #fff;
 
@@ -932,7 +920,6 @@ footer img {
 	transition: all ease 2s;
 	border-radius: 10px;
 	font-size: 20px;
-	font-family: 'PT Sans', sans-serif;
 	text-align: center;
 	color: #fff;
 }
@@ -986,6 +973,13 @@ footer img {
 		width: 287px;
 		margin-left: 0px;
 	}
+
+	.service section {
+		width: 278px;
+		height: 467px;
+		margin: 120px 0px;
+	}
+	
 	.super-bet {
 		margin: 0 auto;
 	}
@@ -1306,8 +1300,7 @@ footer img {
 		margin-top: 0;
 	}
 	.section-wrap {
-		margin-left: 0;
-		width: 300px;
+		width: 277px;
 		margin: 0 auto;
 	}
 	.content section {
@@ -1317,6 +1310,10 @@ footer img {
 	.rewiev section {
 		background-color: #000;
 		height: 150px;
+	}
+
+	.service-slogan {
+		margin-left: 0;
 	}
 	.service__text {
 		font-size: 14px;
@@ -1559,7 +1556,7 @@ footer img {
 		top: 153px;
 	}
 	.btn-pay {
-		padding: 10px 65px;
+		padding: 10px 54px;
 	}
 	.analytics, .analyticts__second, .analytics__third, .analytics__fourth {
 		background-size: 100px;
@@ -2023,3 +2020,7 @@ footer img {
 	}
 	
 }
+
+
+
+

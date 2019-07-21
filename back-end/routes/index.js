@@ -9,12 +9,11 @@ function isLoged(token, session) {
 }
 
 function accessControll(req, res, next) {
-  console.log(req.cookies.token);
+  console.log('test',req.url,req.cookies);
   const _isLoged = isLoged(req.cookies.token,session);
 
   if (_isLoged) next()
-  else res.render('index', { showReg: true });
-
+  else res.render('index', { showReg: true, _isLoged });
 }
 
 /* GET home page. */
@@ -23,12 +22,15 @@ router.get('/', (req, res, next) => { next() }, function (req, res) {
   res.render('index', { showReg: false, _isLoged });
 });
 
-router.get('/buy', function (req, res) {
+router.get('/buy',  function (req, res) {
   res.render('buy');
 });
 
 router.get('/card', accessControll, function (req, res) {
-  res.render('card', { query: req.query });
+
+  const _isLoged = isLoged(req.cookies.token,session);
+  console.log(_isLoged);
+  res.render('card', { query: req.query, _isLoged });
 });
 
 router.get('/cabinet', accessControll, (req, res) => {

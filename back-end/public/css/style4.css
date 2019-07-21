@@ -1,0 +1,100 @@
+/* спецификация */
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+img {
+	display: block;
+}
+body {
+	background-color: #fff;
+}
+.container {
+	position: relative;
+    padding: 0 15px;
+    font-family: 'PT Sans', sans-serif;
+    color: #323232;
+}
+/* header */
+
+.menu__item a {
+    color: #323232;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.p__item {
+    color: #fa5255;
+    margin-top: 3px;
+}
+
+
+
+.welcome-title {
+    margin-top: 60px;
+}
+
+/* main */
+
+.instruction{
+    margin-top: 100px;
+}
+
+.inst__title{
+    font-size: 26px;
+    font-weight: bolder;
+}
+.inst__title2 {
+    font-size: 22px;
+    color: #535353;
+    margin-top: 20px;
+}
+
+.menu__inst{
+    margin-top: 20px;
+    color: #535353;
+}
+
+.inst__item{
+    margin: 10px;
+}
+
+.btns__buy {
+     margin-top: 30px;
+}
+
+.btn__rate {
+    width: 281px;
+    padding: 6px 20px;
+    border-radius: 50px;
+    margin: 10px;
+    font-size: 18px;
+    background: #fa5255;
+    color: #fff;
+    outline: none;
+}
+
+.btn__rate a {
+    color: #fff;
+}
+.our__rewiev__img 
+ {
+       margin-top: 108px;
+       width: 480px;
+       height: 350px;
+          background: black url('/images/bmw.jpg');
+        background-size: cover;
+          -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+      }
+
+
+      .img__mem{
+          width: 180px;
+          height: 350px;
+      }
+
+
+  

@@ -1,0 +1,9 @@
+1) comit , push.
+2) go to server: ssh root@194.9.70.214;
+3) pass;
+4) cd bets;
+5) git pull;
+6) restart 'onin admin panell';
+7) repeat steps 2),3),4);
+8) cd back-end;
+9) nohup node bin/www &;
