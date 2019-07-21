@@ -45,6 +45,11 @@ router.get('/welcome', accessControll, (req, res) => {
   res.render('welcome', { user });
 });
 
+router.all('/pay-callback',(req,res)=>{
+    console.log('buy item',req.url,req.body);
+    res.json('ok');
+})
+
 
 
 router.post('/api/register', async function (req, res) {
