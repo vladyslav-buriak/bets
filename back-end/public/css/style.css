@@ -162,7 +162,7 @@ body {
 	font-size: 65px;
 	font-weight: bolder;
 	text-transform: uppercase;
-	margin-left: 150px;
+    margin-left: 212px;
 	position: absolute;
 	top: -500px;
 	opacity: 0.6;
@@ -946,7 +946,7 @@ footer img {
 		font-size: 40px;
 		width: 500px;
 		text-align: center;
-		margin-left: 230px;
+		margin-left: 283px;
 	}
 	.main-line_2 {
 		position: relative;
