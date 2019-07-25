@@ -95,16 +95,13 @@
 	</script>
 
 	<!-- /////////////// -->
-	<form method="POST" accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout">
-		<input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJwdWJsaWNfa2V5IjoiaTkwOTI5MDE3OTQxIiwiYW1vdW50IjoiNTUiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0JzQvtC5INGC0L7QstCw0YAiLCJ0eXBlIjoiYnV5IiwibGFuZ3VhZ2UiOiJydSJ9" />
-		<input type="hidden" name="signature" value="aCyKWJxEQ/8vYiSrYdBPa7BRdsI=" />
-		<button style="border: none !important; display:inline-block !important;text-align: center !important;padding: 7px 20px !important;
-			color: #fff !important; font-size:16px !important; font-weight: 600 !important; font-family:OpenSans, sans-serif; cursor: pointer !important; border-radius: 2px !important;
-			background: rgb(122,183,43) !important;"onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';">
-			<img src="https://static.liqpay.ua/buttons/logo-small.png" name="btn_text"
-				style="margin-right: 7px !important; vertical-align: middle !important;"/>
-			<span style="vertical-align:middle !important">Оплатить 55 UAH</span>
-		</button>
+	<form id="payment" name="payment" method="post" action="https://sci.interkassa.com/" enctype="utf-8">
+		<input type="hidden" name="ik_co_id" value="5d3778141ae1bd90e58b4567" />
+		<input type="hidden" name="ik_pm_no" value="ID_4233" />
+		<input type="hidden" name="ik_am" value="100.00" />
+		<input type="hidden" name="ik_cur" value="RUB" />
+		<input type="hidden" name="ik_desc" value="Event Description" />
+			<input type="submit" value="Pay">
 	</form>
 	
 	<!-- <script src="//static.liqpay.ua/libjs/checkout.js" async></script> -->

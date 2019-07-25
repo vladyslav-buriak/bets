@@ -45,10 +45,25 @@ router.get('/welcome', accessControll, (req, res) => {
   res.render('welcome', { user });
 });
 
-router.all('/pay-callback',(req,res)=>{
+router.all('/pay-success',(req,res)=>{
     console.log('buy item',req.url,req.body);
-    res.json('ok');
+    res.json(req.body);
 })
+router.all('/pay-unsuccess',(req,res)=>{
+  console.log('buy item',req.url,req.body);
+  res.json(req.body);
+})
+router.all('/pay-pending',(req,res)=>{
+  console.log('buy item',req.url,req.body);
+  res.json(req.body);
+})
+router.all('/pay-info',(req,res)=>{
+  console.log('buy item',req.url,req.body);
+  res.json(req.body);
+})
+
+
+
 
 
 
