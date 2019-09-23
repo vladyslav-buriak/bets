@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
+
 let session = [];
 
 
@@ -9,8 +10,8 @@ function isLoged(token, session) {
 }
 
 function accessControll(req, res, next) {
-  console.log('test',req.url,req.cookies);
-  const _isLoged = isLoged(req.cookies.token,session);
+  console.log('test', req.url, req.cookies);
+  const _isLoged = isLoged(req.cookies.token, session);
 
   if (_isLoged) next()
   else res.render('index', { showReg: true, _isLoged });
@@ -18,17 +19,17 @@ function accessControll(req, res, next) {
 
 /* GET home page. */
 router.get('/', (req, res, next) => { next() }, function (req, res) {
-  const _isLoged = isLoged(req.cookies.token,session);
+  const _isLoged = isLoged(req.cookies.token, session);
   res.render('index', { showReg: false, _isLoged });
 });
 
-router.get('/buy',  function (req, res) {
+router.get('/buy', function (req, res) {
   res.render('buy');
 });
 
 router.get('/card', accessControll, function (req, res) {
 
-  const _isLoged = isLoged(req.cookies.token,session);
+  const _isLoged = isLoged(req.cookies.token, session);
   console.log(_isLoged);
   res.render('card', { query: req.query, _isLoged });
 });
@@ -45,20 +46,20 @@ router.get('/welcome', accessControll, (req, res) => {
   res.render('welcome', { user });
 });
 
-router.all('/pay-success',(req,res)=>{
-    console.log('buy item',req.url,req.body);
-    res.json(req.body);
-})
-router.all('/pay-unsuccess',(req,res)=>{
-  console.log('buy item',req.url,req.body);
+router.all('/pay-success', (req, res) => {
+  console.log('buy item', req.url, req.body);
   res.json(req.body);
 })
-router.all('/pay-pending',(req,res)=>{
-  console.log('buy item',req.url,req.body);
+router.all('/pay-unsuccess', (req, res) => {
+  console.log('buy item', req.url, req.body);
   res.json(req.body);
 })
-router.all('/pay-info',(req,res)=>{
-  console.log('buy item',req.url,req.body);
+router.all('/pay-pending', (req, res) => {
+  console.log('buy item', req.url, req.body);
+  res.json(req.body);
+})
+router.all('/pay-info', (req, res) => {
+  console.log('buy item', req.url, req.body);
   res.json(req.body);
 })
 
@@ -114,11 +115,11 @@ router.post('/api/auth', async function (req, res) {
 });
 
 router.get('/logout', (req, res, next) => { next() }, function (req, res) {
-  session= session.filter((user)=>{
-    return user.token!=req.cookies.token;
+  session = session.filter((user) => {
+    return user.token != req.cookies.token;
   })
-  console.log(session,'session');
-  const _isLoged = isLoged(req.cookies.token,session);
+  console.log(session, 'session');
+  const _isLoged = isLoged(req.cookies.token, session);
   res.render('index', { showReg: false, _isLoged });
 });
 
