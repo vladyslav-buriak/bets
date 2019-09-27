@@ -1,1979 +1,1327 @@
-
-	/* спецификация */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section,a {
-	display: block;
-}
-
-
-body {
-	line-height: 1;
-	background-color: #fff;
-}
-
+ 
+/* спецификация */
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
-
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
-
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	margin-top: 35px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 35px;
 }
-
 img {
-	display: block;
+    display: block;
 }
-
 .container {
-	font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
-
 .header, .header-slider, .content, .our-team {
-	background-color: #fff;
+    background-color: #fff;
 }
-   
 h1,h2,h3,h4 {
-	font-size: 32px;
-	color: #267df4;
-	margin-top: 30px;
-	font-weight: bold;
+    font-size: 32px;
+    color: #267df4;
+    margin-top: 30px;
+    font-weight: bold;
 }
-
 p {
-	font-size: 20px;
-	margin-top: 10px;
-	color: #959393;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #959393;
 }
 
 /* header */
 
 .header .container {
-	background: url('https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM3NTU1fQ&s=b0a49f013d266064b3e0e5a19d5d7c7f') no-repeat 50% 50%;
-	background-size: cover;
+    background: url('https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM3NTU1fQ&s=b0a49f013d266064b3e0e5a19d5d7c7f') no-repeat 50% 50%;
+    background-size: cover;
 }
-
 .header .nav-menu {
-
 }
-
 .header .menu {
-	margin-top: 40px;
-	margin-left: 50px;
+    margin-top: 45px;
+    margin-left: 50px;
 }
-
 .header .menu__item {
     margin-right: 20px;
-	padding: 10px 0;
-	border-radius: 6px;
-	text-align: center;
-	width: 130px;
+    padding: 10px 0;
+    border-radius: 6px;
+    text-align: center;
+    width: 130px;
 }
-
 .header .menu__item a ,.link__logo {
-	color: #fff;
-	font-size: 16px;
-	font-weight: bold;
-	text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
 }
-
 .header .menu__item:hover {
-	background-color: #fff;
-	transition: .2s;
+    background-color: #fff;
+    transition: .2s;
 }
-
 .header .menu__item:hover a {
-	color: #000;
+    color: #000;
 }
-
 .login__app{
-   background-color: #1e88e5;
-   width: 80px;
-   margin: 0 auto;
+    background-color: #1e88e5;
+    width: 80px;
+    margin: 0 auto;
 }
-
 .main-logo {
-	margin-top: 45px;
+    margin-top: 45px;
+    display: block;
 }
-
 .link__logo {
-	font-size: 30px;
-	text-decoration: none;
+    font-size: 30px;
+    text-decoration: none;
+    width: 200px;
+    display: block;
 }
-
 .header .menu__item:last-child {
-	background-color: #1e88e5;
-	border-radius: 40px;
-	width: 90px;
+    background-color: #1e88e5;
+    border-radius: 40px;
+    width: 90px;
 }
-
 .header-service {
-	max-width: 750px;
-	margin: 30px auto;
+    max-width: 750px;
+    margin: 30px auto;
 }
-
 .header__title , .header__text{
-	font-size: 45px;
-	margin-top: 170px;
-	color: #fff;
-	font-weight: bolder;
-} 
-
-.header__text { 
-	margin: 110px auto;
-	font-size: 20px;
-	line-height: 35px;
+    font-size: 45px;
+    margin-top: 170px;
+    color: #fff;
+    font-weight: bolder;
 }
-
+.header__text {
+    margin: 110px auto;
+    font-size: 20px;
+    line-height: 35px;
+}
 .header__btn-buy{
     margin: 50px auto;
-	display: block;
-	padding: 20px 40px;
-	text-transform: uppercase;
-	border: 4px solid #1e88e5;
-	transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
-	transition: 3s;
-	outline: none;
-	background-color: #1e88e5;
+    display: block;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    border: 4px solid #1e88e5;
+    transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+    transition: 3s;
+    outline: none;
+    background-color: #1e88e5;
 }
-
 .header__btn-buy a {
-	color: #fff;
-	text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
-
 .header__btn-buy:hover {
-	background: linear-gradient(to right, #56ccf2, #2f80ed);
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
 }
-
 .header__btn-buy:before ,.header__btn-buy:after{
-	position: absolute;
-	content: ' ';
-	width: 20%;
-	height: 50%;
-	transition: .3s;
-	z-index: -1;
+    position: absolute;
+    content: ' ';
+    width: 20%;
+    height: 50%;
+    transition: .3s;
+    z-index: -1;
 }
-
-.header__btn-buy:before  {
-	border-bottom: 4px solid #1e88e5;
-	border-left: 4px solid #1e88e5;
-	top: 70%;
-	left: -5%;
+.header__btn-buy:before {
+    border-bottom: 4px solid #1e88e5;
+    border-left: 4px solid #1e88e5;
+    top: 70%;
+    left: -5%;
 }
-
-.header__btn-buy:after  {
-	border-top: 4px solid #1e88e5;
-	border-right: 4px solid #1e88e5;
-	top: -20%;
-	right: -5%;
+.header__btn-buy:after {
+    border-top: 4px solid #1e88e5;
+    border-right: 4px solid #1e88e5;
+    top: -20%;
+    right: -5%;
 }
-
 .header__btn-buy:active:before{
-	top: 65%;
-	left: -8%;
+    top: 65%;
+    left: -8%;
 }
 .header__btn-buy:active:after{
-	top: -25%;
-	right: -8%;
+    top: -25%;
+    right: -8%;
 }
-
 .header__btn-buy:active:before , .header__btn-buy:active:after{
     width: 30%;
     height: 60%;
 }
-
 /* info */
 
 .sections-service{
-	position: relative;
-	width: 500px;
-	height: 143px;
+    position: relative;
+    width: 500px;
+    height: 143px;
+   
 }
 
 .section-service{
-	border: 1px solid;
-	background: linear-gradient(to right, #56ccf2, #2f80ed);
-	width: 500px;
-	height: 143px;
-	font-size: 20px;
-	line-height: 31px;
-	border-radius: 6px;
-	color: #fff;
-	position: absolute;
-	padding: 0 15px;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    width: 500px;
+    height: 143px;
+    font-size: 20px;
+    line-height: 31px;
+    border-radius: 6px;
+    color: #fff;
+    position: absolute;
+    padding: 10px 35px 20px;
+    transition: all ease 1s;
+   
 }
+
 .section__text {
-	color: #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
 }
 .section-circle{
-	height: 150px;
-	width: 24px;
-	margin-top: 20px;
+    height: 150px;
+    width: 24px;
+    margin-top: 20px;
 }
-
 .circle{
-	border-radius: 50%;
-	width: 14px;
-	height: 14px;
-	border:1px solid #56ccf2;
-	margin-top: 15px;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    border:1px solid #56ccf2;
+    margin-top: 15px;
 }
-
 .circle:hover {
-	cursor: pointer;
-	background-color:#267df4;
-	transition: 1s;
+    cursor: pointer;
+    background-color:#267df4;
+    transition: 1s;
 }
-
 .section__img{
     width: 350px;
 }
-
 .info__text{
-	color: #959393;
-	font-weight: bold;
+    color: #959393;
+    font-weight: bold;
 }
-
 .section-smart-bets section {
-	color: #fff;
+    color: #fff;
     background: linear-gradient(to right, #56ccf2, #2f80ed);
-	border-radius: 15px;
-	margin: 10px;
+    border-radius: 15px;
+    margin: 10px;
 }
-
 /* main//////////// */
 
 table{
-	margin: 35px auto;
+    margin: 35px auto;
 }
-
 .lines {
-	display: block;
+    display: block;
 }
-
 .rows {
-	border-right: 1px solid #959393;
-	height: 200px;
-	width: 350px;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	transition: .2s;
+    border-right: 1px solid #959393;
+    height: 200px;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    transition: .2s;
 }
-
 .rows:hover {
-	background-color: #1359c8;
-	color: #fff;
+    background-color: #1359c8;
+    color: #fff;
 }
-
 .rows:last-child {
-	border: none;
+    border: none;
 }
-
 .left-block {
-	color: #226fde;
-	font-size: 32px;
-	display: flex;
-	position: relative;
-	top: 20%;
-	left: 10%;
+    color: #226fde;
+    font-size: 32px;
+    display: flex;
+    position: relative;
+    top: 20%;
+    left: 10%;
 }
-
 .rows:hover .left-block ,.rows:hover .right__block-title {
     color: #fff;
 }
-
 .right-block {
-	width: 260px;
-	position: relative;
-	left: 20%;
-	top: -5%;
+    width: 260px;
+    position: relative;
+    left: 20%;
+    top: -5%;
 }
-
 .rows:hover .right__block-text , .rows:hover p{
-	color:#fff;
+    color:#fff;
 }
-
 .rows h3 {
-	font-size: 18px;
-	margin: 0;
-	padding: 0;	
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
-
 .right__block-text , .right__block-price{
-	margin: 20px 0;
-	color: #959393;
-	font-size: 14px;
+    margin: 20px 0;
+    color: #959393;
+    font-size: 14px;
 }
-
 .right__block-price{
-	font-size: 20px;
+    font-size: 20px;
 }
-
-.right__block-title {
-	color: #000;
-}
-
 .rows .super-title,.super-text {
-	font-size: 22px;
-	color: #fff;
+    font-size: 22px;
+    color: #fff;
+    text-align: left;
 }
-
 .super-text {
-	font-size: 18px;
+    font-size: 18px;
 }
-
 .rows-bg {
-	background-color: #1359c8;
+    background-color: #1359c8;
 }
-
 .btn-buy .btn-pay , .btn-super-bet{
-	color: #fff;
-	border-radius: 6px;
-	width: 250px;
-	height: 30px;
+    color: #fff;
+    border-radius: 6px;
+    width: 280px;
+    height: 40px;
     text-align: center;
-	background: linear-gradient(to right, #56ccf2, #2f80ed);
-	text-decoration: none;
-	display: block;
-	line-height: 30px;
-	margin: 10px auto;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    text-decoration: none;
+    display: block;
+    line-height: 40px;
+    margin: 10px auto;
 }
 
 /* ///////////////// our team */
 
 .worker {
-	margin-top: 40px;
+    margin-top: 40px;
 }
-
 .worker-top {
-	margin-top: 200px;	
+    margin-top: 200px;
 }
-
 .worker-bg, .worker-bg-second, .worker-bg-third {
-	background-image: url('/images/we.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 50%;
-	width: 170px;
-	height: 170px;
-	margin: 0 auto;
+    background-image: url('/images/we.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
 }
-
 .worker-bg-second {
-	background: url('/images/chair.jpg');
-	background-size: cover;
+    background: url('/images/chair.jpg');
+    background-size: cover;
 }
-
 .worker-bg-third {
-	background: url('/images/unnamed.jpg');
-	background-size: cover;
+    background: url('/images/unnamed.jpg');
+    background-size: cover;
 }
-
 .worker-text {
-	color: #b3b3b3;
-	text-align: center;
-	font-size: 16px;
+    color: #b3b3b3;
+    text-align: center;
+    font-size: 16px;
 }
-
 .worker-name {
-	color: #464646;
-	font-size: 20px;
-	font-weight: 400;
-	text-align: center;
-	margin-top: 25px;
+    color: #464646;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 25px;
 }
 
 /* rewiev */
 
-.rewiev .container {
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 100px;
-}
-
 .statistic-text {
-	color: #fff;
-	font-size: 34px;
-	margin-top: 10px;
+    color: #fff;
+    font-size: 34px;
+    margin-top: 10px;
 }
-
 .rewiev .review__title ,.review__text {
-	color: #fff;
+    color: #fff;
 }
-
 .rewiev h3 {
-	font-size: 40px;
-	color: #1359c8;
+    font-size: 40px;
+    color: #1359c8;
 }
-
 .rewiev section {
-	padding: 10px 10px;
-	border-radius: 10px;
-	height: 250px;
-	margin: 70px 55px 0 55px;
-	color: #fff;
-	width: 250px;
-	color: #959393;
-	background: linear-gradient(to right, #56ccf2, #2f80ed);
+    padding: 10px 10px;
+    border-radius: 10px;
+    height: 250px;
+    margin: 60px auto 0;
+    color: #fff;
+    width: 250px;
+    color: #959393;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
 }
-
 .rewiev .border-line {
-	width: 100%;
-	height: 5px;
-	background-color: #fff;
-	margin-top: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin-top: 10px;
 }
-
 .review__text {
-	margin-top: 10px;
-	text-align: center;
+    margin-top: 10px;
+    text-align: center;
 }
-
 article {
-	color: #959393;
-	margin: 40px auto;
-	font-size: 18px;
-	border-radius: 6px;
-	padding: 15px 25px;
-	line-height: 25px;
+    color: #959393;
+    margin: 20px 10px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 15px 25px;
+    line-height: 25px;
 }
-
 .sports-wrap {
-	height: 800px;
-	margin-top: 40px;
+    height: 800px;
+    margin-top: 20px;
 }
-
 .basketball, .football, .other, .hockey {
-	background-image: url('/images/lakers.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 350px;
-	width: 330px;
-	border-radius: 6px;
-	position: relative;
-	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-	cursor: pointer;
-	filter: grayscale(0.9);
+    background-image: url('/images/lakers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 330px;
+    border-radius: 6px;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    cursor: pointer;
+    filter: grayscale(0.9);
 }
-
 .basketball {
-	margin: 0 auto;
-	top: 20px;
+    margin: 0 auto;
+    top: 20px;
 }
-
 .hockey {
-	background-image: url('https://images.pexels.com/photos/40564/ice-hockey-players-pass-forward-40564.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
-	background-size: cover;
-	left: -10px;
-	top: -150px;
+    background-image: url('https://images.pexels.com/photos/40564/ice-hockey-players-pass-forward-40564.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+    background-size: cover;
+    right: -557px;
+   ;
+    top: -504px;
 }
-
 .football {
-	background-image: url('/images/football.jpg');
-	background-size: cover;
-	left: -25px;
-	top: -150px;
+    background-image: url('/images/football.jpg');
+    background-size: cover;
+    left: 220px;
+    top: -153px;
 }
-
 .other {
-	background-image: url('https://i.pinimg.com/564x/11/72/e5/1172e5096af6cb078825a91cb741e9ee.jpg');
-	background-size: cover;
-	background-position: center;
-	margin: 0 auto;
-	top: -323px;
-	left: 1px;
+    background-image: url('https://i.pinimg.com/564x/11/72/e5/1172e5096af6cb078825a91cb741e9ee.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    top: -677px;
 }
-
 .sport__name {
-	position: absolute;
-	padding: 20px 0;
-	top: 150px;
-	width: 330px;
-	opacity: 0;
-	text-align: center;
-	color: white;
-	font-size: 1.4em;
+    position: absolute;
+    padding: 20px 0;
+    top: 150px;
+    width: 330px;
+    opacity: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
 }
-
 .sport__name:hover {
-	opacity: 1;
-	background: #1359c8;
+    opacity: 1;
+    background: #1359c8;
 }
-
-
 .customers-rewiev{
-	color: #959393;
-	font-size: 22px;
+    color: #959393;
+    font-size: 22px;
 }
 .slider-wrap {
-	width: 650px;
-	height: 250px;
-	border-radius: 10px;
-	background-color: #fff;
-	margin: 0 auto;
-	margin-top: 30px;
-	position: relative;
+    width: 650px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 30px;
+    position: relative;
 }
-
 .slider-rewiev {
-	display: flex;
-	justify-content: space-between;
-	width: 650px;
-	height: 250px;
-	position: absolute;
-	transition: all ease 1s;
-	overflow: hidden;
-	background: #959393;
-	border-radius: 10px;
-	padding: 8px 25px;
-	color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    height: 250px;
+    position: absolute;
+    transition: all ease 1s;
+    overflow: hidden;
+    background: #959393;
+    border-radius: 10px;
+    padding: 8px 25px;
+    color: #fff;
 }
-
 .slider-rewiev p {
-	color: #fff;
+    color: #fff;
 }
-
 .slider-left, .slider-right {
-	cursor: pointer;
-	margin-left: 100px;
-	margin-top: 10px;
-	color: #1359c8;
-	font-size: 40px;
+    cursor: pointer;
+    color: #1359c8;
+    font-size: 55px;
+    margin: 0 20px;
 }
-
-.slider-right {
-	margin-left: 30px;
-}
-
 .opacity0 {
-	opacity: 0;
+    opacity: 0;
 }
-
 .slider__name {
-	text-align: center;
-	font-size: 18px;
-	margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
 }
-
 .img__user {
-	width: 130px;
-	clip-path: circle(50%);
-	margin-top: 30px;
+    width: 130px;
+    clip-path: circle(50%);
+    margin-top: 30px;
 }
-
 .slider__text {
-	width: 470px;
-	margin-top: 30px;
-	font-size: 18px;
+    width: 470px;
+    margin-top: 30px;
+    font-size: 17px;
 }
-
 .slider-photo {
-	margin-right: 15px
+    margin-right: 15px 
 }
-
 .customers-salary {
-    margin-top: 60px;
-	text-align: center;
+    margin-top: 40px;
+    text-align: center;
 }
-
 .arrow-down{
-	color: #1359c8;
-	text-align: center;
-	font-size: 40px;
-	margin-top: 40px;
+    color: #1359c8;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
 }
-
 .watch-statistic {
-	width: 900px;
-	margin-top: 40px;
+    width: 900px;
+    margin: 20px auto;
 }
 
 /* наши контакты */
 
 .contacts-us {
-	margin-top: 50px;
+    margin-top: 50px;
 }
-
 .contacts__icon {
-	text-align: center;
-	color: #1359c8;
-	font-size: 20px;
-	transition: .2s;
+    text-align: center;
+    color: #1359c8;
+    font-size: 20px;
+    transition: .2s;
 }
-
 .contacts-us:hover , .contacts__icon:hover {
-	background-color: #1359c8;
-	color: #fff;
+    background-color: #1359c8;
+    color: #fff;
 }
-
 .contact__text {
-	font-size: 14px;
-	width: 170px;
-	margin-top: 10px;
-	color: #898888;
+    font-size: 16px;
+    width: 170px;
+    margin-top: 10px;
+    color: #898888;
 }
-
 .contacts .border-line {
-	background-color: #1e88e5;
-	width: 100%;
-	height: 15px;
-	margin-top: 50px;
+    background-color: #1e88e5;
+    width: 100%;
+    height: 15px;
+    margin-top: 50px;
 }
 
 /* аск */
 
 .wrap-ask {
-	width: 500px;
-	height: 150px;
-	transition: all ease 1s;
-	position: relative;
-	transition: all ease 1s;
-	margin-top: 10px;
+    width: 500px;
+    height: 150px;
+    transition: all ease 1s;
+    position: relative;
+    transition: all ease 1s;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
-
 .ask-text{
     margin: 40px 0;
 }
-
 .height-ask {
-	background-color: #1e88e5;
-	font-weight: bolder;
-	position: relative;
-	z-index: 1;
-	color: #fff;
-	border-radius: 10px;
-	line-height: 70px;
-	transition: all ease 3s;
+    background-color: #1e88e5;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    border-radius: 10px;
+    line-height: 70px;
+    transition: all ease 3s;
 }
-
-
 .low-ask {
-	width: 500px;
-	position: absolute;
-	transition: all ease 1s;
-	top: 0;
-	left: 0;
+    width: 500px;
+    position: absolute;
+    transition: all ease 1s;
+    top: 0;
+    left: 0;
 }
-
 .height__ask {
-	color: #fff;
+    color: #fff;
 }
-
 .low__ask {
-	font-size: 16px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	transition: .2s;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .2s;
 }
-
 .arrow-right , .low__ask{
-	cursor: pointer;
+    cursor: pointer;
 }
-
 .opacity0 {
-	opacity: 0;
+    opacity: 0;
 }
 
 /* футер */
 
 footer img {
-	width: 90px;
-	height: 30px;
-	margin: 25px 10px 0 10px;
+    width: 90px;
+    height: 30px;
+    margin: 25px 10px 0 10px;
 }
-
 .footer-block {
-	margin-top: 15px;
+    margin-top: 20px;
 }
-
 footer a{
-	padding: 10px 0;
+    padding: 10px 0;
 }
-
 footer p {
-	font-size: 16px;
+    font-size: 16px;
 }
-
 .footer-block a {
-	text-decoration: none;
-	color: #1e88e5;
+    text-decoration: none;
+    color: #1e88e5;
 }
 
-/* модальные окна  регистрация*/
+/* модальные окна регистрация*/
 
 .hide {
-	display: none;
+    display: none;
 }
-
 .wrap-registr {
-	background-color: rgba(0, 0, 0, 0.5);
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
 }
-
 .modal-wrap {
-	width: 400px;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
+    width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 }
 .modal-registr, .modal-login {
     background-color: #fff;
-	margin: 100px auto;
-	border-radius: 7px;
+    margin: 100px auto;
 }
-
 .modal-login {
-	width: 500px;
-	margin-top: 100px;
+    width: 400px;
+    margin-top: 100px;
 }
-
 .modal-registr {
-	width: 800px;
-	transition: all ease 1s;
-	height: 630px;
-	margin-left: 0;
-
+    width: 800px;
+    transition: all ease 1s;
+    height: 449px;
 }
 .modal-left, .modal-right {
-	width: 50%;
-	float: left;
-	max-height: 535px;
-	
+    width: 50%;
+    float: left;
+    max-height: 535px;
+    position: relative;
 }
 .modal-right {
-	overflow-y: scroll;
-	font-size: 12px;
-	padding: 10px;
-	width: 50%;
+    overflow-y: scroll;
+    font-size: 12px;
+    padding: 10px;
+    width: 50%;
+    background-color: #fff;
+    height: 400px;
 }
+
+.modal-right p {
+    font-size: 12px;
+}
+
+#input__checkbox{
+    display: none;
+    margin-top: 20px;
+}
+
+.fake-checkbox{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #959393;
+    position: relative;
+    top: 2px;
+}
+
+.fake-checkbox::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    background-image: url('/images/ok.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+label {
+    margin-top: 20px;
+}
+
+#input__checkbox:checked+ .fake-checkbox::before{
+    opacity: 1;
+}
+
 .read__rules span, .go__back {
-	cursor: pointer;
-	color: #267df4;
-	font-size: 20px;
+    cursor: pointer;
+    color: #267df4;
+    font-size: 20px;
 }
+
+.form-wrap{
+    height: 500px;
+}
+
 .form-title {
-	font-size: 28px;
-	color: #959393;
+    font-size: 22px;
+    color: #959393;
+    margin: 10px 0 0;
 }
-
 .form-registr input, .modal-login input {
-	outline: none;
-	border: none;
-	margin-top: 40px;
-	padding: 4px 25px;
-	font-size: 16px;
-	border: 1px solid #b9b9b9;
-	background: #fff;
-	border-radius: 6px;
-	height: 50px;
-
+    outline: none;
+    margin-top: 10px;
+    height: 40px;
+    width: 300px;
+    border: 1px solid #959393;
+    background: #fff;
+    border-radius: 6px;
+    color: #959393;
+    font-size: 18px;
+    padding-left: 15px;
 }
 
 .modal-login input {
-	width: 300px;
+    width: 300px;
 }
 
-.input__login, .input__pass, .input__email {
-	width: 350px;
-    height: 50px;
-	background: url('/images/iconfinder_key_309058.png') no-repeat;
-	background-color: #fff;
-	background-position-y: 50%;
-	border-radius: 6px;
+.btn-close {
+    color: #1e88e5;
+    position: absolute;
+    right: 3%;
+    top: -5%;
+    font-size: 38px;
 }
 
-.input__login {
-	background: url('/images/iconfinder_87_111095.png') no-repeat;
-	background-position-y: 50%;
-}
-
-.input__email, .login__email {
-	background: url('/images/iconfinder_icon-ios7-email_211737.png') no-repeat;
-	background-position-y: 50%;
-}
-
-.login__pass {
-	background: url('/images/iconfinder_key_309058.png') no-repeat;
-	background-position-y: 50%;
-}
-
-.close {
-	font-size: 30px;
-	color: #ffde0c;
-	position: relative;
-	left: 0;
-	top: -6px;
+.agree__rules {
+    cursor: pointer;
+    color: #1359c8;
 }
 .close:hover {
-	color: red;
+    color: red;
 }
 .btn-reg, .btn-login {
-	padding: 5px 60px;
-	margin: 30px auto;
-	background-color: #42a5f5;
+    padding: 5px 60px;
+    margin: 15px auto;
+    background-color: #1e88e5;
 }
 .btn-reg:hover {
-	background: #689f38;
+    background: #689f38;
 }
 .disabled:hover {
-	background-color: #1d1d1d;
+    background-color: #1d1d1d;
 }
 .offer {
-	text-align: center;
-	font-size: 20px;
+    text-align: center;
+    font-size: 20px;
 }
-/* модальные окна  вход ,обертка*/
 
+form input[type="email"]:focus , form input[type="password"]:focus{
+    border: 2px solid #959393;
+}
 
+.forget-pass {
+    display: block;
+    margin: 0px auto 15px;
+}
+
+/* модальные окна вход ,обертка*/
 /* чипсы */
 
 .chips {
-	margin: 20px;
-	padding: 20px 30px;
-	background-color: #1e88e5;
-	transition: all ease 2s;
-	border-radius: 10px;
-	font-size: 20px;
-	text-align: center;
-	color: #fff;
+    margin: 20px;
+    padding: 20px 30px;
+    background-color: #1e88e5;
+    transition: all ease 2s;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
 }
 .wrap-chips {
-	width: 400px;
-	height: 100px;
-	position: fixed;
-	right: 10px;
-	top: 10px;
-	z-index: 999;
+    width: 400px;
+    height: 100px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
 }
+
 /* медиа запросы */
 
-@media screen and (max-width:1170px) {
-	.menu {
-		margin-left: 0;
-	}
-	.menu .menu__item a {
-		position: relative;
-		width: 158px;
-		font-size: 17px;
-	}
-	.slogan {
-		font-size: 40px;
-		width: 500px;
-		text-align: center;
-		margin-left: 283px;
-	}
-	.main-line_2 {
-		position: relative;
-		left: 465px;
-	}
-	.img__burger {
-		position: relative;
-		left: -70px;
-	}
-	.text__analytics {
-		margin-left: 10px;
-	}
-	.header .container {
-		width: 99%;
-		position: relative;
-		left: -1px;
-	}
-	.main-logo a .name-company {
-		font-size: 24px;
-		width: 120px;
-		margin-top: 13px;
-	}
-	.content section {
-		width: 287px;
-		margin-left: 0px;
-	}
+@media screen and (max-width:1200px) {
+   /* header */
 
-	.service section {
-		width: 278px;
-		height: 467px;
-		margin: 120px 0px;
-	}
-	
-	.super-bet {
-		margin: 0 auto;
-	}
-	.rewiev section {
-		width: 200px;
-		margin: 0 auto;
-	}
-	.football {
-		left: -86px;
-		top: -150px;
-	}
-	.slider-wrap {
-		position: relative;
-		right: 70px;
-	}
-	.slider-right {
-		margin-left: 60px;
-	}
-	.slider-left {
-		margin-left: 0px;
-	}
-	.slider__text {
-		font-size: 16px;
-	}
-	.customers-salary {
-		margin: 0 auto;
-		margin-top: 40px;
-	}
-	.service-slogan {
-		margin-top: 20px;
-		margin-left: 55px;
-	}
-	.c1 {
-		position: absolute;
-		z-index: 998;
-		left: 100px;
-	}
-	article {
-		width: auto;
-		font-size: 16px;
-	}
-	.block-ask {
-		width: 870px;
-	}
-	.height-ask {
-		width: 442px;
-	}
-	.low-ask {
-		width: 430px;
-		font-size: 14px;
-	}
-	.low__fourth {
-		font-size: 13px;
-	}
+    .menu {
+        margin-left: 0;
+   }
+    .menu .menu__item a:not(:last-child) {
+        position: relative;
+        line-height: 50%;
+   }
+    .img__burger {
+        position: relative;
+        left: -70px;
+   }
+   /* rewiev */
+
+    .football {
+        top: -132px;
+        left: 131px;
+   }
+    .hockey {
+        top: -484px;
+        left: 468px;
+   }
+    .basketball{
+        margin: 0 auto;
+        top: 40px;
+   }
+    .other {
+        top: -656px;
+        left: 1px;
+   }
+
+   /* ask */
+
+    .wrap-ask {
+        width: 447px;
+   }
+    .height__ask{
+        padding: 1px;
+        font-size: 19px;
+   }
+    .low-ask {
+        width: 430px;
+   }
+    .low__ask {
+        font-size: 14px;
+   }
 }
 @media screen and (max-width:992px) {
-	html, body {
-		/* Убирает прокрутку по горизонтале, для мобильной версии */
-		overflow-x: hidden;
-	}
-	.header {
-		width: 100%;
-	}
-	.menu {
-		width: 500px;
-		margin-left: 60px;
-	}
-	.img__burger {
-		position: relative;
-		left: -10px;
-	}
-	.main-line_2 {
-		position: relative;
-		left: 343px;
-	}
-	.text__analytics {
-		width: 200px;
-		font-size: 16px;
-	}
-	.analytics, .analyticts__second, .analytics__third, .analytics__fourth {
-		margin: 0 auto;
-		background-size: 120px;
-		background-position: 35% 55%;
-		width: 300px;
-	}
-	.analyticts__second, .analytics__fourth {
-		background-size: 50px;
-		background-position: 40% 65%;
-		color: #fff;
-	}
-	.analytics__third {
-		background-size: 60px;
-		background-position: 37% 40%;
-	}
-	.content section {
-		margin: 30px auto;
-		width: 400px;
-		margin-left: 140px;
-	}
-	.content h3 {
-		letter-spacing: 10px;
-	}
-	.content section .info__item {
-		display: flex;
-		justify-content: center;
-	}
-	.service__text {
-		font-size: 20px;
-	}
-	.super-bet {
-		margin: 0 34px;
-		border: 2px solid #f1f1f1;
-		border-radius: 6px;
-		color: #fff;
-		width: 100%;
-		padding: 0 20px;
-	}
-	.service-price {
-		color: #689f38;
-		font-size: 42px;
-	}
-	.btn-pay {
-		width: 100%;
-	}
-	.header-slider .bg {
-		background-size: cover;
-		background-position: center;
-	}
-	.slogan {
-		font-size: 40px;
-		width: auto;
-		text-align: center;
-		margin-left: 110px;
-	}
+    html, body {
 
-	.slogan__text {
-		width: auto;
-	}
-	.worker-bg, .worker-bg-second, .worker-bg-third {
-		width: 150px;
-		height: 150px;
-	}
-	.worker {
-		margin: 50px 55px;
-	}
-	.worker-name {
-		color: #464646;
-		font-size: 18px;
-		text-align: center;
-		width: 100px;
-		margin-left: 30px;
-		margin-top: 15px;
-	}
-	.rewiev section {
-		padding: 10px 10px;
-		background-color: #fff;
-		height: 200px;
-		width: auto;
-		margin: 30px auto;
-		font-size: 20px;
-	}
-	.border-title {
-		width: auto;
-	}
-	article {
-		width: auto;
-		text-align: justify;
-	}
-	.football {
-		left: -74px;
-		top: -152px;
-	}
-	.hockey {
-		left: 263px;
-		top: -503px;
-	}
-	.other {
-		top: -676px;
-		left: 1px;
-		background-size: cover;
-	}
-	.slider-wrap {
-		width: 500px;
-		margin-left: 84px;
-		margin-top: 0;
-		height: 230px;
-	}
-	.slider-rewiev {
-		margin: 0 auto;
-		width: 500px;
-		height: 230px;
-	}
-	.img__user {
-		width: 80px;
-		clip-path: circle(50%);
-	}
-	.slider__name {
-		font-size: 16px;
-	}
-	.slider__text {
-		width: 400px;
-		font-size: 14px;
-	}
-	.slider-photo {
-		margin-right: 20px;
-		margin-top: 20px;
-	}
-	.slider-left {
-		top: 70px;
-		position: absolute;
-		left: -22px;
-	}
-	.slider-right {
-		position: absolute;
-		top: -160px;
-		left: 470px;
-	}
-	.watch-statistic {
-		width: auto;
-		margin: 0 auto;
-	}
-	.contacts-us {
-		display: inline-block;
-		margin: 0 250px;
-	}
-	.block-ask {
-		margin-left: 20px;
-	}
-	.partners {
-		margin-left: 300px;
-	}
-	.customers-salary {
-		text-align: center;
-		width: auto;
-	}
-	.section-wrap {
-		margin-left: 40px;
-		width: 100%;
-	}
-	.content section {
-		width: 250px;
-		margin: 30px auto;
-	}
-	.super-bet {
-		margin-top: 35px;
-	}
-	.wrap-ask {
-		margin: 5px 0px 5px 150px;
-	}
-	.block-ask {
-		width: 869px;
-	}
-	.height-ask {
-		width: 439px;
-	}
-	.low-ask {
-		width: 400px;
-		margin: 5px 0px 5px 150px;
-	}
-	.low__ask {
-		width: 400px;
-		text-align: center;
-		font-size: 12px;
-		margin-top: 10px;
-	}
+       /* Убирает прокрутку по горизонтале, для мобильной версии */
+
+        overflow-x: hidden;
+   }
+
+   /* header*/
+
+    .main-logo {
+        margin-top: 45px;
+        display: block;
+        width: 200px;
+        margin-right: 0;
+   }
+    .header .menu {
+        margin-left: 0;
+   }
+
+   /* info */
+
+    .section__img {
+        margin: 0 auto;
+   }
+
+   /* main */
+
+    .left-block {
+        top: 20%;
+        left: 26%;
+   }
+    .right-block {
+        width: 229px;
+        left: 0;
+        padding: 0 10px;
+   }
+    .right__block-text, .right__block-price {
+        font-size: 13px;
+   }
+    .rows-bg{
+        width: 280px;
+   }
+    .super-left-icon{
+        left: 50%;
+        top: 23%;
+        color: #fff;
+   }
+    .rows .super-title {
+        font-size: 17px;
+        color: #fff;
+        text-align: left;
+   }
+    .super-text{
+        text-align: left;
+        font-weight: 400;
+   }
+    .btn-buy .btn-pay {
+        font-size: 14px;
+        width: 200px;
+   }
+
+   /* review */
+
+    .football {
+        top: -132px;
+        left: 12px;
+   }
+    .hockey {
+        top: -484px;
+        left: 346px;
+   }
+    .watch-statistic {
+        width: auto;
+        margin: 0 auto;
+   }
+    .slider-left, .slider-right {
+        font-size: 37px;
+        margin: 0 5px;
+   }
+    .rewiev section {
+        height: auto;
+        margin: 20px 5px 0;
+   }
+    .slider-wrap {
+        width: 610px;
+   }
+    .slider-rewiev {
+        width: 578px;
+   }
+    .slider__text {
+        font-size: 15px;
+        margin-top: 20px;
+   }
+    .contact__text {
+        font-size: 14px;
+   }
+
+   /* aks */
+
+    .wrap-ask {
+        width: 420px;
+        height: 140px;
+        margin: 10px auto 7px;
+   }
+    .height-ask {
+        line-height: 55px;
+   }
+    .height__ask {
+        font-size: 18px;
+   }
+    .low__ask {
+        font-size: 13px;
+        margin: 0;
+        width: 413px;
+   }
 }
 @media screen and (max-width:768px) {
-	.menu {
-		margin-left: 40px;
-	}
-	.menu .menu__item a {
-		font-size: 15px;
-		width: 145px;
-	}
-	.login__app {
-		width: 40px;
-	}
-	.img__burger {
-		width: 15px;
-		left: -20px;
-		top: -3px;
-	}
-	.login__app {
-		right: 40px;
-		padding: 5px;
-		background: transparent;
-		top: -5px;
-	}
-	.header-slider {
-		height: 600px;
-	}
-	.header-slider .bg {
-		background-size: cover;
-		height: 600px;
-		margin-top: 0;
-	}
-	.main-line_2 {
-		position: relative;
-		left: 345px;
-	}
-	.worker-wrap {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.analytics, .analyticts__second, .analytics__third, .analytics__fourth {
-		margin: 10px auto;
-		width: 450px;
-	}
-	.text__analytics {
-		margin-left: 96px;
-	}
-	.worker-top {
-		margin-top: 0;
-	}
-	.section-wrap {
-		width: 277px;
-		margin: 0 auto;
-	}
-	.content section {
-		height: 400px;
-		width: auto;
-	}
-	.rewiev section {
-		background-color: #000;
-		height: 150px;
-	}
 
-	.service-slogan {
-		margin-left: 0;
-	}
-	.service__text {
-		font-size: 14px;
-	}
-	.service-price {
-		font-size: 37px;
-	}
-	.service-title {
-		font-size: 40px;
-		font-weight: bolder;
-	}
-	.img-service {
-		width: 63px;
-	}
-	.btn-pay {
-		padding: 10px 55px;
-	}
-	.super-bet {
-		margin: 0;
-	}
-	.super-bet .btn-pay {
-		padding: 18px 240px;
-	}
-	.basketball, .football, .other, .hockey {
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		height: 240px;
-		width: 220px;
-	}
-	.football {
-		left: 36px;
-		top: -99px;
-	}
-	.hockey {
-		left: 262px;
-		top: -339px;
-	}
-	.other {
-		top: -459px;
-		left: 0px;
-	}
-	.sports-wrap {
-		height: 550px;
-	}
-	.slider-left {
-		top: 80px;
-		left: -4px;
-		height: 30px;
-	}
-	.slider-right {
-		top: -147px;
-		height: 30px;
-	}
-	.block-ask {
-		margin-left: 0;
-	}
-	.wrap-ask {
-		margin: 10px 0px 5px 128px;
-	}
-	.low-ask {
-		width: 400px;
-	}
-	.partners {
-		margin: 0 300px;
-	}
+   /* header */
+
+    .main-logo {
+        margin: 5px auto;
+        text-align: center;
+   }
+    .header .menu {
+        margin-top: 25px;
+        margin-left: 0;
+   }
+    .header .menu__item {
+        margin-right: 10px;
+        width: 120px;
+   }
+    .header .menu__item a {
+        font-size: 14px;
+   }
+
+   /* info */
+
+    .sections-service {
+        width: 500px;
+        height: 143px;
+   }
+    .section-service {
+        width: auto;
+   }
+
+   /* main */
+
+    .right-block {
+        width: 168px;
+   }
+    .right__block-price {
+        font-size: 12px;
+   }
+    .left-block {
+        font-size: 26px;
+        left: 30%;
+   }
+    .rows-bg {
+        width: 250px;
+   }
+    .super-text {
+        width: auto;
+   }
+    .btn-buy .btn-pay {
+        font-size: 12px;
+        width: 140px;
+        margin: 0 auto 10px;
+   }
+
+   /* our team */
+
+    .worker-bg, .worker-bg-second, .worker-bg-third {
+        width: 130px;
+        height: 130px;
+   }
+    .worker-name {
+        color: #464646;
+        font-size: 15px;
+        margin: 5px 0 0;
+   }
+    .worker-text {
+        font-size: 14px;
+        margin: 2px auto;
+   }
+
+   /* rewiev */
+
+    .rewiev section {
+        padding: 0;
+        margin: 10px 10px;
+        height: auto;
+        width: 250px;
+   }
+    .sports-wrap {
+        height: 600px;
+   }
+    .basketball, .football, .other, .hockey {
+        height: 260px;
+        width: 240px;
+   }
+    .basketball {
+        margin-top: 0;
+        top: 39px;
+   }
+    .football {
+        top: -89px;
+        left: 12px;
+   }
+    .hockey {
+        top: -350px;
+        left: 255px;
+   }
+    .other {
+        top: -478px;
+        left: 0;
+   }
+    .slider-rewiev {
+        width: 395px;
+        height: 226px;
+   }
+    .img__user {
+        width: 75px;
+   }
+    .slider__name {
+        font-size: 16px;
+   }
+    .slider__text {
+        font-size: 12px;
+        margin-top: 20px;
+   }
 }
-@media screen and (max-width:567px) {
-	.menu .menu__item a {
-		width: 138px;
-	}
-	.main-line_2 {
-		left: 267px;
-	}
-	.hockey {
-		left: 185px;
-	}
-	.football {
-		left: -40px;
-	}
-	.slider-wrap {
-		width: 450px;
-		margin-left: 30px;
-	}
-	.slider-rewiev {
-		width: 450px;
-		padding: 20px 5px;
-	}
-	.slider__text {
-		width: 450px;
-		margin-top: 0px;
-	}
-	.slider-left {
-		left: -58px;
-	}
-	.slider-right {
-		left: 366px;
-	}
-	.wrap-ask {
-		margin: 5px 0px 5px 65px;
-	}
-	.low-ask {
-		margin: 5px 0px 5px 65px;
-	}
-	.partners {
-		margin: 0 225px;
-	}
-	.content section {
-		width: auto;
-		margin-right: 9px;
-	}
-	.super-bet .btn-pay {
-		padding: 14px 172px;
-	}
-	.super-bet .service-title {
-		font-size: 37px;
-	}
-	.partners {
-		margin: 0 260px;
-	}
-	footer p {
-		margin-top: 0;
-		margin-bottom: 0;
-		font-size: 9px;
-	}
-	footer img {
-		width: 60px;
-	}
-
-	.modal-registr {
-		width: 800px;
-		transition: all ease 1s;
-		height: 560px;
-		margin-left: 0;
-		margin-top: 120px;
-	}
-
-	.modal-login {
-	
-		margin-top: 120px;
-		height: 400px;
-		width: 400px;
-		
-	}
-
-	.modal-login input {
-		width: 80%;
-		
-	}
-	.btn-reg ,.btn-login {
-		margin: 0 auto;
-		width: 90%;
-		padding: 10px 10px;
-	}
-	 .btn-login {
-		margin-top: 50px;
-	
-	}
-	
-	label {
-	
-	margin-bottom: 0;
-	}
-}
-@media screen and (max-width:414px) {
-	.header {
-		position: relative;
-	}
-	.header .container {
-		padding: 10px 109px 222px;
-	}
-	.main-line_2 {
-		left: 191px;
-	}
-	.menu {
-		display: flex;
-		flex-direction: column;
-	}
-	.menu .menu__item a {
-		font-size: 22px;
-		width: auto;
-		margin-left: -388px;
-		margin-top: 10px;
-	}
-	.img__burger {
-		left: -83px;
-		top: 12px;
-	}
-	.login__app {
-		background-color: #267df4;
-		padding: 5px;
-		right: 0;
-		top: -3px;
-	}
-	.menu .menu__item a span {
-		position: absolute;
-		width: 25%;
-		height: 100%;
-		background-color: #bbdefb;
-		z-index: -1;
-		transform-origin: top;
-		transform: scaleY(0);
-		transition: transform .7s;
-	}
-	.header-slider {
-		height: 450px;
-	}
-	.header-slider .bg {
-		background-size: cover;
-		height: 450px;
-		margin-top: 0;
-	}
-	.bg-slides {
-		height: 450px;
-	}
-	.slogan {
-		margin-left: 0;
-		font-size: 35px;
-		top: -700px;
-	}
-	.c1 {
-		top: -620px;
-	}
-	.slogan__text {
-		font-size: 14px;
-		top: -596px;
-		left: 0;
-	}
-	.content {
-		height: auto;
-	}
-	.iphone {
-		padding: 80px;
-	}
-	.main-line_2 {
-		left: 191px;
-		height: 200px;
-	}
-	.round__line2 {
-		top: 153px;
-	}
-	.btn-pay {
-		padding: 10px 54px;
-	}
-	.analytics, .analyticts__second, .analytics__third, .analytics__fourth {
-		background-size: 100px;
-		background-position: 73% 53%;
-		width: auto;
-		height: 180px;
-		margin: 20px auto;
-	}
-	.analyticts__second {
-		background-size: 60px;
-		background-position: 66% 65%;
-	}
-	.analytics__third, .analytics__fourth {
-		background-size: 72px;
-		background-position: 62% 53%;
-	}
-	.analytics__fourth {
-		background-size: 55px;
-		background-position: 63% 72%;
-	}
-	.text__analytics {
-		margin-left: 0;
-	}
-	.text__number {
-		font-size: 45px;
-		margin-top: 80px;
-		margin-left: 60px;
-	}
-	.service section {
-		height: 360px;
-	}
-	.img-service {
-		width: 40px;
-	}
-	.service__text {
-		font-size: 13px;
-	}
-	.service-title, .service-slogan {
-		font-size: 22px;
-		margin-top: 10px;
-		margin-left: 0;
-	}
-	.service-price {
-		font-size: 35px;
-	}
-	.rewiev .container {
-		padding: 5px;
-	}
-	.service section {
-		margin: 20px 25px;
-	}
-	.super-bet .bet-items {
-		font-size: 20px;
-	}
-	.super-bet .btn-pay {
-		padding: 16px 69px;
-	}
-	.sports-wrap {
-		height: 465px;
-	}
-	.basketball, .football, .other, .hockey {
-		height: 200px;
-		width: 180px;
-	}
-	.football {
-		left: 18px;
-		top: -79px;
-	}
-	.hockey {
-		left: 203px;
-		top: -279px;
-	}
-	.other {
-		top: -378px;
-	}
-	.slider-wrap {
-		width: auto;
-		margin-left: 100px;
-		height: 200px;
-	}
-	.slider-rewiev {
-		width: auto;
-		height: 200px;
-		padding: 5px;
-	}
-	.slider__text {
-		width: 250px;
-		font-size: 12px;
-	}
-	.img__user {
-		width: 60px;
-	}
-	.slider-left {
-		left: 15px;
-		top: 64px;
-	}
-	.slider-right {
-		left: 327px;
-		top: -135px;
-	}
-	.customers-salary {
-		font-size: 24px;
-		margin-top: 20px;
-	}
-	.contact__text {
-		font-size: 12px;
-		width: 200px;
-		margin-top: 5px;
-		color: #898888;
-	}
-	.contact__img {
-		width: 12px;
-	}
-	.block-ask {
-		margin-left: -75px;
-	}
-	.height-ask {
-		width: 404px;
-	}
-	.ask-text {
-		margin: 10px 0;
-		font-size: 25px;
-	}
-	.partners {
-		margin: 0 149px;
-	}
-	.partners {
-		margin: 0 176px;
-	}
-	.modal-registr {
-	
-		margin-left: 0;
-		
-	}
-	.modal-wrap ,.wrap-login  {
-		
-		margin-left: -8px;
-	}
-
-}
-@media screen and (max-width:375px) {
-	.menu {
-		margin-left: 18px;
-	}
-	.main-logo a .name-company {
-		text-align: center;
-	}
-	.main-line_2 {
-		left: 172px;
-		height: 155px;
-	}
-	.service section {
-		height: 340px;
-	}
-	.btn-pay {
-		padding: 10px 55px;
-	}
-
-	.super-bet .service-title {
-		font-size: 34px;
-	}
-	.football {
-		left: 0px;
-		top: -79px;
-	}
-	.hockey {
-		left: 183px;
-		top: -279px;
-	}
-	.slider-rewiev {
-		width: 100%;
-		margin: 0 auto;
-	}
-	.slider-wrap {
-		width: 100%;
-		margin-left: 70px;
-	}
-	.slider__text {
-		margin-right: 15px;
-	}
-	.slider-photo {
-		margin-left: 15px;
-	}
-	.slider-left {
-		z-index: 999;
-		left: 10px;
-	}
-	.slider-right {
-		z-index: 999;
-		left: 293px;
-		top: -134px;
-	}
-	.height__ask {
-		font-size: 16px;
-		line-height: 70px;
-	}
-	.height-ask {
-		width: 350px;
-	}
-	.low__ask, .low__second {
-		width: 350px;
-		font-size: 11px;
-		width: 350px;
-		margin-top: 10px;
-		margin-left: 9px;
-	}
-	.wrap-ask {
-		margin: 5px 0px 5px 71px;
-	}
-	.partners {
-		margin: 0 158px;
-	}
-	.modal-wrap, .wrap-login {
-		margin-left: 0;
-	}
-
-	.modal-login {
-		width: auto;
-	}
-
-	.modal-registr {
-		height: 580px;
-		margin-top: 20px;
-		}
-
-	.modal-wrap {
-		margin-left: 0;
-		margin: 0 auto;
-		width: 330px;
-		height: 687px;
-	}
-	.form-title {
-		margin-right: 0;
-	}
-	label {
-		margin-bottom: 0rem;
-		margin-right: 67px;
-	}
-
-	.form-registr input, .modal-login input {
-		
-		width: auto;
-	}
-	.form-registr {
-		margin-right: 65px;
-	}
-
-	
-	.btn-reg, .btn-login {	
-		width: 70%;
-		
-	}
-
-	.close {
-	font-size: 40px;
-		left: -73px;
-		z-index: 999;
-		top: -6px;
-	}
-	.wrap-login .close {
-		left: 0;
-	}
-	.input__checkbox {
-	 position: relative;
-	 top: 50px;
-	 left: 130px;
-	}
-	label {
-		margin-right: 0;
-	}
-
-  .btn-reg {
-	
-	margin-left: 47px;
-	}
-
-	.modal-left .form-title {
-		margin-right: 65px;
-	}
-
-
-	@media screen and (max-width:360px){
-		.modal-registr {
-			margin-top: 20px;
-		}
-
-	}
-
-
-}
-@media screen and (max-width:320px) {
-	.menu {
-		margin: 0;
-	}
-	.img__burger {
-		left: -106px;
-	}
-	.slogan {
-		margin-left: -15px;
-	}
-	.slogan__text {
-		font-size: 12px;
-		top: -596px;
-		left: 0;
-	}
-	.iphone {
-		font-size: 10px;
-	}
-	.header-slider {
-		height: 350px;
-	}
-	.header-slider .bg {
-		background-size: cover;
-		height: 350px;
-	}
-	.bg-slides {
-		height: 350px;
-	}
-	.main-line_2, .round__line, .round__line2 {
-		height: 0;
-		width: 0;
-	}
-	.content section {
-		height: 300px;
-		width: 300px;
-	}
-	.service-title, .service-slogan {
-		font-size: 20px;
-	}
-	.service-price {
-		font-size: 26px;
-	}
-	.info__img {
-		height: 20px;
-	}
-	.service__text {
-		font-size: 10px;
-	}
-	.super-bet {
-		width: 300px;
-		margin-left: -5px;
-	}
-	.super-bet .btn-pay {
-		padding: 10px 53px;
-	}
-	.our-team {
-		height: 586px;
-	}
-	.worker-bg, .worker-bg-second, .worker-bg-third {
-		width: 60px;
-		height: 60px;
-		margin: 0px auto;
-	}
-	.worker-name {
-		font-size: 13px;
-		width: 400px;
-		margin-top: 5px;
-		height: 50px;
-		margin-right: 30px;
-	}
-	.rewiev section {
-		height: 120px;
-	}
-	.basketball, .football, .other, .hockey {
-		height: 150px;
-		width: 130px;
-	}
-	.other {
-		top: -279px;
-	}
-	.hockey {
-		left: 156px;
-		top: -205px;
-	}
-	.football {
-		left: 23px;
-		top: -54px;
-	}
-	.sport__name {
-		top: 17px;
-		width: 128px;
-		font-size: 0.7em;
-	}
-	.slider__text {
-		font-size: 10px;
-	}
-	.slider-right {
-		left: 236px;
-	}
-	.customers-salary {
-		font-size: 15px;
-		margin-top: 20px;
-	}
-	.ask-text {
-		margin: 5px 0;
-		font-size: 23px;
-	}
-	.height-ask {
-		width: 296px;
-	}
-	.low__ask, .low__second {
-		font-size: 10px;
-		width: 290px;
-	}
-	.arrow__ask {
-		width: 12px;
-		height: 12px;
-		margin-top: 29px;
-		margin-left: 1px;
-	}
-	.partners {
-		margin: 0px 128px;
-	}
-	footer img {
-		width: 60px;
-	}
-	footer p {
-		margin-top: 0;
-		margin-bottom: 0;
-		font-size: 9px;
-	}
-	.modal-registr {
-		margin-top: 0;
-	}
-	.modal-login {
-		margin-top: 10px;
-		height: 400px;
-		
-	}
-	.btn-reg, .btn-login {
-		width: 100%;
-	}
-	.read__rules {
-		margin-right: 40px;
-	}
-	.modal-left .form-title {
-		margin-right: 91px;
-	}
-	.form-registr input {
-		width: auto;
-		margin-right: 32px;
-	}
-	.btn-reg {
-		width: 70%;
-		margin-left: 33px;
-	}
-	.modal-wrap {
-		width: 300px;
-	}
-	
-	.wrap-registr {
-	
-		left: -5px;
-		
-	}
-
-	button.close {
-		position: relative;
-		left: -101px;
-	}
-	
+@media screen and (max-width:576px){
+    h1,h2,h3 {
+        font-size: 26px;
+   }
+    .header .menu {
+        margin-top: 25px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 300px;
+   }
+    .header .menu__item {
+        width: 100%;
+        margin: 10px auto;
+   }
+    .section__img {
+        width: 250px;
+   }
+    .left-block {
+        font-size: 21px;
+        left: 30%;
+        top: 15%;
+   }
+    .right-block {
+        width: 127px;
+   }
+    .rows h3 {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+   }
+    .right__block-text, .right__block-price {
+        font-size: 9px;
+   }
+    .btn-buy .btn-pay {
+        font-size: 11px;
+        width: 115px;
+        height: 30px;
+        line-height: 30px;
+   }
+    .super-text {
+        font-size: 14px;
+        width: 200px;
+   }
+    .super-left-icon {
+        left: 40%;
+        top: 25%;
+   }
+    .btn-super-block {
+        padding: 10px;
+   }
+    .btn-super-block .btn-super-bet {
+        width: 100%;
+        font-size: 14px;
+   }
+    .worker-bg, .worker-bg-second, .worker-bg-third {
+        width: 110px;
+        height: 110px;
+   }
+    .worker-name {
+        font-size: 13px;
+   }
+    .worker-text {
+        font-size: 12px;
+   }
+    .rewiev section {
+        margin: 20px 5px 0;
+   }
+    .review__text {
+        font-size: 15px;
+        padding: 3px;
+   }
+    .rewiev h3 {
+        font-size: 26px;
+   }
+    article {
+        font-size: 16px;
+        padding: 5px 5px;
+        text-align: justify;
+   }
+    .sports-wrap {
+        height: 445px;
+   }
+    .basketball, .football, .other, .hockey {
+        height: 180px;
+        width: 160px;
+   }
+    .football {
+        top: -51px;
+        left: 28px;
+   }
+    .other {
+        top: -321px;
+   }
+    .hockey {
+        top: -231px;
+        left: 192px;
+   }
+    .customers-rewiev {
+        margin: 0;
+   }
+    .slider-rewiev {
+        width: 300px;
+        height: 130px;
+   }
+    .slider__text {
+        font-size: 7px;
+   }
+    .img__user {
+        width: 45px;
+   }
+    .slider-left, .slider-right {
+        font-size: 20px;
+        margin-top: 20px;
+   }
+    .slider__name {
+        font-size: 13px;
+   }
+    .slider-wrap {
+        height: 126px;
+   }
+    .arrow-down {
+        font-size: 20px;
+   }
+    .contacts-us {
+        width: 136px;
+   }
+    .contact__text {
+        font-size: 10px;
+        width: 135px;
+        text-align: center;
+   }
+    .ask-text {
+        margin: 30px 0;
+   }
+    .height__ask {
+        font-size: 15px;
+   }
+    .low__ask {
+        width: 380px;
+        font-size: 11px;
+        padding: 0 5px;
+   }
+    .wrap-ask {
+        width: 420px;
+        height: 133px;
+        margin: 10px auto 7px;
+   }
+    footer p {
+        font-size: 14px;
+   }
+    footer img {
+        width: 70px;
+   }
 }
 
+@media screen and (max-width:375px){
+    .right-block {
+        width: 115px;
+   }
+    text, .right__block-price {
+        font-size: 8px;
+   }
+   
+    .btn-buy .btn-pay {
+        font-size: 11px;
+        width: 100px;
+        height: 27px;
+        line-height: 27px;
+   }
+   .btn-super-block .btn-super-bet {
+        width: 100%;
+        font-size: 13px;
+   }
+    .right__block-text, .right__block-price {
+        font-size: 8px;
+   }
+    .super-text {
+        font-size: 14px;
+   }
+    .football {
+        top: -51px;
+        left: 9px;
+   }
+    .hockey {
+        top: -231px;
+        left: 172px;
+   }
+    .slider-rewiev {
+        width: 261px;
+        height: 130px;
+        padding: 5px;
+   }
+    .contacts__icon {
+        font-size: 18px;
+   }
+    .low__ask {
+        width: 350px;
+   }
+    footer p {
+        font-size: 13px;
+   }
+}
 
+/* адаптив под отдельные елементы */
 
+@media screen and (width:1200px){
+    .hockey {
+        left: 557px;
+   }
+    .football {
+        left: 222px;
+   }
+}
 
+@media screen and (width:992px){
+    .hockey {
+        left: 467px;
+   }
+    .football {
+        left: 131px;
+   }
+    .slider-rewiev {
+        width: 611px;
+   }
+    .rewiev section {
+        margin: 30px auto 0;
+   }
+}
+
+@media screen and (width:768px){
+    .hockey {
+        left: 345px;
+   }
+    .football {
+        left: 101px;
+   }
+    .slider-rewiev {
+        width: 611px;
+   }
+    .img__user {
+        width: 80px;
+   }
+    .slider__text {
+        font-size: 16px;
+   }
+}
+
+@media screen and (width:576px){
+    .hockey {
+        left: 255px;
+   }
+    .football {
+        left: 91px;
+   }
+    .slider-rewiev {
+        width: 425px;
+   }
+    .slider__text {
+        font-size: 9px;
+   }
+}

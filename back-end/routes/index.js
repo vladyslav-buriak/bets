@@ -72,7 +72,7 @@ router.post('/api/register', async function (req, res) {
   console.log(req.body);
 
 
-  const isUser = await User.findOne({ name: req.body.name });
+  const isUser = await User.findOne({ email: req.body.email });
   if (isUser) return res.json({ message: 'Пользователь с такими данными уже зарегистрирован', ok: false });
 
   const user = new User({
@@ -96,13 +96,13 @@ router.post('/api/register', async function (req, res) {
 
 router.post('/api/auth', async function (req, res) {
   console.log(req.body);
-  const user = await User.findOne({ email: req.body.email });
+  const user = await User.findOne({ name: req.body.name });
 
   if (user == null) res.json({ ok: false, message: ' User not found' })
   else if (user.pass == req.body.pass) {
     // res.json({ ok: true,token:'ghwgjgshjdjgshdgjfsg' });
     let token = (Math.random() * 1000000) + '';
-    const user = await User.findOneAndUpdate({ email: req.body.email }, { token: token });
+    const user = await User.findOneAndUpdate({ name: req.body.name }, { token: token });
     user.token = token
     session.push(user);
     console.log(session);

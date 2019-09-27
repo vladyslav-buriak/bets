@@ -9,12 +9,16 @@ ul, li {
 body {
 	background-color: #fff;
 }
+
 .container {
-	position: relative;
-	padding: 0 15px;
 	font-family: 'PT Sans', sans-serif;
+	
 }
 
+h1,h2,h3 {
+	color: #959393;
+	margin-top: 20px;
+}
 
 
 /* header */
@@ -22,7 +26,7 @@ body {
 	background-color: #fff;
 }
 .header .container {
-	background-color: #000;
+	background-color: #fff;
 }
 .header {
 	background-color: #fff;
@@ -34,36 +38,31 @@ body {
 	width: 16px;
 }
 .menu {
-	width: 500px;
-	margin-top: 7px;
+
 	list-style: none;
+
 }
 .nav-menu .menu .menu__item a {
 	width: 20px;
 	height: 23px;
 	margin-left: 20px;
+	
 }
+
 .login-items {
 	margin-right: 30px;
 	list-style: none;
 }
 .menu__item a, .login-items {
-	color: #fff;
-	font-size: 20px;
+	color: #959393;
+	font-size: 16px;
 	font-weight: bold;
 	text-decoration: none;
 	font-weight: bolder;
 	margin-top: 20px;
+
 }
-.menu__item a:hover {
-	color: #fa5255;
-	transition: all ease 1s;
-	text-decoration-line: underline;
-	text-decoration-color: #fa5255;
-}
-.burger__img {
-	margin-top: 10px;
-}
+
 .login {
 	margin-top: 60px;
 	cursor: pointer;
@@ -88,29 +87,14 @@ body {
 .main-logo a .name-company {
 	font-weight: bolder;
 	text-decoration: none;
-	color: #fff;
-	background: url('https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif');
-	background-size: cover;
-	color: transparent;
-	line-height: 55px;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	width: 200px;
+	font-size: 22px;
+	margin: 0;
 }
 .main-logo a {
 	text-decoration: none;
 }
 /* ////////// */
 
-.paralax .container {
-	background-image: url('https://images7.alphacoders.com/716/716405.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 45vh;
-	background-attachment: fixed;
-	background-position: center;
-}
 .bg-2 .container {
 	background-image: url('https://images.unsplash.com/photo-1552874031-b9c207ed9292?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
 }
@@ -121,10 +105,9 @@ body {
 	padding: 30px 0;
 }
 .subscription-title, .about-title, .section__title, .calc-title {
-	color: #323232;
 	font-weight: bolder;
 	font-size: 30px;
-	margin: 25px 0;
+	margin-top: 30px;
 	font-weight: bolder;
 }
 .subscription {
@@ -132,11 +115,9 @@ body {
 	width: auto;
 	height: 385px;
 	margin: 0 auto;
-	border-radius: 5px;
 	padding: 100px 0;
 	font-size: 18px;
 	color: #000;
-	border: 2px solid #323232;
 	background-image: url('/images/zlatan-ibrahimovic-png-16.png');
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -144,14 +125,13 @@ body {
 }
 .subscription-text {
 	width: auto;
-	/* border: 2px solid red; */
 	border-radius: 5px;
 	padding: 10px;
 	margin-left: 50px;
 	font-size: 15px;
 	margin-top: 30px;
 	color: #fff;
-	background-color: #fa5255;
+	background-color: #267df4;
 }
 .subscription-price {
 	width: auto;
@@ -161,38 +141,61 @@ body {
 .btn-sub {
 	cursor: pointer;
 	min-width: 150px;
-	padding: 9px 12px;
+	padding: 8px 27px;
 	text-transform: uppercase;
-	vertical-align: middle;
-	background: #3da35a;
+	background: linear-gradient(to right, #56ccf2, #2f80ed);
 	border: none;
 	color: #ffffff;
 	font-weight: 600;
 	border-radius: 5px;
-	box-shadow: 0 0 10px rgb(56, 100, 38);
-	transition: all 1s;
 	outline: none;
-	margin-left: 64px;
 	margin-top: 10px;
+	font-size: 14px;
+
 }
-.btn-sub:hover {
-	box-shadow: 0 0 55px rgb(56, 100, 38);
-}
-path {
-	stroke-dasharray: 99.47578430175781;
-	stroke-dashoffset: -99.47578430175781;
-	fill: transparent;
-}
+
+
 .sub__price {
-	color: #689f38;
-	font-size: 50px;
+	font-size: 22px;
+    color: #267df4;
 	font-weight: bolder;
 }
-label {
-	color: #ff6d00;
-	margin-left: 50px;
-	font-size: 20px;
+
+.input__sub{
+	display: none;
 }
+
+.fake-input {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 1px solid silver;
+	display: inline-block;
+	position: relative;
+}
+
+.fake-input::before{
+	content: "";
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	top: 50%;
+	left: 50%;
+	background-color: #1359c8;
+	border-radius: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	display: block;
+
+}
+
+.input__sub:checked+ .fake-input::before{
+	opacity: 1;
+}
+
+
+
+
 /* about */
 
 
@@ -202,137 +205,147 @@ label {
 	text-align: center;
 	margin: 0 auto;
 }
-.about-section section {
-	width: 220px;
-	height: 330px;
-	background-color: #000;
-	border-radius: 25px;
-	margin: 20px;
-	padding: 0 10px;
-}
-.section__img {
-	width: 70px;
-	margin-top: 20px;
+
+
+.section-about{
+     margin-top: 50px;
 }
 .section__title {
-	font-size: 33px;
-	font-weight: bolder;
+	font-size: 26px;
+	color: #959393;
+	margin: 0;
+	width: 500px;
+}
+
+
+.item {
+    width: 300px;
+	height: 180px;
+	background-color: #1359c8;
+	margin: 10px;
+	
+}
+
+.item__number {
+	font-weight: lighter;
+	font-size: 25px;
+	margin: 0;
+	padding: 20px 0 0 20px;
 	color: #fff;
 }
-.section__text {
-	color: #fa5255;
+
+.item__text {
+	font-weight: bold;
 	font-size: 16px;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 20px;
+	color: #fff;
 }
+
+.item:hover {
+	color: #fff;
+}
+
+.item-1:hover {
+	background-image:linear-gradient(rgba(1,1,1,.7), rgba(1,1,1,.7)), url('https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjM3NTU1fQ');
+	background-size: cover;
+	background-position: center;
+    -webkit-background-size: cover;
+}
+
+
+.item-2:hover {
+	background-image:linear-gradient(rgba(1,1,1,.7), rgba(1,1,1,.7)), url('/images/bank.jpg');
+	background-size: cover;
+	background-position: center;
+    -webkit-background-size: cover;
+}
+
+
+.item-3:hover {
+	background-image:linear-gradient(rgba(1,1,1,.7), rgba(1,1,1,.7)), url('/images/kof.jpg');
+	background-size: cover;
+	background-position: center;
+    -webkit-background-size: cover;
+}
+
+
+.item-4:hover {
+	background-image:linear-gradient(rgba(1,1,1,.7), rgba(1,1,1,.7)), url('/images/sec.jpeg');
+	background-size: cover;
+	background-position: center;
+    -webkit-background-size: cover;
+}
+
+
 /* /////кальк */
 
-.calc .container {
-	background-color: #fff;
-	padding-top: 50px;
 
-}
 .calc-money {
 	background-image: url('https://clipart.info/images/ccovers/1510437647Alexandre-Lacazette-Arsenal-2017-18-Png.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 	color: #000;
-	background-position: 100% 80%;
+	background-position: 53%;
 }
+
+
+.calc-title {
+	margin-top: 100px;
+}
+
 .input__earn {
 	min-width: 200px;
-	color: #fff;
+	color: #959393;
 	padding: 7px 15px;
 	outline: none;
 	border-radius: 5px;
-	font-size: 20px;
-	border: none;
-	background-color: #fa5255;
+	font-size: 22px;
+	border: 1px solid silver;
+	margin-top: 10px;
 }
-.label {
-	color: #fff;
-}
+
 #select__rate {
-	font-size: px;
+	font-size: 22px;
 	min-width: 230px;
-	height: 42px;
+	padding: 8px;
+	border-radius: 5px;
 	outline: none;
-	background-color: #fa5255;
-	color: #fff;
+	color: #959393;
+	border: 1px solid silver;
+	margin-top: 10px;
+	
 }
-.calc form {
-	margin-left: 150px;
+.form-calc {
+	margin-top: 70px;
+	
 }
-.your-rate {
-	margin: 0 auto;
+
+.rate-bets ,.tarif {
+    display: block;
+    background-color: #1359c8;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+	font-weight: bold;
+
 }
+
+
+
 .profit__text, .profit__rate, .profit__money {
-	color: #689f38;
+	color: #267df4;
 	font-size: 34px;
 }
-.profit__rate, .profit__money {
-	font-size: 35px;
-	color: #689f38;
-}
+
 /* инфо */
 
-.info .container {
-	background: #fff;
-}
-.table {
-	background-color: #fff;
-	margin: 0 auto;
-}
-.info-text {
-	color: #323232;
-	margin: 40px 0;
-}
-.arrow-top {
-	background-image: url('/images/down-arrow.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 50px;
-	height: 60px;
-	margin: 0 auto;
-	cursor: pointer;
-}
-.up {
-	background-image: url('/images/up-arrow.png');
-}
-.table {
-	color: #000;
-	font-size: 20px;
-	background-color: #fff;
-}
-.green {
-	color: #689f38;
-}
-.blue {
-	color: #267df4;
-}
-.tomato {
-	color: tomato;
-}
-.purple {
-	color: purple;
-}
-.brown {
-	color: #795548;
-}
-.red {
-	color: #d32f2f;
-}
-th {
-	background-color: #fff;
-}
-.table-opacity0 {
-	display: none;
-	transition: all ease 1s;
-}
+
 /* футер */
 
-footer .container {
-	background-color: #000;
-	padding: 15px 0;
-}
 .footer__text {
 	font-size: 20px;
 	color: #fff;

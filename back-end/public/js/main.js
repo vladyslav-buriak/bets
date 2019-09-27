@@ -38,7 +38,7 @@ document.querySelectorAll('.login__enter').forEach(function (element) {
 })
 
 function showLoginWindow() {
-
+	console.log(111);
 	let modalId = this.dataset.login;
 	document.querySelector(modalId).classList.remove('hide')
 	document.onkeydown = function (event) {
@@ -48,6 +48,7 @@ function showLoginWindow() {
 		console.log(event);
 		document.onkeydown = null;
 	}
+
 }
 
 // модальные окна стоп пропагейшн
@@ -80,7 +81,7 @@ function goBack() {
 
 //  активная не активная кнопка регистрации
 
-document.querySelector('.input__checkbox').onchange = agree;
+document.querySelector('#input__checkbox').onchange = agree;
 
 function agree() {
 	if (this.checked) {
@@ -91,6 +92,66 @@ function agree() {
 		document.querySelector('.btn-reg').classList.add('disabled');
 	}
 }
+
+
+// по нажатию на кружок №1-№2-№3-№4 срабатывает
+// событие онклик и выводит нам нужный слайд
+// с лозунгами компании
+
+let circles = document.querySelectorAll('.circle');
+
+for (let i = 0; i < circles.length; i++) {
+
+	circles[0].onclick = () => {
+
+		let service = document.querySelectorAll('.section-service');
+
+		for (let j = 0; j < service.length; j++) {
+			service[1].classList.add('hide');
+			service[2].classList.add('hide');
+			service[3].classList.add('hide');
+			service[0].classList.remove('hide');
+		}
+
+	}
+
+	circles[1].onclick = () => {
+
+		let service = document.querySelectorAll('.section-service');
+
+		for (let j = 0; j < service.length; j++) {
+			service[1].classList.remove('hide');
+			service[2].classList.add('hide');
+			service[3].classList.add('hide');
+			service[0].classList.add('hide');
+		}
+	}
+
+	circles[2].onclick = () => {
+
+		let service = document.querySelectorAll('.section-service');
+
+		for (let j = 0; j < service.length; j++) {
+			service[1].classList.add('hide');
+			service[2].classList.remove('hide');
+			service[3].classList.add('hide');
+			service[0].classList.add('hide');
+		}
+	}
+
+	circles[3].onclick = () => {
+
+		let service = document.querySelectorAll('.section-service');
+
+		for (let j = 0; j < service.length; j++) {
+			service[1].classList.add('hide');
+			service[2].classList.add('hide');
+			service[3].classList.remove('hide');
+			service[0].classList.add('hide');
+		}
+	}
+}
+
 
 // слайдер///////
 
@@ -137,7 +198,7 @@ document.querySelector('.slider-right').onclick = function () {
 // евент таргетом каждый div двигаем 
 // вниз по значению в переменной  down
 
-let down = 80;
+let down = 87;
 let askData = [];
 
 document.querySelectorAll('.arrow-right').forEach(function (element) {
@@ -162,35 +223,50 @@ form.addEventListener('submit', (event) => {
 	let pass = document.querySelector('.input__pass').value;
 	let email = document.querySelector('.input__email').value;
 
+
+	if (email.length <= 4 || email.length > 20) {
+		alert('Длина логина должна составлять от 4');
+
+		return false;
+	}
+
+	if (parseInt(email.slice(0, 1))) {
+		alert('логин должен начинаться с буквы')
+
+		return false;
+	}
+
+
+
 	// проверка логина при регистрации модальное окно///
 
-	if (name.length <= 3 || name.length > 20) {
-		alert('Длина логина от 4 до 20 символов');
-		return false;
-	}
+	// if (name.length <= 3 || name.length > 20) {
+	// 	alert('Длина логина от 4 до 20 символов');
+	// 	return false;
+	// }
 
-	if (parseInt(name.substr(0, 1))) {
-		alert('Логин должен начинаться с буквы');
-		return false;
-	}
-	for (let i = 0; i < name.length; i++) {
+	// if (parseInt(name.substr(0, 1))) {
+	// 	alert('Логин должен начинаться с буквы');
+	// 	return false;
+	// }
+	// for (let i = 0; i < name.length; i++) {
 
-		if (/^[a-zA-Z1-9]+$/.test(name) === false) {
-			alert('Вы ввели запрещенный символ!')
-			return true;
-		}
-	}
-	if (pass.length <= 5 || pass.length > 20) {
-		alert('Длина пароля от 6 до 20 символов');
-		return false;
-	}
-	for (let i = 0; i < pass.length; i++) {
-		console.log(pass[i], /^[a-zA-Z1-9]+$/.test(pass[i]));
-		if (/^[a-zA-Z1-9]+$/.test(pass) === false) {
-			alert('Вы ввели запрещенный символ!')
-			return true;
-		}
-	}
+	// 	if (/^[a-zA-Z1-9]+$/.test(name) === false) {
+	// 		alert('Вы ввели запрещенный символ!')
+	// 		return true;
+	// 	}
+	// }
+	// if (pass.length <= 5 || pass.length > 20) {
+	// 	alert('Длина пароля от 6 до 20 символов');
+	// 	return false;
+	// }
+	// for (let i = 0; i < pass.length; i++) {
+	// 	console.log(pass[i], /^[a-zA-Z1-9]+$/.test(pass[i]));
+	// 	if (/^[a-zA-Z1-9]+$/.test(pass) === false) {
+	// 		alert('Вы ввели запрещенный символ!')
+	// 		return true;
+	// 	}
+	// }
 	const options = {
 		method: 'POST', // *GET, POST, PUT, DELETE, etc.
 		mode: 'cors', // no-cors, cors, *same-origin
@@ -226,8 +302,8 @@ const formLogin = document.querySelector('#form-login');
 console.log(formLogin);
 formLogin.addEventListener('submit', (event) => {
 	event.preventDefault();
+	let name = document.querySelector('.login__name').value;
 	let pass = document.querySelector('.login__pass').value;
-	let email = document.querySelector('.login__email').value;
 	const options = {
 		method: 'POST', // *GET, POST, PUT, DELETE, etc.
 		mode: 'cors', // no-cors, cors, *same-origin
@@ -240,8 +316,8 @@ formLogin.addEventListener('submit', (event) => {
 		redirect: 'follow', // manual, *follow, error
 		referrer: 'no-referrer', // no-referrer, *client
 		body: JSON.stringify({
-			pass,
-			email
+			name,
+			pass
 		}), // тип данных в body должен соответвовать значению заголовка "Content-Type"
 	}
 	fetch('/api/auth', options).then((response) => {
@@ -300,3 +376,21 @@ function addChips(chips) {
 
 ////////////////////
 
+document.querySelector('.input__login').onkeypress = loginSymbols;
+document.querySelector('.input__email').onkeypress = loginSymbols;
+document.querySelector('.input__pass').onkeypress = loginSymbols;
+
+
+
+function loginSymbols(e) {
+	console.log(e);
+	if ((e.keyCode < 97 || e.keyCode > 122) && e.key != '@' && (e.keyCode < 46 || e.keyCode > 57)) {
+		alert('недопустимые символы');
+		console.log(e.keyCode);
+		return false;
+	}
+
+	else {
+		return true;
+	}
+}
