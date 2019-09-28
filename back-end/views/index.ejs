@@ -5,14 +5,14 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+SansRoboto&display=swap" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/css/animate.css" rel="stylesheet">
 	<link href="/css/style.css" rel="stylesheet">
 	<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<link href="/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<title>Smarts Bets</title>
+	<title>Прогнозы на спорт</title>
 </head>
 
 <body>
@@ -62,9 +62,11 @@
 				<div class="col-lg-12">
 					<div class="header-service">
 						<h1 class="header__title text-center">Прогнозы на спорт</h1>
-						<button class="header__btn-buy">
-							<a href="/buy">Оформить подписку</a>
-						</button>
+
+						<form action="/buy">
+							<button class="header__btn-buy">Оформить подписку</button>
+						</form>
+
 						<p class="header__text text-center">Мы команда профессиональных капперов.Занимаемся аналитикой
 							спортивных событий в
 							интернете с 2010 года!</p>
@@ -140,8 +142,8 @@
 							<th class="rows">
 								<div class="left-block"> <i class="fa fa-futbol-o" aria-hidden="true"></i></div>
 								<div class="right-block">
-									<h3 class="right__block-title text-left">Старт </h3>
-									<p class="right__block-price">400 &#8381</p>
+									<p class="right__block-title text-left">Старт </p>
+									<p class="right__block-price">400 &#8381; </p>
 									<p class="right__block-text">Коэффициент тарифа 1.75-2.0</p>
 									<p class="right__block-text">Проходимость 90%</p>
 									<p class="right__block-text">Страховка от проигрыша</p>
@@ -155,8 +157,8 @@
 							<th class="rows">
 								<div class="left-block"><i class="fa fa-plus" aria-hidden="true"></i></div>
 								<div class="right-block">
-									<h3 class="right__block-title text-left">Плюс </h3>
-									<p class="right__block-price">850 &#8381</p>
+									<p class="right__block-title text-left">Плюс </p>
+									<p class="right__block-price">850 &#8381; </p>
 									<p class="right__block-text">Коэффициент тарифа 2.5-3.0</p>
 									<p class="right__block-text">Проходимость 80-85%</p>
 									<p class="right__block-text">Страховка от проигрыша</p>
@@ -169,8 +171,8 @@
 							<th class="rows">
 								<div class="left-block"><i class="fa fa-bomb" aria-hidden="true"></i></div>
 								<div class="right-block">
-									<h3 class="right__block-title text-left">Бомба </h3>
-									<p class="right__block-price">1200 &#8381</p>
+									<p class="right__block-title text-left">Бомба </p>
+									<p class="right__block-price">1200 &#8381; </p>
 									<p class="right__block-text">Коэффициент тарифа 4.2 - 5.0</p>
 									<p class="right__block-text">Проходимость 70-80%</p>
 									<p class="right__block-text">Страховка от проигрыша</p>
@@ -192,8 +194,8 @@
 								<div class="left-block super-left-icon"><i class="fa fa-superpowers"
 										aria-hidden="true"></i></div>
 								<div class="right-block">
-									<h3 class="right__block-title super-title ">Супер Экспресс </h3>
-									<p class="right__block-price super-text ">11999 &#8381 </p>
+									<p class="right__block-title super-title ">Супер Экспресс </p>
+									<p class="right__block-price super-text ">11999 &#8381; </p>
 									<p class="right__block-text  super-text ">8 экспресс прогнозов</p>
 									<p class="right__block-text  super-text ">Проходимость 60 - 65%</p>
 									<p class="right__block-text  super-text ">Средний коэффициент 10 - 12</p>
@@ -273,7 +275,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<article>
+					<p class="our-skill">
 						Чтобы оценить все перечисленное в предыдущем разделе, необходимо отлично разбираться в
 						особенностях конкретного вида спорта. Поэтому, аналитики всегда имеют непосредственное отношение
 						к спорту, на который делаются прогнозы. Только такой подход делает прогнозы на спорт от
@@ -283,7 +285,7 @@
 						показывает результат свыше 90%, это отличный результат. К сожалению, даже опытный аналитик не
 						сможет достичь 100% результативности, ведь форс-мажорные обстоятельства никто предсказать не в
 						состоянии.
-					</article>
+					</p>
 				</div>
 			</div>
 			<div class="sports-wrap">
@@ -370,7 +372,6 @@
 		</div>
 
 	</div>
-	</div>
 
 	<!-- contacts -->
 
@@ -417,7 +418,7 @@
 					<div class="map d-flex justify-content-center">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.659581892104!2d30.490366415729262!3d50.39154417946734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8c500ec7819%3A0x8dfbf7f3d1c97221!2z0LLRg9C70LjRhtGPINCc0LjRhdCw0LnQu9CwINCb0L7QvNC-0L3QvtGB0L7QstCwLCAyMCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1569071145981!5m2!1sru!2sua"
-							width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+							width="" height="300" style="border:0;" allowfullscreen=""></iframe>
 					</div>
 				</div>
 			</div>
@@ -537,16 +538,15 @@
 											name="form-reg">
 
 											<label for="input__login">
-												<input class="input__login" name="login" placeholder="логин"
-													type="login">
+												<input id="input__login" name="login" placeholder="логин" type="text">
 											</label>
 											<label for="input__email">
-												<input class="input__email" name="email" placeholder="Email"
-													type="email">
+												<input id="input__email" name="email" placeholder="Email" type="email">
 											</label>
 
-											<label for="input__pass"><input class="input__pass" name="pass"
-													placeholder="Пароль" type="password">
+											<label for="input__pass">
+												<input id="input__pass" name="pass" placeholder="Пароль"
+													type="password">
 											</label>
 
 											<label for="input__checkbox" class="checkbox">
@@ -563,11 +563,11 @@
 							</div>
 							<div class="modal-right">
 								<div class="row">
-									<div class="col-lg-12">
-										<a href="#" id="top" name="top">Договор Оферты</a>
+									<div class="col-lg-12 ">
+										<a href="#" name="top" id="top">Договор Оферты</a>
 										<p>1. Термины и определения</p>
-										<p>Оферта – настоящий документ «Оферта на оказание консультационных услуг»,
-											опубликованный в сети Интернет по адресу: http://smartbets.com.ua</p>
+										<p>Оферта – настоящий документ Оферта на оказание консультационных услуг,
+											опубликованный в сети Интернет по адресу: smartbets.com.ua</p>
 										<p>Акцепт Оферты – полное безоговорочное принятие Оферты путём осуществления
 											действий, указанных в разделе 6 Оферты. Акцептом Оферты заключается Договор.
 										</p>
@@ -706,24 +706,24 @@
 					<div class="modal-login modal-stop">
 						<div class="row">
 							<div class="col-lg-12">
-								<button aria-label="Close" class="close btn-close" data-window="#registr"
+								<button aria-label="Close" class="close btn-close btn-close-2" data-window="#registr"
 									type="button"><span aria-hidden="true">&times;</span></button>
 								<p class="form-title text-center">Вход</p>
 								<form class="form-login text-center d-flex flex-column" id="form-login"
 									name="form-login">
 
-									<label for="input__login">
-										<input class="login__name" name="login" placeholder="Логин" type="login">
+									<label for="login__name">
+										<input id="login__name" name="login" placeholder="Логин" type="text">
 									</label>
 									<label for="login__pass">
-										<input class="login__pass" name="-login-pass" placeholder="Пароль"
-											type="password" value=""></label>
+										<input id="login__pass" name="login-pass" placeholder="Пароль" type="password"
+											value="">
+									</label>
 									<div class="col-lg-12 text-center">
 										<button class="btn btn-primary btn-login">Войти</button>
 									</div>
 									<a href="#" class="forget-pass text-center">Забыли пароль?</a>
 								</form>
-
 							</div>
 						</div>
 					</div>
