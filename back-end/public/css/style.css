@@ -1,35 +1,45 @@
  
 /* спецификация */
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
     margin-top: 35px;
 }
+
 img {
     display: block;
 }
+
 .container {
     font-family: 'PT Sans', sans-serif;
+    
 }
+
 .header, .header-slider, .content, .our-team {
     background-color: #fff;
 }
+
 h1,h2,h3,h4 {
     font-size: 32px;
     color: #267df4;
     margin-top: 30px;
     font-weight: bold;
 }
+
 p {
     font-size: 20px;
     margin-top: 10px;
@@ -37,17 +47,16 @@ p {
 }
 
 /* header */
-
 .header .container {
     background: url('https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM3NTU1fQ&s=b0a49f013d266064b3e0e5a19d5d7c7f') no-repeat 50% 50%;
     background-size: cover;
 }
-.header .nav-menu {
-}
+
 .header .menu {
     margin-top: 45px;
     margin-left: 50px;
 }
+
 .header .menu__item {
     margin-right: 20px;
     padding: 10px 0;
@@ -55,54 +64,65 @@ p {
     text-align: center;
     width: 130px;
 }
+
 .header .menu__item a ,.link__logo {
     color: #fff;
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
 }
+
 .header .menu__item:hover {
     background-color: #fff;
     transition: .2s;
 }
+
 .header .menu__item:hover a {
     color: #000;
 }
+
 .login__app{
     background-color: #1e88e5;
     width: 80px;
     margin: 0 auto;
 }
+
 .main-logo {
     margin-top: 45px;
     display: block;
 }
+
 .link__logo {
     font-size: 30px;
     text-decoration: none;
     width: 200px;
     display: block;
 }
+
 .header .menu__item:last-child {
     background-color: #1e88e5;
     border-radius: 40px;
     width: 90px;
 }
+
 .header-service {
     max-width: 750px;
     margin: 30px auto;
 }
+
 .header__title , .header__text{
     font-size: 45px;
     margin-top: 170px;
     color: #fff;
     font-weight: bolder;
 }
+
 .header__text {
     margin: 110px auto;
     font-size: 20px;
     line-height: 35px;
 }
+
 .header__btn-buy{
     margin: 50px auto;
     display: block;
@@ -114,13 +134,16 @@ p {
     outline: none;
     background-color: #1e88e5;
 }
-.header__btn-buy a {
+
+.header__btn-buy {
     color: #fff;
     text-decoration: none;
 }
+
 .header__btn-buy:hover {
     background: linear-gradient(to right, #56ccf2, #2f80ed);
 }
+
 .header__btn-buy:before ,.header__btn-buy:after{
     position: absolute;
     content: ' ';
@@ -129,37 +152,42 @@ p {
     transition: .3s;
     z-index: -1;
 }
+
 .header__btn-buy:before {
     border-bottom: 4px solid #1e88e5;
     border-left: 4px solid #1e88e5;
     top: 70%;
     left: -5%;
 }
+
 .header__btn-buy:after {
     border-top: 4px solid #1e88e5;
     border-right: 4px solid #1e88e5;
     top: -20%;
     right: -5%;
 }
+
 .header__btn-buy:active:before{
     top: 65%;
     left: -8%;
 }
+
 .header__btn-buy:active:after{
     top: -25%;
     right: -8%;
 }
+
 .header__btn-buy:active:before , .header__btn-buy:active:after{
     width: 30%;
     height: 60%;
 }
+
 /* info */
 
 .sections-service{
     position: relative;
     width: 500px;
     height: 143px;
-   
 }
 
 .section-service{
@@ -173,7 +201,6 @@ p {
     position: absolute;
     padding: 10px 35px 20px;
     transition: all ease 1s;
-   
 }
 
 .section__text {
@@ -181,11 +208,13 @@ p {
     font-size: 18px;
     font-weight: 400;
 }
+
 .section-circle{
     height: 150px;
     width: 24px;
     margin-top: 20px;
 }
+
 .circle{
     border-radius: 50%;
     width: 14px;
@@ -198,27 +227,33 @@ p {
     background-color:#267df4;
     transition: 1s;
 }
+
 .section__img{
     width: 350px;
 }
+
 .info__text{
     color: #959393;
     font-weight: bold;
 }
+
 .section-smart-bets section {
     color: #fff;
     background: linear-gradient(to right, #56ccf2, #2f80ed);
     border-radius: 15px;
     margin: 10px;
 }
+
 /* main//////////// */
 
 table{
     margin: 35px auto;
 }
+
 .lines {
     display: block;
 }
+
 .rows {
     border-right: 1px solid #959393;
     height: 200px;
@@ -228,13 +263,16 @@ table{
     color: #000;
     transition: .2s;
 }
+
 .rows:hover {
     background-color: #1359c8;
     color: #fff;
 }
+
 .rows:last-child {
     border: none;
 }
+
 .left-block {
     color: #226fde;
     font-size: 32px;
@@ -243,42 +281,56 @@ table{
     top: 20%;
     left: 10%;
 }
+
+.right__block-title{
+    color: #1359c8;
+}
+
 .rows:hover .left-block ,.rows:hover .right__block-title {
     color: #fff;
 }
+
 .right-block {
     width: 260px;
     position: relative;
     left: 20%;
     top: -5%;
 }
+
 .rows:hover .right__block-text , .rows:hover p{
     color:#fff;
 }
+
 .rows h3 {
     font-size: 18px;
     margin: 0;
     padding: 0;
 }
+
 .right__block-text , .right__block-price{
     margin: 20px 0;
     color: #959393;
     font-size: 14px;
 }
+
 .right__block-price{
     font-size: 20px;
 }
+
 .rows .super-title,.super-text {
     font-size: 22px;
     color: #fff;
     text-align: left;
 }
+
 .super-text {
     font-size: 18px;
 }
+
 .rows-bg {
     background-color: #1359c8;
 }
+
 .btn-buy .btn-pay , .btn-super-bet{
     color: #fff;
     border-radius: 6px;
@@ -297,9 +349,11 @@ table{
 .worker {
     margin-top: 40px;
 }
+
 .worker-top {
     margin-top: 200px;
 }
+
 .worker-bg, .worker-bg-second, .worker-bg-third {
     background-image: url('/images/we.jpg');
     background-repeat: no-repeat;
@@ -309,19 +363,23 @@ table{
     height: 170px;
     margin: 0 auto;
 }
+
 .worker-bg-second {
     background: url('/images/chair.jpg');
     background-size: cover;
 }
+
 .worker-bg-third {
     background: url('/images/unnamed.jpg');
     background-size: cover;
 }
+
 .worker-text {
     color: #b3b3b3;
     text-align: center;
     font-size: 16px;
 }
+
 .worker-name {
     color: #464646;
     font-size: 20px;
@@ -331,19 +389,21 @@ table{
 }
 
 /* rewiev */
-
 .statistic-text {
     color: #fff;
     font-size: 34px;
     margin-top: 10px;
 }
+
 .rewiev .review__title ,.review__text {
     color: #fff;
 }
+
 .rewiev h3 {
     font-size: 40px;
     color: #1359c8;
 }
+
 .rewiev section {
     padding: 10px 10px;
     border-radius: 10px;
@@ -354,28 +414,29 @@ table{
     color: #959393;
     background: linear-gradient(to right, #56ccf2, #2f80ed);
 }
+
 .rewiev .border-line {
     width: 100%;
     height: 5px;
     background-color: #fff;
     margin-top: 10px;
 }
+
 .review__text {
     margin-top: 10px;
     text-align: center;
 }
-article {
-    color: #959393;
-    margin: 20px 10px 0;
-    font-size: 18px;
-    border-radius: 6px;
-    padding: 15px 25px;
-    line-height: 25px;
+
+.our-skill {
+    font-size: 16px;
+    margin-top: 40px;
 }
+
 .sports-wrap {
     height: 800px;
     margin-top: 20px;
 }
+
 .basketball, .football, .other, .hockey {
     background-image: url('/images/lakers.jpg');
     background-size: cover;
@@ -390,23 +451,27 @@ article {
     cursor: pointer;
     filter: grayscale(0.9);
 }
+
 .basketball {
     margin: 0 auto;
     top: 20px;
 }
+
 .hockey {
     background-image: url('https://images.pexels.com/photos/40564/ice-hockey-players-pass-forward-40564.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
     background-size: cover;
-    right: -557px;
-   ;
+    right: -558px;
+    ;
     top: -504px;
 }
+
 .football {
     background-image: url('/images/football.jpg');
     background-size: cover;
-    left: 220px;
+    left: 223px;
     top: -153px;
 }
+
 .other {
     background-image: url('https://i.pinimg.com/564x/11/72/e5/1172e5096af6cb078825a91cb741e9ee.jpg');
     background-size: cover;
@@ -414,6 +479,7 @@ article {
     margin: 0 auto;
     top: -677px;
 }
+
 .sport__name {
     position: absolute;
     padding: 20px 0;
@@ -424,14 +490,17 @@ article {
     color: white;
     font-size: 1.4em;
 }
+
 .sport__name:hover {
     opacity: 1;
     background: #1359c8;
 }
+
 .customers-rewiev{
     color: #959393;
     font-size: 22px;
 }
+
 .slider-wrap {
     width: 650px;
     height: 250px;
@@ -440,6 +509,7 @@ article {
     margin-top: 30px;
     position: relative;
 }
+
 .slider-rewiev {
     display: flex;
     justify-content: space-between;
@@ -453,46 +523,56 @@ article {
     padding: 8px 25px;
     color: #fff;
 }
+
 .slider-rewiev p {
     color: #fff;
 }
+
 .slider-left, .slider-right {
     cursor: pointer;
     color: #1359c8;
     font-size: 55px;
     margin: 0 20px;
 }
+
 .opacity0 {
     opacity: 0;
 }
+
 .slider__name {
     text-align: center;
     font-size: 18px;
     margin-top: 10px;
 }
+
 .img__user {
     width: 130px;
     clip-path: circle(50%);
     margin-top: 30px;
 }
+
 .slider__text {
     width: 470px;
     margin-top: 30px;
     font-size: 17px;
 }
+
 .slider-photo {
     margin-right: 15px 
 }
+
 .customers-salary {
     margin-top: 40px;
     text-align: center;
 }
+
 .arrow-down{
     color: #1359c8;
     text-align: center;
     font-size: 40px;
     margin-top: 30px;
 }
+
 .watch-statistic {
     width: 900px;
     margin: 20px auto;
@@ -503,27 +583,35 @@ article {
 .contacts-us {
     margin-top: 50px;
 }
+
 .contacts__icon {
     text-align: center;
     color: #1359c8;
     font-size: 20px;
     transition: .2s;
 }
+
 .contacts-us:hover , .contacts__icon:hover {
     background-color: #1359c8;
     color: #fff;
 }
+
 .contact__text {
     font-size: 16px;
     width: 170px;
     margin-top: 10px;
     color: #898888;
 }
+
 .contacts .border-line {
     background-color: #1e88e5;
     width: 100%;
     height: 15px;
     margin-top: 50px;
+}
+
+iframe {
+    width: 100%;
 }
 
 /* аск */
@@ -537,9 +625,11 @@ article {
     margin-top: 10px;
     margin-bottom: 25px;
 }
+
 .ask-text{
     margin: 40px 0;
 }
+
 .height-ask {
     background-color: #1e88e5;
     font-weight: bolder;
@@ -550,6 +640,7 @@ article {
     line-height: 70px;
     transition: all ease 3s;
 }
+
 .low-ask {
     width: 500px;
     position: absolute;
@@ -557,9 +648,11 @@ article {
     top: 0;
     left: 0;
 }
+
 .height__ask {
     color: #fff;
 }
+
 .low__ask {
     font-size: 16px;
     position: absolute;
@@ -567,39 +660,44 @@ article {
     left: 0;
     transition: .2s;
 }
+
 .arrow-right , .low__ask{
     cursor: pointer;
 }
+
 .opacity0 {
     opacity: 0;
 }
 
 /* футер */
-
 footer img {
     width: 90px;
     height: 30px;
     margin: 25px 10px 0 10px;
 }
+
 .footer-block {
     margin-top: 20px;
 }
+
 footer a{
     padding: 10px 0;
 }
+
 footer p {
     font-size: 16px;
 }
+
 .footer-block a {
     text-decoration: none;
     color: #1e88e5;
 }
 
 /* модальные окна регистрация*/
-
 .hide {
     display: none;
 }
+
 .wrap-registr {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -609,31 +707,37 @@ footer p {
     bottom: 0;
     z-index: 999;
 }
+
 .modal-wrap {
     width: 400px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
+
 .modal-registr, .modal-login {
     background-color: #fff;
     margin: 100px auto;
 }
+
 .modal-login {
     width: 400px;
     margin-top: 100px;
 }
+
 .modal-registr {
     width: 800px;
     transition: all ease 1s;
     height: 449px;
 }
+
 .modal-left, .modal-right {
     width: 50%;
     float: left;
     max-height: 535px;
     position: relative;
 }
+
 .modal-right {
     overflow-y: scroll;
     font-size: 12px;
@@ -699,6 +803,7 @@ label {
     color: #959393;
     margin: 10px 0 0;
 }
+
 .form-registr input, .modal-login input {
     outline: none;
     margin-top: 10px;
@@ -728,20 +833,25 @@ label {
     cursor: pointer;
     color: #1359c8;
 }
+
 .close:hover {
     color: red;
 }
+
 .btn-reg, .btn-login {
     padding: 5px 60px;
     margin: 15px auto;
     background-color: #1e88e5;
 }
+
 .btn-reg:hover {
     background: #689f38;
 }
+
 .disabled:hover {
     background-color: #1d1d1d;
 }
+
 .offer {
     text-align: center;
     font-size: 20px;
@@ -769,6 +879,7 @@ form input[type="email"]:focus , form input[type="password"]:focus{
     text-align: center;
     color: #fff;
 }
+
 .wrap-chips {
     width: 400px;
     height: 100px;
@@ -783,31 +894,42 @@ form input[type="email"]:focus , form input[type="password"]:focus{
 @media screen and (max-width:1200px) {
    /* header */
 
+   html, body {
+
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+     overflow-x: hidden;
+}
     .menu {
         margin-left: 0;
    }
+
     .menu .menu__item a:not(:last-child) {
         position: relative;
         line-height: 50%;
    }
+
     .img__burger {
         position: relative;
         left: -70px;
    }
+
    /* rewiev */
 
     .football {
         top: -132px;
-        left: 131px;
+        left: 133px;
    }
+
     .hockey {
         top: -484px;
-        left: 468px;
+        left: 469px;
    }
+
     .basketball{
         margin: 0 auto;
         top: 40px;
    }
+
     .other {
         top: -656px;
         left: 1px;
@@ -818,25 +940,24 @@ form input[type="email"]:focus , form input[type="password"]:focus{
     .wrap-ask {
         width: 447px;
    }
+   
     .height__ask{
         padding: 1px;
         font-size: 19px;
    }
+
     .low-ask {
         width: 430px;
    }
+
     .low__ask {
         font-size: 14px;
    }
+
 }
+
 @media screen and (max-width:992px) {
-    html, body {
-
-       /* Убирает прокрутку по горизонтале, для мобильной версии */
-
-        overflow-x: hidden;
-   }
-
+  
    /* header*/
 
     .main-logo {
@@ -845,6 +966,7 @@ form input[type="email"]:focus , form input[type="password"]:focus{
         width: 200px;
         margin-right: 0;
    }
+
     .header .menu {
         margin-left: 0;
    }
@@ -861,31 +983,38 @@ form input[type="email"]:focus , form input[type="password"]:focus{
         top: 20%;
         left: 26%;
    }
+
     .right-block {
         width: 229px;
         left: 0;
         padding: 0 10px;
    }
+
     .right__block-text, .right__block-price {
         font-size: 13px;
    }
+
     .rows-bg{
         width: 280px;
    }
+
     .super-left-icon{
         left: 50%;
         top: 23%;
         color: #fff;
    }
+
     .rows .super-title {
         font-size: 17px;
         color: #fff;
         text-align: left;
    }
+
     .super-text{
         text-align: left;
         font-weight: 400;
    }
+
     .btn-buy .btn-pay {
         font-size: 14px;
         width: 200px;
@@ -897,32 +1026,40 @@ form input[type="email"]:focus , form input[type="password"]:focus{
         top: -132px;
         left: 12px;
    }
+
     .hockey {
         top: -484px;
         left: 346px;
    }
+
     .watch-statistic {
         width: auto;
         margin: 0 auto;
    }
+   
     .slider-left, .slider-right {
         font-size: 37px;
         margin: 0 5px;
    }
+
     .rewiev section {
         height: auto;
         margin: 20px 5px 0;
    }
+
     .slider-wrap {
         width: 610px;
    }
+
     .slider-rewiev {
         width: 578px;
    }
+
     .slider__text {
         font-size: 15px;
         margin-top: 20px;
    }
+
     .contact__text {
         font-size: 14px;
    }
@@ -934,394 +1071,699 @@ form input[type="email"]:focus , form input[type="password"]:focus{
         height: 140px;
         margin: 10px auto 7px;
    }
+
     .height-ask {
         line-height: 55px;
    }
+
     .height__ask {
         font-size: 18px;
    }
+
     .low__ask {
         font-size: 13px;
         margin: 0;
         width: 413px;
    }
+
+    .btn-close {
+        right: 3%;
+        top: -5%;
+   }
+
+    .btn-close-2{
+        right: 1%;
+        top: -6%;
+   }
+
 }
-@media screen and (max-width:768px) {
 
-   /* header */
+ @media screen and (max-width:768px) {
 
-    .main-logo {
-        margin: 5px auto;
-        text-align: center;
-   }
-    .header .menu {
-        margin-top: 25px;
-        margin-left: 0;
-   }
-    .header .menu__item {
-        margin-right: 10px;
-        width: 120px;
-   }
-    .header .menu__item a {
-        font-size: 14px;
-   }
+/* header */
 
-   /* info */
+.main-logo {
+    margin: 5px auto;
+    text-align: center;
+}
 
-    .sections-service {
-        width: 500px;
-        height: 143px;
-   }
-    .section-service {
-        width: auto;
-   }
+.header .menu {
+    margin-top: 25px;
+    margin-left: 0;
+}
 
-   /* main */
+.header .menu__item {
+    margin-right: 10px;
+    width: 120px;
+}
 
-    .right-block {
-        width: 168px;
-   }
-    .right__block-price {
-        font-size: 12px;
-   }
-    .left-block {
-        font-size: 26px;
-        left: 30%;
-   }
-    .rows-bg {
-        width: 250px;
-   }
-    .super-text {
-        width: auto;
-   }
+.header .menu__item a {
+    font-size: 14px;
+}
+
+/* info */
+.sections-service {
+    width: 500px;
+    height: 143px;
+}
+
+.section-service {
+    width: auto;
+}
+
+/* main */
+.right-block {
+    width: 168px;
+}
+
+.right__block-price {
+    font-size: 12px;
+}
+
+.left-block {
+    font-size: 26px;
+    left: 30%;
+}
+
+.rows-bg {
+    width: 250px;
+}
+
+.super-text {
+    width: auto;
+}
+
+.btn-buy .btn-pay {
+    font-size: 12px;
+    width: 140px;
+    margin: 0 auto 10px;
+}
+
+/* our team */
+
+.worker-bg, .worker-bg-second, .worker-bg-third {
+    width: 130px;
+    height: 130px;
+}
+
+.worker-name {
+    color: #464646;
+    font-size: 15px;
+    margin: 5px 0 0;
+}
+
+.worker-text {
+    font-size: 14px;
+    margin: 2px auto;
+}
+
+/* rewiev */
+
+.rewiev section {
+    padding: 0;
+    margin: 10px 10px;
+    height: auto;
+    width: 250px;
+}
+
+.sports-wrap {
+    height: 600px;
+}
+
+.basketball, .football, .other, .hockey {
+    height: 260px;
+    width: 240px;
+}
+
+.basketball {
+    margin-top: 0;
+    top: 39px;
+}
+
+.football {
+    top: -89px;
+    left: 13px;
+}
+
+.hockey {
+    top: -350px;
+    left: 255px;
+}
+
+.other {
+    top: -478px;
+    left: 0;
+}
+
+.slider-rewiev {
+    width: 395px;
+    height: 226px;
+}
+
+.img__user {
+    width: 75px;
+}
+
+.slider__name {
+    font-size: 16px;
+}
+
+.slider__text {
+    font-size: 12px;
+    margin-top: 20px;
+} 
+
+ }
+@media screen and (max-width:576px){
+
+h1,h2,h3 {
+    font-size: 26px;
+}
+
+.header .menu {
+    margin: 10px auto 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 300px;
+}
+
+.header .menu__item {
+    width: 100%;
+    margin: 0;
+}
+
+
+.header .menu__item:last-child {
+    background-color: #1e88e5;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.header__title{
+    margin-top: 70px;
+}
+
+.header__text {
+    font-size: 18px;
+}
+
+.section__img {
+    width: 250px;
+}
+
+.left-block {
+    font-size: 20px;
+    left: 40%;
+    top: 17%;
+}
+
+.right-block {
+    width: 127px;
+}
+
+.rows h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.right__block-title {
+    font-size: 14px;
+}
+
+.right__block-text, .right__block-price {
+    font-size: 9px;
+}
+
+.btn-buy .btn-pay {
+    font-size: 11px;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.super-text {
+    font-size: 14px;
+    width: 200px;
+}
+
+.super-left-icon {
+    left: 40%;
+    top: 25%;
+}
+
+.btn-super-block {
+    padding: 10px;
+}
+
+.btn-super-block .btn-super-bet {
+    width: 100%;
+    font-size: 14px;
+}
+
+.worker-bg, .worker-bg-second, .worker-bg-third {
+    width: 85px;
+    height: 85px;
+}
+
+.worker-name {
+    font-size: 13px;
+}
+
+.worker-text {
+    font-size: 12px;
+}
+
+.worker-top{
+    margin-top: 170px;
+}
+
+.rewiev section {
+    margin: 20px 5px 0;
+}
+
+.review__text {
+    font-size: 15px;
+    padding: 3px;
+}
+
+.rewiev h3 {
+    font-size: 26px;
+}
+
+.our-skill {
+    font-size: 14px;
+    padding: 5px 5px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.sports-wrap {
+    height: 445px;
+}
+
+.basketball, .football, .other, .hockey {
+    height: 180px;
+    width: 160px;
+}
+
+.football {
+    top: -51px;
+    left: 28px;
+}
+
+.other {
+    top: -321px;
+}
+
+.hockey {
+    top: -231px;
+    left: 192px;
+}
+
+.customers-rewiev {
+    margin: 0;
+}
+
+.slider-rewiev {
+    width: 300px;
+    height: 130px;
+}
+
+.slider__text {
+    font-size: 7px;
+}
+
+.img__user {
+    width: 45px;
+}
+
+.slider-left, .slider-right {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.slider__name {
+    font-size: 13px;
+}
+
+.slider-wrap {
+    height: 126px;
+}
+
+.arrow-down {
+    font-size: 20px;
+}
+
+.contacts-us {
+    width: 136px;
+}
+
+.contact__text {
+    font-size: 10px;
+    width: 135px;
+    text-align: center;
+}
+
+.ask-text {
+    margin: 30px 0;
+}
+
+.height__ask {
+    font-size: 15px;
+}
+
+.low__ask {
+    width: 380px;
+    font-size: 11px;
+    padding: 0 5px;
+}
+
+.wrap-ask {
+    width: 420px;
+    height: 133px;
+    margin: 10px auto 7px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer img {
+    width: 70px;
+}
+
+.modal-wrap {
+    width: 379px;
+}
+
+.modal-login {
+    width: 352px;
+}
+
+.btn-close {
+    right: 8%;
+    top: -4%;
+}
+
+.btn-close-2 {
+    right: -5px;
+    top: -19px;
+    position: relative;
+}
+
+}
+
+ @media screen and (max-width:375px){
+
+.right-block {
+    width: 115px;
+}
+
+text, .right__block-price {
+    font-size: 8px;
+}
+
+.btn-buy .btn-pay {
+    font-size: 11px;
+    width: 100px;
+    height: 27px;
+    line-height: 27px;
+}
+
+.btn-super-block .btn-super-bet {
+    width: 100%;
+    font-size: 13px;
+}
+
+.right__block-text, .right__block-price {
+    font-size: 8px;
+}
+
+.super-text {
+    font-size: 14px;
+}
+
+.worker-text {
+    font-size: 10px;
+}
+.worker-name {
+    font-size: 12px;
+}
+
+.football {
+    top: -51px;
+    left: 9px;
+}
+
+.hockey {
+    top: -231px;
+    left: 172px;
+}
+
+.slider-rewiev {
+    width: 261px;
+    height: 130px;
+    padding: 5px;
+}
+
+.contacts__icon {
+    font-size: 18px;
+}
+
+.low__ask {
+    width: 350px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.modal-wrap {
+    width: 326px;
+}
+
+.modal-login {
+    width: 341px;
+}
+
+.btn-close {
+    right: 20%;
+}
+
+.btn-close-2 {
+    right: -5px;
+    top: -19px;
+    position: relative;
+}
+
+.form-registr{
+    width: 330px;
+}
+
+
+.form-title {
+    width: 330px;
+}
+
+}
+
+@media screen and (max-width:360px){
     .btn-buy .btn-pay {
-        font-size: 12px;
-        width: 140px;
-        margin: 0 auto 10px;
+        font-size: 9px;
+        width: 90px;
+        height: 25px;
+        line-height: 25px;
    }
-
-   /* our team */
-
-    .worker-bg, .worker-bg-second, .worker-bg-third {
-        width: 130px;
-        height: 130px;
-   }
-    .worker-name {
-        color: #464646;
-        font-size: 15px;
-        margin: 5px 0 0;
-   }
-    .worker-text {
-        font-size: 14px;
-        margin: 2px auto;
-   }
-
-   /* rewiev */
-
-    .rewiev section {
-        padding: 0;
-        margin: 10px 10px;
-        height: auto;
-        width: 250px;
-   }
-    .sports-wrap {
-        height: 600px;
-   }
-    .basketball, .football, .other, .hockey {
-        height: 260px;
-        width: 240px;
-   }
-    .basketball {
-        margin-top: 0;
-        top: 39px;
-   }
-    .football {
-        top: -89px;
-        left: 12px;
-   }
-    .hockey {
-        top: -350px;
-        left: 255px;
-   }
-    .other {
-        top: -478px;
-        left: 0;
-   }
-    .slider-rewiev {
-        width: 395px;
-        height: 226px;
-   }
-    .img__user {
+    .right-block {
         width: 75px;
    }
-    .slider__name {
-        font-size: 16px;
-   }
-    .slider__text {
-        font-size: 12px;
-        margin-top: 20px;
-   }
-}
-@media screen and (max-width:576px){
-    h1,h2,h3 {
-        font-size: 26px;
-   }
-    .header .menu {
-        margin-top: 25px;
-        margin-left: 0;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        width: 300px;
-   }
-    .header .menu__item {
-        width: 100%;
-        margin: 10px auto;
-   }
-    .section__img {
-        width: 250px;
-   }
     .left-block {
-        font-size: 21px;
-        left: 30%;
-        top: 15%;
-   }
-    .right-block {
-        width: 127px;
-   }
-    .rows h3 {
         font-size: 16px;
-        margin: 0;
-        padding: 0;
-   }
-    .right__block-text, .right__block-price {
-        font-size: 9px;
+        left: 53%;
    }
     .btn-buy .btn-pay {
-        font-size: 11px;
-        width: 115px;
-        height: 30px;
-        line-height: 30px;
-   }
-    .super-text {
-        font-size: 14px;
-        width: 200px;
-   }
-    .super-left-icon {
-        left: 40%;
-        top: 25%;
-   }
-    .btn-super-block {
-        padding: 10px;
-   }
-    .btn-super-block .btn-super-bet {
         width: 100%;
-        font-size: 14px;
-   }
-    .worker-bg, .worker-bg-second, .worker-bg-third {
-        width: 110px;
-        height: 110px;
-   }
-    .worker-name {
-        font-size: 13px;
-   }
-    .worker-text {
-        font-size: 12px;
-   }
-    .rewiev section {
-        margin: 20px 5px 0;
-   }
-    .review__text {
-        font-size: 15px;
-        padding: 3px;
    }
     .rewiev h3 {
-        font-size: 26px;
-   }
-    article {
-        font-size: 16px;
-        padding: 5px 5px;
-        text-align: justify;
-   }
-    .sports-wrap {
-        height: 445px;
-   }
-    .basketball, .football, .other, .hockey {
-        height: 180px;
-        width: 160px;
-   }
-    .football {
-        top: -51px;
-        left: 28px;
-   }
-    .other {
-        top: -321px;
-   }
-    .hockey {
-        top: -231px;
-        left: 192px;
-   }
-    .customers-rewiev {
-        margin: 0;
-   }
-    .slider-rewiev {
-        width: 300px;
-        height: 130px;
-   }
-    .slider__text {
-        font-size: 7px;
-   }
-    .img__user {
-        width: 45px;
-   }
-    .slider-left, .slider-right {
-        font-size: 20px;
-        margin-top: 20px;
-   }
-    .slider__name {
-        font-size: 13px;
-   }
-    .slider-wrap {
-        height: 126px;
-   }
-    .arrow-down {
-        font-size: 20px;
-   }
-    .contacts-us {
-        width: 136px;
-   }
-    .contact__text {
-        font-size: 10px;
-        width: 135px;
-        text-align: center;
-   }
-    .ask-text {
-        margin: 30px 0;
-   }
-    .height__ask {
-        font-size: 15px;
-   }
-    .low__ask {
-        width: 380px;
-        font-size: 11px;
-        padding: 0 5px;
-   }
-    .wrap-ask {
-        width: 420px;
-        height: 133px;
-        margin: 10px auto 7px;
-   }
-    footer p {
-        font-size: 14px;
-   }
-    footer img {
-        width: 70px;
-   }
-}
-
-@media screen and (max-width:375px){
-    .right-block {
-        width: 115px;
-   }
-    text, .right__block-price {
-        font-size: 8px;
-   }
-   
-    .btn-buy .btn-pay {
-        font-size: 11px;
-        width: 100px;
-        height: 27px;
-        line-height: 27px;
-   }
-   .btn-super-block .btn-super-bet {
-        width: 100%;
-        font-size: 13px;
-   }
-    .right__block-text, .right__block-price {
-        font-size: 8px;
-   }
-    .super-text {
-        font-size: 14px;
-   }
-    .football {
-        top: -51px;
-        left: 9px;
-   }
-    .hockey {
-        top: -231px;
-        left: 172px;
-   }
-    .slider-rewiev {
-        width: 261px;
-        height: 130px;
-        padding: 5px;
-   }
-    .contacts__icon {
         font-size: 18px;
    }
-    .low__ask {
-        width: 350px;
+    .review__text {
+        font-size: 10px;
    }
-    footer p {
-        font-size: 13px;
+    .sports-wrap {
+        height: 405px;
+        margin-top: 5px;
    }
-}
-
-/* адаптив под отдельные елементы */
-
-@media screen and (width:1200px){
+    .basketball, .football, .other, .hockey {
+        height: 170px;
+        width: 150px;
+   }
     .hockey {
-        left: 557px;
+        top: -216px;
+        left: 167px;
    }
     .football {
-        left: 222px;
+        top: -46px;
+        left: 13px;
    }
-}
-
-@media screen and (width:992px){
-    .hockey {
-        left: 467px;
-   }
-    .football {
-        left: 131px;
+    .other {
+        top: -301px;
    }
     .slider-rewiev {
-        width: 611px;
+        width: 252px;
    }
-    .rewiev section {
-        margin: 30px auto 0;
+    .slider-left, .slider-right {
+        font-size: 17px;
+        margin-top: 27px;
    }
-}
-
-@media screen and (width:768px){
-    .hockey {
-        left: 345px;
-   }
-    .football {
-        left: 101px;
-   }
-    .slider-rewiev {
-        width: 611px;
-   }
-    .img__user {
-        width: 80px;
-   }
-    .slider__text {
+    .contacts__icon {
         font-size: 16px;
    }
+    .contacts-us {
+        width: 105px;
+   }
+    .contact__text {
+        font-size: 8px;
+        width: 100px;
+        text-align: center;
+   }
+    .height__ask {
+        font-size: 14px;
+   }
+    .low__ask {
+        width: 337px;
+        font-size: 10px;
+        padding: 0 5px;
+   }
+    .modal-login {
+        width: 322px;
+   }
 }
 
-@media screen and (width:576px){
-    .hockey {
-        left: 255px;
+
+@media screen and (width:320px){
+    .btn-buy .btn-pay {
+        width: 88%;
+   }
+    .sports-wrap {
+        height: 362px;
+   }
+    .basketball, .football, .other, .hockey {
+        height: 140px;
+        width: 120px;
    }
     .football {
-        left: 91px;
+        top: -32px;
+        left: 22px;
+   }
+    .hockey {
+        top: -172px;
+        left: 148px;
+   }
+    .other {
+        top: -242px;
    }
     .slider-rewiev {
-        width: 425px;
+        width: 211px;
    }
     .slider__text {
-        font-size: 9px;
+        font-size: 6px;
+   }
+    .height__ask {
+        font-size: 12px;
+   }
+    .low__ask {
+        width: 296px;
+        font-size: 10px;
+        padding: 0 5px;
+   }
+    footer p {
+        font-size: 11px;
+   }
+    .form-title {
+        width: 266px;
+   }
+    .modal-wrap {
+        width: 278px;
+   }
+    .form-registr {
+        width: 278px;
+   }
+    .form-registr input, .modal-login input {
+        width: 216px;
+   }
+    .btn-close {
+        right: 31%;
+   }
+    .modal-login {
+        width: 278px;
+   }
+    .btn-close-2{
+        right: -2%;
    }
 }
+
+
+/* адаптив под отдельные елементы */ @media screen and (width:1200px){
+.hockey {
+    left: 557px;
+}
+.football {
+    left: 222px;
+}
+}
+ @media screen and (width:992px){
+.hockey {
+    left: 467px;
+}
+.football {
+    left: 131px;
+}
+.slider-rewiev {
+    width: 611px;
+}
+.rewiev section {
+    margin: 30px auto 0;
+}} @media screen and (width:768px){
+.hockey {
+    left: 347px;
+}
+.football {
+    left: 104px;
+}
+.slider-rewiev {
+    width: 611px;
+}
+.img__user {
+    width: 80px;
+}
+.slider__text {
+    font-size: 16px;
+}} @media screen and (width:576px){
+.hockey {
+    left: 255px;
+}
+.football {
+    left: 91px;
+}
+.slider-rewiev {
+    width: 425px;
+}
+.slider__text {
+    font-size: 9px;
+}} @media screen and (width:414px){
+.hockey {
+    left: 194px;
+}
+.football {
+    left: 30px;
+}} @media screen and (width:375px){
+.hockey {
+    left: 174px;
+}
+.football {
+    left: 11px;
+}}
