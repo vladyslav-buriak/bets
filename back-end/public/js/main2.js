@@ -3,9 +3,13 @@
 
 let radioValue = 'week';
 let p = document.querySelector('.sub__price');
-document.querySelectorAll('.input__sub').forEach(function (element) {
+p.textContent = '8 200 рублей';
+
+document.querySelectorAll('.radio').forEach(function (element) {
 	element.onclick = checkPrice;
 })
+
+
 
 function variants() {
 	[

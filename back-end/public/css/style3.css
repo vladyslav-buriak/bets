@@ -1,94 +1,12 @@
-.card-wraper {
-    width: 751px;
-    height: 381px;
-    position: relative;
-    margin-top: 150px;
-
+.buy-section {
+    background-color: #1e88e5;
+    margin: 100px auto;
 }
 
-.card-back , .card-front{
-    width: 535px;
-    height: 343px;
-    border: 1px solid grey;
-    border-radius: 15px;
-    position: absolute;
+.buy__title{
+    font-size: 20px;
 }
-
-.card-back {
-    right: 0;
-    bottom: 0;
-    background-color: #ececec;
+.buy__email{
+    color: #fff;
+    font-size: 26px;
 }
-
-.card-front {
-    background-color: gold;
-}
-
-.card-back-line {
-
-    width: 95%;
-    height: 70px;
-     background-color: grey;
-     position: absolute;
-     top: 50px;
-}
-
-
-#cvv {
-   width: 17%;
-  
-    position: absolute;
-    top: 170px;
-    right: 50px;
-    font-size: 40px;
-}
-
-
-#card-number {
-    width: 83%;
-  
-    border: none;
-    outline: none;
-    font-size: 40px;
-     position: absolute;
-     top: 130px;
-     left: 47px;
-    
-}
-
-.card-image {
-    width: 80px;
-}
-.card-logo {
-    width: 200px;
-    
-    position: absolute;
-    left: 50px;
-    top: 30px;
-}
-
-#card-year , #card-mounth{
-    position: absolute;
-    top: 240px;
-    background-color: #f1f1f1;
-    outline: none;
-    border: none;
-    font-size: 32px;
-    width: 57px;
-    left: -9%;
-    padding: 5px;
-}
-
-#card-year {
-    left: 34%;
-}
-
-.card-image {
-    position: absolute;
-    top: 245px;
-    left: 294px;
-}
-
-
-
-

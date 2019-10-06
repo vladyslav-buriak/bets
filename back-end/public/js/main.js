@@ -219,9 +219,9 @@ document.querySelectorAll('.arrow-right').forEach(function (element) {
 const form = document.querySelector('#form-reg');
 form.addEventListener('submit', (event) => {
 	event.preventDefault();
-	let name = document.querySelector('.input__login').value;
-	let pass = document.querySelector('.input__pass').value;
-	let email = document.querySelector('.input__email').value;
+	let name = document.querySelector('#input__login').value;
+	let pass = document.querySelector('#input__pass').value;
+	let email = document.querySelector('#input__email').value;
 
 
 	if (email.length <= 4 || email.length > 20) {
@@ -302,8 +302,8 @@ const formLogin = document.querySelector('#form-login');
 console.log(formLogin);
 formLogin.addEventListener('submit', (event) => {
 	event.preventDefault();
-	let name = document.querySelector('.login__name').value;
-	let pass = document.querySelector('.login__pass').value;
+	let name = document.querySelector('#login__name').value;
+	let pass = document.querySelector('#login__pass').value;
 	const options = {
 		method: 'POST', // *GET, POST, PUT, DELETE, etc.
 		mode: 'cors', // no-cors, cors, *same-origin
@@ -376,9 +376,9 @@ function addChips(chips) {
 
 ////////////////////
 
-document.querySelector('.input__login').onkeypress = loginSymbols;
-document.querySelector('.input__email').onkeypress = loginSymbols;
-document.querySelector('.input__pass').onkeypress = loginSymbols;
+document.querySelector('#input__login').onkeypress = loginSymbols;
+document.querySelector('#input__email').onkeypress = loginSymbols;
+document.querySelector('#input__pass').onkeypress = loginSymbols;
 
 
 

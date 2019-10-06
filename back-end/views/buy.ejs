@@ -67,17 +67,20 @@
 						</div>
 						<div class="col-lg-4">
 							<form class="form-subscription d-flex flex-column align-items-center">
-								<p class="sub__price">25 500 &#8381</p>
-								<label for="input__sub">
-									<input class="input__sub" name="price" type="checkbox" value="week">
+								<p class="sub__price"></p>
+								<label for="input-radio">
+									<input type="radio" id="input-radio" class="radio" name="radio" value="week"
+										checked>
+									<span class="fake"></span>
 									<span class="input__text">Неделя</span>
-									<span class="fake-input"></span>
 								</label>
-								<label for="input__sub">
-									<input checked class="input__sub" name="price" type="checkbox" value="mounth">
+
+								<label for="input-radio-2">
+									<input type="radio" id="input-radio-2" class="radio" name="radio" value="mounth">
+									<span class="fake"></span>
 									<span class="input__text">Месяц</span>
-									<span class="fake-input"></span>
 								</label>
+
 								<a class="btn-sub text-center " href="/card?price=25500&rate=Подписка%20">ОПЛАТИТЬ
 									ПОДПИСКУ</a>
 							</form>
