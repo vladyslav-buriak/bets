@@ -156,41 +156,8 @@ h1,h2,h3 {
 
 #input-radio:checked+ .fake::before,#input-radio-2:checked+ .fake::before{
 	opacity: 1;
-
-
 }
 
-
-/* #input-radio{
-	display: none;
-}
-
-.input-fake {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	border: 1px solid silver;
-	display: inline-block;
-	position: relative;
-}
-
-.input-fake::before{
-	content: '';
-	display: block;
-	background-color: red;
-	border-radius: 50%;
-	width: 10px;
-	height: 10px;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    opacity: 0;
-}
-
-#input-radio:checked+ .input-fake::before{
-	opacity: 1;
-} */
 
 /* about */
 
@@ -282,7 +249,7 @@ h1,h2,h3 {
 	margin-top: 100px;
 }
 
-.input__earn {
+#input__earn {
 	min-width: 200px;
 	color: #959393;
 	padding: 7px 15px;
