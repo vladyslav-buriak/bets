@@ -1,0 +1,4 @@
+@font-face {
+  font-family: "Cap";
+  src: url("/back-end/public/fonts/Capitalregular.woff2") format("woff2"), url("/back-end/public/fonts/Capitalregular.woff") format("woff");
+}

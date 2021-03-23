@@ -1,0 +1,49 @@
+@import "reset";
+@import "mixin";
+@import "variables";
+@import "fonts";
+@import "buy-header";
+@import "buy-subscrip";
+@import "buy-statistic";
+@import "buy-calc";
+@import "footer";
+@import "my-style";
+
+// @import "my-style";
+
+/* спецификация */
+
+img {
+  display: block;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @include fonts(32px, #474747, $ff5);
+  margin-top: 5%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "MonBold";
+  text-align: center;
+
+  @media (max-width: 992px) {
+    font-size: 27px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 470px) {
+    font-size: 17px;
+  }
+}
+

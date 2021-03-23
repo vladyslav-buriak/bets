@@ -1,0 +1,53 @@
+/* аск */
+
+.ask-section{
+    @include  fonts(18px,#000,$ff6);
+    margin: 25% 0 10%;
+    border-radius: 7px;
+    font-variant: small-caps;
+    background-color: #c2e900;
+    
+    @media(max-width:992px){
+        margin: 17% 0 5%;
+    }
+
+    @media(max-width:768px){
+        font-size: 22px;
+        margin: 7% 0 5%;
+    }
+
+    @media(max-width:470px){
+        font-size: 16px;
+        margin: 4% 0 5%;
+    }
+    
+    &__spoiler , #spoiler ,#spoiler--second ,#spoiler--third ,#spoiler--four{
+        display: none;
+    }
+
+    &__spoiler{
+        font-size: 14px;
+        padding: 10px;
+        line-height: 22px;
+        letter-spacing: 1px;
+
+        @media(max-width:768px){
+            font-size: 18px;
+        }
+
+        @media(max-width:470px){
+            font-size: 13px;
+        }
+    }
+
+    &__label{
+        margin: 0;
+        padding: 10px;
+        line-height: 25px;
+    }
+
+    & :checked ~ &__spoiler{
+        display: block;
+    }
+
+}

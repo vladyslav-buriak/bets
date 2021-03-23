@@ -123,8 +123,4 @@ router.get('/logout', (req, res, next) => { next() }, function (req, res) {
   res.render('index', { showReg: false, _isLoged });
 });
 
-
-
-
-
 module.exports = router;

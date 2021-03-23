@@ -2,14 +2,12 @@
 // выбор подписки месяц неделя
 
 let radioValue = 'week';
-let p = document.querySelector('.sub__price');
+let p = document.querySelector('.form-subscrip__price');
 p.textContent = '8 200 рублей';
 
 document.querySelectorAll('.radio').forEach(function (element) {
 	element.onclick = checkPrice;
 })
-
-
 
 function variants() {
 	[
@@ -37,7 +35,7 @@ function checkPrice() {
 document.querySelector('input[type="number"]').oninput = function () {
 
 	let select = document.querySelector('#select__rate').value;
-	let p = document.querySelector('.profit__text');
+	let p = document.querySelector('.your-rate__text');
 
 	p.textContent = this.value * Math.round(select);
 
@@ -60,3 +58,9 @@ document.querySelector('#select__rate').onchange = function () {
 
 	p.textContent = input * Math.round(this.value);
 }
+
+
+$(".burger").click(function () {
+	$(".burger , .menu").toggleClass('active');
+	$("body").toggleClass('lock');
+});

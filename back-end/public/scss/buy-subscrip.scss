@@ -1,0 +1,90 @@
+.subscrip-photo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+  }
+
+  &__img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+.form-subscrip {
+   
+  @media (max-width: 768px) {
+    margin-top: 4%;
+  }
+
+  &__price {
+    @include fonts(28px + 3px, #000, $ff5);
+
+    @media (max-width: 768px) {
+       font-size: 20px;
+    }
+  }
+
+  &__label {
+    @include fonts(22px, #474747, $ff6);
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+   }
+    margin-top: 2%;
+  }
+
+  &__btn {
+    background-color: #c2e900;
+    @include fonts(12px, #000, $ff5);
+    padding: 0 45px;
+    margin-top: 3%;
+    border-radius: 16px;
+    height: 54px;
+    line-height: 54px;
+    transition:  all ease 1s;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+      background-color: #bce008;
+    }
+  }
+}
+
+#input-radio,
+#input-radio-2 {
+  display: none;
+}
+
+.fake {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    background-color: #c2e900;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all ease 1s;
+  }
+}
+
+#input-radio:checked + .fake::before,
+#input-radio-2:checked + .fake::before {
+  opacity: 1;
+}

@@ -5,34 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/animate.css" rel="stylesheet">
-    <link href="/css/style4.css" rel="stylesheet">
+    <link href="/scss/welcome.css" rel="stylesheet">
     <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans|Roboto|Varela+Round&display=swap" rel="stylesheet">
     <title>User Cabinet SmartBets</title>
 </head>
 
 <body>
 
-
     <div class="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="nav-menu">
-                        <ul class="menu d-flex justify-content-center">
-                            <li class="menu__item"><a href="/" class="link__item">Главная</a></li>
-                            <li class="menu__item"><a href="/buy" class="link__item">Инфо про подписку</a></li>
-                            <li class="menu__item">
-                                <p class="p__item"><%= user.name %></p>
-                            </li>
+                    <ul class="menu">
+                        <li class="menu__item item">
+                            <a href="/" class="menu__link item__link">Главная</a></li>
+                        <li class="menu__item">
+                            <a href="/buy" class="menu__link">Инфо про подписку</a>
+                        </li>
+                        <li class="menu__item">
+                            <p class="p__item"><%= user.name %></p>
+                        </li>
 
-                        </ul>
-                    </div>
-                    <h1 class="welcome-title text-center">Приветствуем Вас на нашем сайте!</h1>
+                    </ul>
+                    <h2 class="welcome-title text-center">Приветствуем Вас на нашем сайте!</h2>
                 </div>
             </div>
 
@@ -42,37 +40,38 @@
     <div class="main">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="instruction">
-                        <h2 class="inst__title">
+                <div class="col-lg-6 col-md-12">
+                    <div class="inst">
+                        <p class="inst__title">
                             Как приобрести прогноз или оформить подписку?
-                        </h2>
-                        <h3 class="inst__title2">Все очень просто</h3>
-                        <ol class="menu__inst">
-                            <li class="inst__item">Выбираете тариф или подписку</li>
-                            <li class="inst__item">нажимаете на кнопку купить прогноз</li>
-                            <li class="inst__item">переходите оплатить онлайн</li>
-                            <li class="inst__item">после оплаты мы высылаем вам прогноз на ваш емейл и вы его сможете
-                                видеть на этой странице! </li>
-
+                        </p>
+                        <p class="inst__sub-title">Все очень просто</p>
+                        <ol class="inst__menu menu-list">
+                            <li class="menu-list__item">Выбираете тариф или подписку</li>
+                            <li class="menu-list__item">Нажимаете на кнопку купить прогноз</li>
+                            <li class="menu-list__item">Переходите оплатить онлайн</li>
+                            <li class="menu-list__item">После оплаты мы высылаем вам прогноз на ваш емейл!</li>
+                            <li class="menu-list__item">Прогноз будет отображаться в личном кабинете</li>
                         </ol>
-                        <div class="btns__buy d-flex ">
-                            <button class="btn__rate"><a href="/#our-rate">Хочу купить прогноз</a></button>
-                            <button class="btn__rate"><a href="/buy">Хочу оформить подписку</a></button>
+                        <div class="btn-body d-flex justify-content-between">
+                            <div class="btn-buy">
+                                <a class="btn-pay" href="/#our-rate">купить прогноз</a>
+                            </div>
+                            <div class="btn-buy">
+                                <a href="/buy" class="btn-pay">оформить подписку</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-
-                    <div class="our__rewiev__img clip-path"></div>
-
-
-
-
+                <div class="col-lg-6 col-md-12 d-flex flex-column  align-items-center">
+                    <div class="main-bg">
+                        <img src="/images/bmw.jpg" alt="car" class="main-bg__img">
+                        <p class="main-bg__text">Smart Bets</p>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 d-flex justify-content-end">
+                <div class="col-lg-12 d-flex justify-content-center mt-2">
                     <img src="http://emoticons.do.am/1/110/9.png" class="mem__img" alt="mem">
                 </div>
             </div>

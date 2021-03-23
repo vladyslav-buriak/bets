@@ -1,0 +1,73 @@
+/* /////кальк */
+
+.form-calc{
+    margin-top: 5%;
+
+    @media(max-width:992px){
+        flex-direction: column;
+        align-items: center;
+    }
+    
+	&__label,&__span{
+        @include  fonts(18px,#000,$ff6);
+        font-variant: small-caps;
+
+        @media(max-width:992px){
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            margin: 10px 0;
+        }
+	}
+
+	&__input ,&__select{
+        @include  fonts(14px,#000,$ff5);
+		border: none;
+		outline: none;
+		background-color: #c2e900;
+        padding: 0 7px;
+        height: 40px;
+        border-radius: 16px;
+        font-variant: small-caps;
+		-webkit-appearance: none;
+		
+		&:hover{
+		-webkit-appearance: none;
+
+		}
+	}
+
+	&__select{
+        padding: 9px 15px;
+        outline: none;
+        
+        @media(max-width:576px){
+            margin-top: 3%;
+        }
+
+       
+    }
+}
+
+.your-rate{
+   &__text{
+	@include  fonts(26px,#000,$ff6);
+	letter-spacing: 2px;
+    font-variant: small-caps;
+    margin: 1% 0;
+   }
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    }
+    input[type="number"]:hover,
+    input[type="number"]:focus {
+    -moz-appearance: number-input;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+     margin: 0;
+        }       

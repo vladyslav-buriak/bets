@@ -5,200 +5,223 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/css/animate.css" rel="stylesheet">
-	<link href="/css/style2.css" rel="stylesheet">
+	<link href="/scss/buy.css" rel="stylesheet">
 	<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans|Roboto|Varela+Round&display=swap" rel="stylesheet">
 	<title>Оформить подписку на SmatrBets </title>
 </head>
 
 <body>
+
+	<!-- header -->
 	<div class="header">
 		<div class="container">
-			<div class="row d-flex align-items-center">
-				<div class="col-lg-5 d-flex justify-content-center">
-					<div class="nav-menu animated fadeInLeft">
-						<ul class="menu d-flex d-flex justify-content-center">
-							<li class="menu__item">
-								<a href="/">Главная</a>
-							</li>
-							<li class="menu__item">
-								<a href="/#our-rate">Купить прогноз</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 d-flex justify-content-center">
-					<div class="main-logo animated fadeInDown">
-						<a class="link__logo" href="#">
-							<h1 class="name-company">Smart Bets</h1>
-
+			<div class="row align-items-center justify-content-between header-row">
+				<div class="col-lg-3 col-md-12 col-sm-5 col-5 d-flex justify-content-center">
+					<div class="main-logo ">
+						<a class="main-logo__link logo-link " href="#">
+							<img src="/images/new-logo.png" alt="logo" class="logo-img">
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-3 ml-auto">
-					<div class="login d-flex animated fadeInRight">
-						<a class="login__app" href="https://www.apple.com/ios/app-store/"><i class="fa fa-apple"></i>
-							Get App</a>
+				<div class="col-lg-9 d-flex justify-content-center col-md-12 col-sm-3  col-3">
+					<ul class="menu d-flex animated tdFadeInLeft">
+						<li class="menu__item">
+							<a href="/" class="menu__link">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a href="/#our-rate" class="menu__link">Купить прогноз</a>
+						</li>
+
+						<li class="menu__item">
+							<a href="/#review" class="menu__link">Отзывы</a>
+						</li>
+
+					</ul>
+					<div class="burger">
+						<span class="burger__span"></span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="main">
+	<!-- subscrip -->
+	<div class="subscrip">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 class="subscription-title text-center">МЕСЯЦ ВЫИГРЫШНЫХ СТАВОК ОТ SmartBets</h2>
+					<h2 class="subscrip-title text-center">месяц выиграшных ставок от SmartBets</h2>
 				</div>
 			</div>
-			<div class="subscription">
-				<div class="subscription-service d-flex">
-					<div class="row">
-						<div class="col-lg-6 ml-auto">
-							<p class="subscription-text" id="podpiska">Оплатив подписку на месяц, ежедневно Вы будете
-								получать матчи тарифных планов “Старт” и “Плюс”.Профит, при усредненных показателях,
-								составит +7100% или +7100$ .Следуя всем нашим рекомендациям, в ближайшее время вы
-								сможете выйти на стабильную прибыль в 100 000 - 200 000 рублей в месяц.</p>
-						</div>
-						<div class="col-lg-4">
-							<form class="form-subscription d-flex flex-column align-items-center">
-								<p class="sub__price"></p>
-								<label for="input-radio">
-									<input type="radio" id="input-radio" class="radio" name="radio" value="week"
-										checked>
-									<span class="fake"></span>
-									<span class="input__text">Неделя</span>
-								</label>
-
-								<label for="input-radio-2">
-									<input type="radio" id="input-radio-2" class="radio" name="radio" value="mounth">
-									<span class="fake"></span>
-									<span class="input__text">Месяц</span>
-								</label>
-
-								<a class="btn-sub text-center " href="/card?price=25500&rate=Подписка%20">ОПЛАТИТЬ
-									ПОДПИСКУ</a>
-							</form>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="about">
-		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h3 class="about-title text-center"> Статистика клиентов оплативших подписку</h3>
+					<form class="form-subscrip d-flex flex-column align-items-center">
+						<p class="form-subscrip__price"></p>
+						<label for="input-radio" class="form-subscrip__label">
+							<input type="radio" id="input-radio" class="radio " name="radio" value="week" checked>
+							<span class="fake"></span>
+							<span class="input__text">Неделя</span>
+						</label>
+						<label for="input-radio-2" class="form-subscrip__label">
+							<input type="radio" id="input-radio-2" class="radio form-subscrip__radio" name="radio"
+								value="mounth">
+							<span class="fake"></span>
+							<span class="input__text">Месяц</span>
+						</label>
+
+						<a class="form-subscrip__btn text-center " href="/card?price=25500&rate=Подписка%20">ОПЛАТИТЬ
+							ПОДПИСКУ</a>
+					</form>
+
 				</div>
 			</div>
-
 			<div class="row">
-				<div class="col-lg-12 ml-auto">
-					<div class="section-about d-flex ml-auto justify-content-center">
-						<h3 class="section__title ">Самый выгодный тариф</h3>
+				<div class="col-lg-12">
 
-						<div class="table d-flex flex-wrap">
-							<div class="item item-1">
-								<p class="item__number">1 </p>
-								<p class="item__text">9 482 оформили подписку</p>
-							</div>
-							<div class="item item-2">
-								<p class="item__number">2</p>
-								<p class="item__text">Банк растет от 280-350 тысяч каждый месяц</p>
-							</div>
-							<div class="item item-3">
-								<p class="item__number">3 </p>
-								<p class="item__text">Самые высокие кофициенты</p>
-							</div>
-							<div class="item item-4">
-								<p class="item__number">4 </p>
-								<p class="item__text">Стань успешнее</p>
-							</div>
-						</div>
+					<div class="subscrip-section main-text wow animate__animated animate__shakeY">
+						<p class="subscrip-section__text main-text__lines lines ">Оплатив подписку на месяц. </p>
+						<p class="subscrip-section__text main-text__lines lines ">Вы будете
+							получать матчи тарифных планов “Старт” и “Плюс” </p>
+						<p class="subscrip-section__text main-text__lines lines "> Профит, при усредненных показателях,
+							составит +7100% или +7100$ </p>
 					</div>
 				</div>
 			</div>
-
-
-
 		</div>
 	</div>
 
+	<!-- calc -->
 	<div class="calc">
 		<div class="container">
-			<div class="calc-money">
-				<div class="row">
-					<div class="col-lg-12">
-						<h3 class="calc-title text-center">ПОСЧИТАЙТЕ, СКОЛЬКО ВЫ МОЖЕТЕ ЗАРАБОТАТЬ ПРЯМО СЕЙЧАС</h3>
-					</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="calc-title text-center">посчитайте, сколько вы можете заработать прямо сейчас!</h3>
 				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<form class="form-calc d-flex justify-content-around ">
-							<label for="input__earn">
-								<span class="rate-bets">Размер ставки</span>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<form class="form-calc d-flex justify-content-around ">
+						<label for="input__earn" class="form-calc__label">
+							<span class="form-calc__span">размер ставки</span>
+							<input id="input__earn" class="form-calc__input" type="number"
+								placeholder="Введите сумму ставки">
+						</label>
+						<label for="select__rate" class="form-calc__label">
+							<span class="tarif form-calc__span">тарифный план</span>
 
-								<input id="input__earn" type="number" placeholder="Введите сумму ставки">
-							</label>
-							<label for="select__rate">
-								<span class="tarif">тарифный план</span>
-
-								<select id="select__rate" name="rate">
-									<option value="1.9">
-										Старт
-									</option>
-									<option value="3">
-										Плюс
-									</option>
-									<option value="4.8">
-										Бомба
-									</option>
-									<option value="12">
-										Супер Экспресс
-									</option>
-								</select></label>
-						</form>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 ">
-						<div class="your-rate d-flex justify-content-center">
-							<p class="profit__text">Ваша прибыль </p>
-							<p class="profit__rate text-center"> 0</p>
-							<p class="profit__money text-center">$</p>
-						</div>
+							<select id="select__rate" name="rate" class="form-calc__select">
+								<option value="1.9">
+									Старт
+								</option>
+								<option value="3">
+									Плюс
+								</option>
+								<option value="4.8">
+									Бомба
+								</option>
+								<option value="12">
+									Супер Экспресс
+								</option>
+							</select>
+						</label>
+					</form>
+					<div class="your-rate d-flex justify-content-center">
+						<p class="your-rate__text">ваша прибыль </p>
+						<p class="your-rate__text text-center"> 0</p>
+						<p class="your-rate__text text-center">$</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<footer>
+	<!-- statistic -->
+	<div class="statistic">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
-					<p class="footer__text">Наши партнеры</p>
-					<div class="logo-partners d-flex justify-content-center d-flex justify-content-beetwen">
-						<img alt="partner" src="/images/2017-10-23-logo-refresh.png">
-						<img alt="partner" src="/images/logo-temp.png">
-						<img alt="partner" src="/images/blokt-logo-no-tagline-light-bg-1200x250px1.png">
-						<img alt="partner" src="/images/stillio-as-logo-1000-green.png">
+				<div class="col-lg-12">
+					<h3 class="statistic-title text-center"> статистика клиентов оплативших подписку</h3>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+
+					<div class="statistic-body ">
+						<div class="statistic-body__table table">
+							<div class=" table__item item  ">
+								<img src="/images/client.jpg" alt="clients">
+								<p class="item__number"> 9 482 челокек </p>
+							<p class="item__text">Оформили подписку</p>
+							</div>
+							
+						</div>
+						<div class="statistic-body__table table">
+
+							<div class=" table__item item ">
+								<img src="/images/bank.jpg" alt="phone">
+								<p class="item__number">280-350 тысяч</p>
+								<p class="item__text">Банк растет от 280-350 тысяч каждый месяц</p>
+							</div>
+						
+						</div>
+						<div class="statistic-body__table table">
+						<div class=" table__item item ">
+							<img src="/images/kof.jpg" alt="phone">
+							<p class="item__number"> Высокие кофы</p>
+							<p class="item__text">У нас вы получаете максимально высокие кофициенты</p>
+						</div>
+						
+						</div>
+						<div class="statistic-body__table table">
+
+							<div class="  table__item item ">
+								<img src="/images/sec.jpeg" alt="succses">
+								<p class="item__number">Стань успешнее</p>
+								<p class="item__text">Позитивный результат будет виден,быстрее чем вы думаете.</p>
+							</div>
+							
+							</div>
+						</div>
+					
 					</div>
 
+				</div>
+			</div>
+
+		</div>
+
+
+	<!-- footer -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="footer-body d-flex flex-column align-items-center">
+						<p class="footer-body__text">. Информация носит информационный характер. 18+</p>
+						<p class="footer-body__copy text-center">&copy;2019
+							<a class="footer-body__link" href="index.html">smartbets.su</a>
+						</p>
+						<p class="footer-body__text footer-body__text--color text-center">Наши партнеры</p>
+						<div class="footer-body__logo logo-partners  d-flex justify-content-between">
+							<img alt="partner" src="/images/2017-10-23-logo-refresh.png" class="logo-partners__img">
+							<img alt="partner" src="/images/logo-temp.png" class="logo-partners__img">
+							<img alt="partner" src="/images/blokt-logo-no-tagline-light-bg-1200x250px1.png"
+								class="logo-partners__img">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<script src="/js/main2.js">
+
+	<script src="/jq/jquery-3.5.1.min.js">
 	</script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	<script src="/js/main2.js">
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
 	</script>

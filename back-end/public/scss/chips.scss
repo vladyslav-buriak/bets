@@ -1,0 +1,22 @@
+/* чипсы */
+
+.chips {
+    @include  fonts(20px,#000,$ff5);
+    margin: 20px;
+    padding: 20px 30px;
+    background-color:#c2e900;
+    transition: all ease 2s;
+    border-radius: 10px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.wrap-chips {
+    width: 400px;
+    height: 100px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+}
+

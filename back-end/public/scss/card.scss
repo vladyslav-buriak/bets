@@ -1,0 +1,73 @@
+@import "reset";
+@import "mixin";
+@import "variables";
+@import "fonts";
+@import "my-style";
+
+.main-text{
+    margin-bottom: 5%;
+
+    &__lines{
+
+        @media (max-width: 576px) {
+            font-size: 14px;
+            line-height: 22px;
+          }
+    
+        span{
+            color: steelblue;
+        }
+    }
+}
+
+.social-media{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    @media(max-width:768px){
+        flex-wrap: wrap;
+    }
+}
+
+.box-items{
+    text-align: center;
+    width: 25%;
+    padding: 15px 0;
+
+    @media(max-width:768px){
+        width: 50%;
+    }
+    @media(max-width:576px){
+        width: 100%;
+    }
+
+    &__text{
+        margin-top: 10px;
+        @include fonts(14px, #474747, $ff5);
+
+        @media(max-width:768px){
+            font-size: 18px;
+        }
+    }
+}
+.link__i{
+    font-size: 26px;
+    transition: all ease 1s;
+
+    @media(max-width:768px){
+        font-size: 36px;
+    }
+    @media(max-width:576px){
+        font-size: 45px;
+    }
+    @media(max-width:576px){
+        font-size: 45px;
+    }
+
+    &:hover{
+        color: #c2e900;
+    }
+}

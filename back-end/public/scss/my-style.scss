@@ -1,0 +1,128 @@
+/* спецификация */
+img {
+  display: block;
+}
+
+.header,
+.header-slider,
+.content,
+.our-team {
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @include fonts(32px, #474747, $ff5);
+  margin-top: 5%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "MonBold";
+  text-align: center;
+
+  @media (max-width: 992px) {
+    font-size: 27px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 20px;
+  }
+}
+
+.container {
+ 
+}
+
+.main-text {
+  max-width: 800px;
+  width: 100%;
+  line-height: 65px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 10% auto;
+
+  &__lines {
+    @include fonts(48px, #474747, $ff5);
+
+    &:last-child {
+      color: #c2e900;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 27px;
+      line-height: 40px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 22px;
+      line-height: 35px;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+}
+
+.main-text--mt {
+  @media (max-width: 992px) {
+    margin-top: 31%;
+  }
+
+  @media (max-width: 768px) {
+
+    margin:16% auto 5%;
+  }
+}
+
+// p {
+//     margin-top: 2%;
+//     @include  fonts(20px,#c2e900,$ff4);
+// }
+
+a {
+  font-family: $ff3;
+}
+
+.btn-pay {
+  @include fonts(14px, #000, $ff5);
+  border-radius: 3px;
+  max-width: 220px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 10px auto;
+  border: 3px solid transparent;
+  background-color: #c2e900;
+  padding: 8px 20px;
+  margin: 15px 0;
+
+  @media (max-width: 992px){
+      margin: 30px auto 0;
+
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px 0;
+    max-width: 280px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: #fdd90aef;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:focus {
+    border: transparent;
+  }
+}

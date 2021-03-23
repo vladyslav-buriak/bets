@@ -1,0 +1,109 @@
+/* rewiev */
+
+.review-span{
+    color: #c2e900;
+}
+
+.review-slider-wrap{
+     margin: 5% auto;
+     display: flex;
+     max-width: 800px;
+     width: 100%;
+
+     @media(max-width:576px){
+        max-width: 300px;
+    }
+
+    @media(max-width:470px){
+        max-width: 200px;
+    }
+  
+    .slick-prev,.slick-next{
+
+        &:before{
+            color: #474747;
+            font-size: 40px;
+
+            @media(max-width:768px){
+                display: none;
+            }
+        }
+    }
+
+    .slick-prev {
+        left: -45px;
+    }
+
+    .review-slider{
+        background-color: #c2e900;
+        position: relative;
+
+        .review-photo{
+            position: relative;
+            max-width: 100px;
+            width: 100%;
+            height: 100px;
+            margin-top: 5%;
+            z-index: 5;
+
+            @media(max-width:576px){
+                max-width: 0;
+                height: 0;
+            }
+           
+            &:after{
+                content: "";
+                position: absolute;
+                top: 0;
+                display: block;
+                width: 100%;
+                height: 40%;
+                // background: linear-gradient(to top, rgba(2, 2, 2, 0), rgba(0, 0, 0, 0.6));
+            }
+
+            &__img{
+               object-fit: cover;
+               width: 100%;
+               height: 100%;
+               border-radius: 50%;
+            }
+
+            &__name{
+                position: absolute;
+                left: 50%;
+                bottom: 5%;
+                transform: translateX(-50%);
+                font-variant: small-caps;
+                @include  fonts(10px,#fff,$ff2);
+            }
+
+        }
+        &__text{
+            letter-spacing: 1px;
+            @include  fonts(15px,#000,$ff6);
+            line-height: 25px;
+            padding: 0 20px;
+            width: 100%;
+            font-style: italic;
+            font-variant: small-caps;
+
+            @media(max-width:768px){
+                font-size: 10px;
+                padding: 0 10px;
+                line-height: 14px;
+            }
+        }
+
+        &__star{
+            @include  fonts(14px,#f57a07,$ff2);
+            margin-top: 1%;
+            z-index: 5;
+            padding-bottom: 1%;
+        }
+
+        .star--white{
+            color: white;
+        }
+        
+    }
+}

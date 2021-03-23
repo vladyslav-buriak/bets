@@ -2,748 +2,760 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta content="ie=edge" http-equiv="X-UA-Compatible">
-	<meta name="keywords" content="прогнозы на спорт от лучших аналитиков рунета" />
-	<meta name="description"
-		content="Максимально высокие коэффициенты на прогнозв на спорт с минимальным риском для вас,футбол,хокей,баскетбол и другие виды спорта!" />
-	<link href="https://fonts.googleapis.com/css?family=Open+SansRoboto&display=swap" rel="stylesheet">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="/css/animate.css" rel="stylesheet">
-	<link href="/css/style.css" rel="stylesheet">
-	<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<link href="/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<title>Надежные прогнозы на спорт от SmartBets</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta name="keywords" content="прогнозы на спорт от лучших аналитиков рунета" />
+    <meta name="description"
+        content="Максимально высокие коэффициенты на прогнозв на спорт с минимальным риском для вас,футбол,хокей,баскетбол и другие виды спорта!" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="/scss/style.css" rel="stylesheet">
+    <script src="/js/wow.min.js"></script>
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <title>Надежные прогнозы на спорт от SmartBets</title>
 </head>
 
 <body>
+    <!-- header -->
+    <div class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-3 col-md-12 col-sm-12  d-flex justify-content-md-center ">
 
-	<!-- header -->
+                    <div class="main-logo ">
+                        <a class="main-logo__link logo-link " href="#">
+                            <img src="/images/new-logo.png" alt="logo" class="logo-img">
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="col-lg-9 d-flex justify-content-center col-md-12 justify-content-sm-around  col-sm-5 col-5  ">
+                    <div class="burger">
+                        <span class="burger__span"></span>
+                    </div>
+                    <div class="menu-body">
+                        <ul class="menu justify-content-sm-start">
+                            <li class="menu__item">
+                                <a href="/#super-bets" class="menu__link">Купить прогноз</a>
+                            </li>
+                            <% if (!_isLoged) { %>
 
-	<div class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 ">
-					<div class="main-logo ">
-						<a class="link__logo" href="#">
-							Smart Bets
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-10 d-flex justify-content-center ">
-					<div class="nav-menu animated fadeInRight">
-						<!-- <a href="/"><img alt="burger" class="img__burger" src="/images/menu.png"></a> -->
-						<ul class="menu d-flex animated fadeInRight">
-							<li class="menu__item">
-								<a href="/#super-express">Купить прогноз</a>
-							</li>
-							<% if (!_isLoged) { %>
-							<li class="menu__item">
-								<a class="login__reg" data-reg="#registr" href="#">Регистрация <span></span>
-									<span></span> <span></span> <span></span></a>
-							</li>
-							<li class="menu__item">
-								<a class="login__enter" data-login="#login" href="#">Вход</a>
-							</li>
-							<% } %>
-							<% if (_isLoged) { %>
-							<li class="menu__item">
-								<a class="logout" data-reg="#registr" href="/logout">Выход</a>
-							</li>
-							<% } %>
-							<li class="menu__item">
-								<a class="login__app" href="https://www.apple.com/ios/app-store/"><i
-										class="fa fa-apple"></i> Get App</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="header-service">
-						<h1 class="header__title text-center">Прогнозы на спорт</h1>
+                                <li class="menu__item">
+                                    <a class="login__enter menu__link" href="/#our-rate">Цены</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="login__reg menu__link" data-reg="#registr" href="#">Регистрация
+                                        <span></span>
+                                        <span></span> <span></span> <span></span></a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="login__enter menu__link" data-login="#login" href="#">Вход</a>
+                                </li>
+                                <% } %>
+                                    <% if (_isLoged) { %>
+                                        <li class="menu__item">
+                                            <a class="logout menu__link" data-reg="#registr" href="/logout">Выход</a>
+                                        </li>
+                                        <% } %>
+                        </ul>
+                    </div>
+                    <a href="/" class="logo-media">smarts bets</a>
 
-						<form action="/buy">
-							<button class="header__btn-buy">Оформить подписку</button>
-						</form>
+                </div>
+            </div>
 
-						<p class="header__text text-center">Мы команда профессиональных капперов.Занимаемся аналитикой
-							спортивных событий в
-							интернете с 2010 года!</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <!-- модальные окна регистрация -->
 
-	<!-- info -->
+            <div class="wrap-registr <% if (!showReg) { %> hide <% } %>" id="registr">
 
-	<div class="info">
-		<div class="container">
+                <div class="modal-wrap">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="modal-registr modal-stop">
+                                <div class="modal-registr__left  modal-left">
+                                    <button aria-label="Close" class="close modal-left__btn-close"
+                                        data-window="#registr" type="button"><span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <p class="modal-left__title text-center">Регистрация</p>
+                                    <form class=" modal-registr__form form-modal text-center d-flex flex-column"
+                                        id="form-reg" name="form-reg">
+                                        <label for="input__login" class="form-modal__label">
+                                            <input class="form-modal__input _inp-reg" id="input__login" name="login"
+                                                placeholder="логин" type="text">
+                                        </label>
+                                        <label class="form-modal__label" for="input__email">
+                                            <input class="form-modal__input _inp-reg" id="input__email" name="email"
+                                                placeholder="Email" type="email">
+                                        </label>
 
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="info-section">
-						<h2 class="info__title text-center">SmartBets это</h2>
-						<p class="info__text text-center">надежный партнер</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 d-flex justify-content-center align-items-center">
-					<div class="section-circle">
-						<div class="circle"></div>
-						<div class="circle"></div>
-						<div class="circle"></div>
-						<div class="circle"></div>
-					</div>
-					<div class="sections-service">
-						<div class="section-service">
-							<p class="section__text">На нашем ресурсе мы предоставляем грамотную аналитику. Вы можете
-								быть уверенны в нашем профессионализме и идти вперед вместе с нами!</p>
-						</div>
-						<div class="section-service">
-							<p class="section__text"> SmartBets- надежная инвестиция,которая даст результат с первых
-								ставок. У нас большой опыт в нашей сфере, более 9 лет в интернете.</p>
-						</div>
-						<div class="section-service">
-							<p class="section__text">Мы предоставляем верифицированную статистику,которую можно
-								проверить по
-								номеру ставки. Подробная инструкция по проверке читайте в описании!</p>
-						</div>
-						<div class="section-service">
-							<p class="section__text">У нас огромная команда специалистов,мы на свои прогнозы даем
-								максимально высокий процент проходимости прогнозов 89%.
-							</p>
-						</div>
+                                        <label class="form-modal__label" for="input__pass">
+                                            <input class="form-modal__input _inp-reg" id="input__pass" name="pass"
+                                                placeholder="Пароль" type="password">
+                                        </label>
 
-					</div>
-				</div>
-				<div class="col-lg-5 ml-auto">
-					<img src="/images/NOT_FOR_USE!!!!!.png" alt="gadjets" class="section__img">
-				</div>
-			</div>
-		</div>
-	</div>
+                                        <label class="form-modal__label form-modal__label--rules" for="input__checkbox"
+                                            class="checkbox">
+                                            <input class="form-modal__check" id="input__checkbox" name="checkbox"
+                                                type="checkbox">
+                                            <span class="fake-checkbox"></span>
+                                            <span class="form-modal__rules"> Я принимаю правила сайта</span>
+                                        </label>
+                                        <span class="form-modal__rules form-modal__rules--agree">читать Правила</span>
+                                        <button class="btn  form-modal__btn btn-reg disabled"
+                                            disabled>Регистрация</button>
+                                    </form>
 
-	<!-- main -->
+                                </div>
+                                <div class="modal-right">
+                                    <a href="#" name="top" id="top">Договор Оферты</a>
+                                    <p>1. Термины и определения</p>
+                                    <p>Оферта – настоящий документ Оферта на оказание консультационных услуг,
+                                        опубликованный в сети Интернет по адресу: smartbets.com.ua</p>
+                                    <p>Акцепт Оферты – полное безоговорочное принятие Оферты путём осуществления
+                                        действий, указанных в разделе 6 Оферты. Акцептом Оферты заключается Договор.
+                                    </p>
+                                    <p>Договор – возмездный договор между Заказчиком и Исполнителем на оказание
+                                        консультационных услуг, который заключается путём Акцепта Оферты.
+                                    </p>
+                                    <p>Заказчик – лицо, осуществившее акцепт Оферты, и являющееся таким образом
+                                        Заказчиком услуг Исполнителя по заключенному Договору.</p>
+                                    <p>Прейскурант цен – действующий перечень платных услуг, оказываемых Исполнителем с
+                                        ценами, публикуемый в сети Интернет по адресу: http://smartbets.com.ua
+                                    </p>
+                                    <p>2. Предмет Договора</p>
+                                    <p>1. Предметом Договора является возмездное оказание Исполнителем Заказчику
+                                        консультативных услуг в виде прогнозов результатов спортивных событий на
+                                        условиях Оферты.</p>
+                                    <p>3. Условия оказания услуг</p>
+                                    <p>1. Использование результатов оказания консультативных услуг в виде прогнозов
+                                        спортивных событий не гарантирует на 100% получение прибыли Заказчиком
+                                        посредством использования данных прогнозов. Не бывает абсолютно точных
+                                        прогнозов. Те, кто пишет о 100% проходимости - мошенники.</p>
+                                    <p>2. Предоставленная Заказчику Исполнителем информация в виде прогноза является
+                                        субъективной точкой зрения авторов прогноза, прогноз может не совпасть с
+                                        реальным итоговым результатом спортивного мероприятия.</p>
+                                    <p>3. Прогнозы появляются на сайте по мере составления их авторами прогноза.
+                                        Заключение настоящего Договора не гарантирует Заказчику поступление ежедневных
+                                        прогнозов.</p>
+                                    <p>Если в какой-то с дней нет прогноза - мы добавляем +1 день к подписке всем
+                                        пользователям.
+                                    </p>
+                                    <p>4. Совершая Акцепт настоящей Оферты, Заказчик подтверждает, что ознакомился с
+                                        положением о рисках, размещенным по ссылке http://smartbets.com.ua/dogovor.php,
+                                        и согласен с тем, что Исполнитель не несёт ответственности
+                                        за убытки Заказчика и никаким образом их не компенсирует. Если случается такое,
+                                        что по итогам подписки заказчик остается в минусе, мы добавляем пару дней к
+                                        подписке,
+                                    </p>
+                                    <p>5. Заказчик не имеет право публиковать и распространять в интернете полученную от
+                                        исполнителя информацию, а так же использовать её для коммерческих целей. Если
+                                        заказчик нарушает это правило - мы имеем полное право отказать
+                                        ему в предоставлении услуг. Заказчик не имеет права сообщать о публично, что он
+                                        пользуется/пользовался платными услугами.</p>
+                                    <p>4. Стоимость услуг и порядок получения прогнозов</p>
+                                    <p>1. Стоимость услуг определяется в соответствии с ценами, указанными в
+                                        Прейскуранте цен, размещаемом в сети Интернет по адресу: http://smartbets.com.ua
+                                    </p>
+                                    <p>2. Оказание услуг осуществляется в полном объеме при условии их 100% (сто
+                                        процентов) оплаты их Заказчиком. Оплата Заказчиком услуг осуществляется на сайте
+                                        http://smartbets.com.ua при помощи системы приема электронных
+                                        платежей.
+                                    </p>
+                                    <p>3. При покупке подписки на любой срок заказчик автоматически вступает в закрытую
+                                        группу и с момента оплаты начинает получать прогнозы.</p>
+                                    <p>4. При покупке экспресса получение прогноза осуществовляется сразу же, в
+                                        автоматическом режиме. После оплаты экспресс Вы получаете в личном кабинете,
+                                        если он готов.</p>
+                                    <p>5. Стоимость услуг может меняться. Изменения стоимости услуг вступают в силу с
+                                        момента опубликования нового Прейскуранта цен.</p>
+                                    <p>5. Политика возврата денежных средств</p>
+                                    <p>1. В случае ошибочности прогноза, деньги, уплаченные за данный прогноз, Заказчику
+                                        не возвращаются.</p>
+                                    <p>2. В случае отказа, Заказчиком, от получения оплаченных услуг в полном объеме,
+                                        деньги, уплаченные за данные услуги, Заказчику не возвращаются.
+                                    </p>
+                                    <p>6. Акцепт Оферты и заключение Договора</p>
+                                    <p>1. Заказчик производит Акцепт Оферты путём предварительной оплаты услуг
+                                        Исполнителя в отношении которых заключается Договор.</p>
+                                    <p>7. Политика конфиденциальности</p>
+                                    <p>1. Любая информация о Заказчике, которую получает Исполнитель, используется
+                                        исключительно в целях оказания услуг и повышения их качества, а также для того,
+                                        чтобы сделать сервис прогнозов спортивных событий более простыми
+                                        и удобными в использовании.</p>
+                                    <p>2. Совершая Акцепт настоящей Оферты, Заказчик соглашается с тем, что Исполнитель
+                                        вправе направлять Заказчику информацию, в том числе рекламного характера,
+                                        посредством отправки электронных сообщений. Заказчик вправе
+                                        отказаться от получения такой информации посредством направления Исполнителю
+                                        электронного письма на адрес электронной почты Исполнителя.</p>
+                                    <p>3. Исполнитель обеспечивает принятие необходимых и достаточных организационных и
+                                        технических мер для защиты информации Заказчика от неправомерного или случайного
+                                        доступа, уничтожения, изменения, блокирования, копирования,
+                                        распространения, а также от иных неправомерных действий со стороны третьих лиц.
+                                    </p>
+                                    <p>4. При обработке информации Заказчика Исполнитель руководствуется действующим
+                                        законодательством Great Britain.</p>
+                                    <p>8. Срок действия и изменение условий Оферты</p>
+                                    <p>1. Оферта вступает в силу с момента размещения в сети Интернет по адресу
+                                        http://smartbets.com.ua и действует до момента отзыва Оферты Исполнителем.
+                                    </p>
+                                    <p>2. Исполнитель оставляет за собой право внести изменения в Оферту или отозвать
+                                        Оферту в любой момент по своему усмотрению. В случае внесения Исполнителем
+                                        изменений в Оферту, такие изменения вступают в силу с момента
+                                        размещения измененного текста Оферта в сети Интернет по указанному в п. 8.1.
+                                        адресу, если иной срок вступления изменений в силу не определен дополнительно
+                                        при таком размещении.</p>\
+                                    <p>9. Срок действия и изменение Договора</p>
+                                    <p>1. Акцепт Оферты Заказчиком, произведенный согласно части 6 Оферты, создаёт
+                                        Договор на условиях Оферты.</p>
+                                    <p>2. Договор вступает в силу с момента Акцепта Оферты Заказчиком и действует: а) до
+                                        момента исполнения Сторонами обязательств по Договору, либо б) до момента
+                                        расторжения Договора</p>
+                                    <p>3. Заказчик соглашается и признает, что внесение изменений в Оферту влечет за
+                                        собой внесение этих изменений в заключенный и действующий между Заказчиком и
+                                        Исполнителем Договор, и эти изменения в Договор вступают в силу
+                                        одновременно с такими изменениями в Оферту.</p>
+                                    <p>10. Расторжение Договора</p>
+                                    <p>1. По соглашению Сторон в любое время. 2. По инициативе любой из Сторон в случае
+                                        нарушения другой Стороной условий Договора с письменным уведомлением другой
+                                        Стороны.</p>
+                                    <p>11. Гарантии</p>
+                                    <p>1. Соглашаясь с условиями и принимая условия настоящей Оферты путём Акцепта
+                                        Оферты, Заказчик заверяет Исполнителя и гарантирует, что Заказчик: а) полностью
+                                        ознакомился с условиями Оферты б) полностью понимает предмет
+                                        Оферты и Договора в) полностью понимает значение и последствия своих действий в
+                                        отношении заключения и исполнения Договора.</p>
+                                    <p>12. Прочие условия</p>
+                                    <p>1. Любые уведомления по Договору могут направляться одной Стороной другой Стороне
+                                        по электронной почте. 2. В случае если одно или более положений Оферты является
+                                        по какой-либо причине недействительными, не имеющими
+                                        юридической силы, такая недействительность не оказывает влияние на
+                                        недействительность любого другого положения Оферты (Договора), которые остаются
+                                        в силе.</p>
+                                    <p class="modal-right__go-back">Назад</p>
+                                    <a class="modal-right__go-top" href="#top">Наверх</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-	<div class="main">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2 class="main-slogan text-center" id="our-rate">Цены на прогнозы</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<table>
-						<tr class="lines">
-							<th class="rows">
-								<div class="left-block"> <i class="fa fa-futbol-o" aria-hidden="true"></i></div>
-								<div class="right-block">
-									<p class="right__block-title text-left">Старт </p>
-									<p class="right__block-price">400 &#8381; </p>
-									<p class="right__block-text">Коэффициент тарифа 1.75-2.0</p>
-									<p class="right__block-text">Проходимость 90%</p>
-									<p class="right__block-text">Страховка от проигрыша</p>
-									<p class="right__block-text">Выбор пользователей</p>
-								</div>
-								<div class="btn-buy">
-									<a class="btn-pay" href="/card?price=400&rate=Старт%20">Купить
-										Прогноз</a>
-								</div>
-							</th>
-							<th class="rows">
-								<div class="left-block"><i class="fa fa-plus" aria-hidden="true"></i></div>
-								<div class="right-block">
-									<p class="right__block-title text-left">Плюс </p>
-									<p class="right__block-price">850 &#8381; </p>
-									<p class="right__block-text">Коэффициент тарифа 2.5-3.0</p>
-									<p class="right__block-text">Проходимость 80-85%</p>
-									<p class="right__block-text">Страховка от проигрыша</p>
-									<p class="right__block-text">Выбор пользователей</p>
-								</div>
-								<div class="btn-buy"><a class="btn-pay" href="/card?price=850&rate=Плюс%20">Купить
-										Прогноз</a>
-								</div>
-							</th>
-							<th class="rows">
-								<div class="left-block"><i class="fa fa-bomb" aria-hidden="true"></i></div>
-								<div class="right-block">
-									<p class="right__block-title text-left">Бомба </p>
-									<p class="right__block-price">1200 &#8381; </p>
-									<p class="right__block-text">Коэффициент тарифа 4.2 - 5.0</p>
-									<p class="right__block-text">Проходимость 70-80%</p>
-									<p class="right__block-text">Страховка от проигрыша</p>
-									<p class="right__block-text">Отличная цена</p>
-								</div>
-								<div class="btn-buy"><a class="btn-pay" href="/card?price=1200&rate=Бомба%20">Купить
-										Прогноз </a>
-								</div>
-							</th>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<table>
-						<tr class="lines">
-							<th class="rows rows-bg ">
-								<div class="left-block super-left-icon"><i class="fa fa-superpowers"
-										aria-hidden="true"></i></div>
-								<div class="right-block">
-									<p class="right__block-title super-title ">Супер Экспресс </p>
-									<p class="right__block-price super-text ">11999 &#8381; </p>
-									<p class="right__block-text  super-text ">8 экспресс прогнозов</p>
-									<p class="right__block-text  super-text ">Проходимость 60 - 65%</p>
-									<p class="right__block-text  super-text ">Средний коэффициент 10 - 12</p>
-									<p class="right__block-text  super-text ">Отличная цена</p>
-								</div>
-								<div class="btn-buy btn-super-block"><a class="btn-pay btn-super-bet"
-										href="/card?price=12000&rate=Cупер%20Экспресс">Купить
-										Прогноз</a>
-								</div>
-							</th>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
+            </div>
 
-	<!-- our team -->
+            <!-- модальные окна вход -->
 
-	<div class="our-team">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h4 class="team-title text-center">Наша команда</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 d-flex justify-content-around">
-					<div class=" worker worker-top">
-						<div class="worker-bg d-flex align-items-end"></div>
-						<p class="worker-name">Игорь Кравченко </p>
-						<p class="worker-text text-center">главный аналитик</p>
-					</div>
-					<div class="worker">
-						<div class="worker-bg-second d-flex align-items-end"></div>
-						<p class="worker-name">Владимир Борисов </p>
-						<p class="worker-text"> Основатель Smart Bet</p>
-					</div>
-					<div class=" worker worker-top">
-						<div class="worker-bg-third d-flex align-items-end"></div>
-						<p class="worker-name">Андрей Гончар</p>
-						<p class="worker-text text-center">аналитик</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="wrap-login wrap-registr hide" id="login">
 
-	<!-- rewiev -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-login modal-stop">
+                            <button aria-label="Close" class="close btn-close  modal-left__btn-close"
+                                data-window="#registr" type="button"><span aria-hidden="true">&times;</span>
+                            </button>
+                            <p class="modal-login__title text-center">Вход</p>
+                            <form class="form-modal text-center d-flex flex-column" id="form-login" name="form-login">
 
-	<div class="rewiev">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h3 class="rewiev-title text-center">Статистика работы с нашими клиентами</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 d-flex">
-					<section>
-						<h3 class="review__title text-center">41 803</h3>
-						<div class="border-line"></div>
-						<p class="review__text">Выиграли на наших прогнозах.</p>
-					</section>
-					<section>
-						<h3 class="review__title text-center">250%</h3>
-						<div class="border-line"></div>
-						<p class="review__text">Примерно средняя прибыль наших клиентов в первые месяци сотрудничиства!
-						</p>
-					</section>
-					<section>
-						<h3 class="review__title text-center">60%</h3>
-						<div class="border-line"></div>
-						<p class="review__text">Такое количество клиентов открыло свой личный бизнесс.</p>
-					</section>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<p class="our-skill">
-						Чтобы оценить все перечисленное в предыдущем разделе, необходимо отлично разбираться в
-						особенностях конкретного вида спорта. Поэтому, аналитики всегда имеют непосредственное отношение
-						к спорту, на который делаются прогнозы. Только такой подход делает прогнозы на спорт от
-						профессионалов максимально эффективными. Также желательно, чтобы люди составляющее прогнозы
-						разбирались в особенностях работы букмекерских контор. На нашем сайте вы всегда найдете платные
-						прогнозы на спорт от лучших аналитиков страны. Вся предлагаемая аналитика от Smartbets
-						показывает результат свыше 90%, это отличный результат. К сожалению, даже опытный аналитик не
-						сможет достичь 100% результативности, ведь форс-мажорные обстоятельства никто предсказать не в
-						состоянии.
-					</p>
-				</div>
-			</div>
-			<div class="sports-wrap">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="basketball">
-							<p class="sport__name">Баскетбол</p>
-						</div>
-						<div class=" football">
-							<p class="sport__name">Футбол</p>
-						</div>
-						<div class="hockey">
-							<p class="sport__name">Хокей</p>
-						</div>
-						<div class=" other">
-							<p class="sport__name">Другие виды</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<p class="customers-rewiev text-center">Отзывы</p>
-				</div>
-			</div>
-			<div class="row">
-			</div>
-			<div class="col-lg-12 d-flex justify-content-center">
-				<div class="slider-left align-self-center"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
-				<div class="slider-wrap">
-					<div class="slider-rewiev">
-						<div class="slider-photo">
-							<img alt="user" class="img__user" src="/images/user.jpg">
-							<p class="slider__name">Егор</p>
-						</div>
-						<p class="slider__text">Я очень люблю спорт,но самостоятельно заработать с помощью ставок
-							мне было очень трудно я часто уходил в минус.Мне посоветовали хорошего каппера Игоря
-							Кравченка!Результат превзошел мои ожидания:доход за первый месяц получился не скромный
-							примерно 110% и это при том,что другие капперы присылали провальные прогнозы и я терпел
-							не мало неудач.Планирую и дальше работать со Smartbets.</p>
-					</div>
-					<div class="slider-rewiev">
-						<div class="slider-photo">
-							<img alt="user" class="img__user" src="/images/user3.jpg">
-							<p class="slider__name">Владислав</p>
-						</div>
-						<p class="slider__text">Довольно давно покупаю подписку в данной конторе, услугами пользуюсь
-							года два. Ни чего плохого не вижу в том, что люди обращаються к специалистом в данной
-							отрасли. Сейчас я выплачиваю банку третий кредит, мои друзья и знакомые также
-							выплачивают кредит и все остались довольны. Бывало не проходил прогноз, но после всегда
-							повзло выигрывать в данный момент в плюсе,с выйгрыша открыл небольшое кафе.</p>
-					</div>
-					<div class="slider-rewiev">
-						<div class="slider-photo">
-							<img alt="user" class="img__user" src="/images/user4.jpg">
-							<p class="slider__name">Карен</p>
-						</div>
-						<p class="slider__text">Очень трудно самому держать свой банк в плюсе.Победы чередовались с
-							проигрошами,но после того как подписался на подписку подписку банк начал немного
-							расти,но справедливости ради ставлю небольшие сумы.Ну а так дело каждого кто хочет сам
-							ставит,а кто пользуеться услугами компании!</p>
-					</div>
-					<div class="slider-rewiev">
-						<div class="slider-photo">
-							<img alt="user" class="img__user" src="/images/user2.jpg">
-							<p class="slider__name">Женя</p>
-						</div>
-						<p class="slider__text">Ставил всегда исключительно по фану и в основном на события которые
-							популярные и небольшие сумы,но я хотел зарабатывать больше и с минимальным риском!Мне
-							один из друзей посоветовал команду капперов и теперь для меня это хороший пассивный
-							доход!</p>
-					</div>
-				</div>
-				<div class="slider-right align-self-center"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<p class="customers-salary">Заработок наших клиентов за последнии три месяца!</p>
-					<div class="arrow-down"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
-					<div class="col-lg-12"><img alt="statistic" class="watch-statistic" src="/images/graf.svg"></div>
-				</div>
-			</div>
-		</div>
+                                <label for="login__name">
+                                    <input class=" form-modal__input" id="login__name" name="login" placeholder="Логин"
+                                        type="text">
+                                </label>
+                                <label for="login__pass">
+                                    <input class="form-modal__input" id="login__pass" name="login-pass"
+                                        placeholder="Пароль" type="password" value="">
+                                </label>
+                                <div class="col-lg-12 text-center">
+                                    <button class="btn  form-modal__btn form-modal__btn--login">Войти</button>
+                                </div>
+                                <a href="#" class="form-modal__forget text-center">Забыли пароль?</a>
+                            </form>
 
-	</div>
+                        </div>
+                    </div>
+                </div>
 
-	<!-- contacts -->
-
-	<div class="contacts">
-		<div class="container">
-			<div class="row">
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<h3 class="contact-title text-center">Наши контакты</h3>
-				</div>
-			</div>
-			<div class="contacts-wrap d-flex justify-content-center">
-				<div class="row">
-					<div class="col-lg-12 d-flex justify-content-around">
-						<div class="contacts-us">
-							<div class="contacts__icon">
-								<i class="fa fa-mobile" aria-hidden="true"></i>
-							</div>
-							<p class="contact__text text-center">+38 (097 003 03 33)</p>
-						</div>
-						<div class="contacts-us">
-							<div class="contacts__icon">
-								<i class="fa fa-map-marker" aria-hidden="true"></i>
-							</div>
-							<p class="contact__text text-center">г.Киев ул. Ломоносова, 20</p>
-						</div>
-						<div class="contacts-us">
-							<div class="contacts__icon">
-								<i class="fa fa-envelope-o" aria-hidden="true"></i>
-							</div>
-							<p class="contact__text text-center">smartbets@gmail.com</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="border-line"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="map d-flex justify-content-center">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.659581892104!2d30.490366415729262!3d50.39154417946734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8c500ec7819%3A0x8dfbf7f3d1c97221!2z0LLRg9C70LjRhtGPINCc0LjRhdCw0LnQu9CwINCb0L7QvNC-0L3QvtGB0L7QstCwLCAyMCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1569071145981!5m2!1sru!2sua"
-							width="" height="300" style="border:0;" allowfullscreen=""></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- ask -->
-
-	<div class="ask">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h3 class="ask-text text-center">Ответы на частые Вопросы</h3>
-				</div>
-			</div>
-			<div class="block-ask">
-				<div class="row">
-					<div class="col-lg-12 d-flex justify-content-around flex-wrap">
-						<div class="wrap-ask">
-							<div class="height-ask text-center d-flex justify-content-center">
-								<p class="height__ask">Должен ли я регистрироваться на сайте?
-									<i class="fa fa-arrow-circle-right arrow-right" data-i="0" aria-hidden="true"></i>
-								</p>
-							</div>
-							<div class="low-ask text-center">
-								<p class="low__ask">Да без этого никак!Регистрируясь на сайте, у вас есть
-									возможность
-									купить прогноз!.<i class="fa fa-arrow-up" aria-hidden="true"></i></p>
-							</div>
-						</div>
-						<div class="wrap-ask">
-							<div class="height-ask text-center d-flex justify-content-center">
-								<p class="height__ask">Если я забыл свой пароль?
-									<i class="fa fa-arrow-circle-right arrow-right" data-i="1" aria-hidden="true"></i>
-								</p>
-							</div>
-							<div class="low-ask low-second text-center d-flex">
-								<p class="low__ask">Функция восстановления пароля расположена в окне входа
-									на сайт.
-									<i class="fa fa-arrow-up" aria-hidden="true"></i>
-								</p>
-							</div>
-						</div>
-						<div class="wrap-ask">
-							<div class="height-ask text-center d-flex justify-content-center">
-								<p class="height__ask">Ставите ли Вы сами по своим прогнозам?
-									<i class="fa fa-arrow-circle-right arrow-right" data-i="2" aria-hidden="true"></i>
-								</p>
-							</div>
-
-							<div class="low-ask low-third text-center">
-								<p class="low__ask low__third ">Конечно, мы делаем ставки по своим прогнозам
-									,это наш
-									основной бизнесс! Проблемы с выводом средств в букмекерских конторах, подтолкнули
-									нас к созданию нашего сервиса!. <i class="fa fa-arrow-up" aria-hidden="true"></i>
-								</p>
-							</div>
-						</div>
-						<div class="wrap-ask">
-							<div class="height-ask height-second text-center d-flex justify-content-center">
-								<p class="height__ask">Какие гарантии на ваши прогнозы?
-									<i class="fa fa-arrow-circle-right arrow-right" data-i="3" aria-hidden="true"></i>
-								</p>
-							</div>
-							<div class="low-ask text-center low-fourth">
-								<p class="low__ask low__fourth">Мы очень дорожим своей репутацией и
-									стараемся выдавать
-									максимально точный прогноз!У
-									вас есть возможность запросить замену бесплатную замену!
-									<i class="fa fa-arrow-up" aria-hidden="true"></i></p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- footer -->
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="footer-block d-flex flex-column align-items-center">
-						<p class="footer__text">. Информация носит информационный характер. 18+”</p>
-						<p class="footer__copy text-center">&copy;2019 <a href="index.html">smartbets.su</a></p>
-						<p class="footer__text">Наши партнеры</p>
-					</div>
-					<div class="logo-partners d-flex justify-content-center d-flex justify-content-beetwen">
-						<img alt="partner" src="/images/2017-10-23-logo-refresh.png">
-						<img alt="partner" src="/images/logo-temp.png">
-						<img alt="partner" src="/images/blokt-logo-no-tagline-light-bg-1200x250px1.png">
-						<img alt="partner" src="/images/stillio-as-logo-1000-green.png">
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- модальные окна регистрация -->
-
-	<div class="wrap-registr <% if (!showReg) { %> hide <% } %>" id="registr">
-		<div class="container">
-			<div class="modal-wrap">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="modal-registr modal-stop">
-							<div class="modal-left">
-								<div class="row">
-									<div class="col-lg-12">
-										<button aria-label="Close" class="close btn-close" data-window="#registr"
-											type="button"><span aria-hidden="true">&times;</span></button>
-										<p class="form-title text-center">Регистрация</p>
-										<form class=" form-registr text-center d-flex flex-column" id="form-reg"
-											name="form-reg">
-
-											<label for="input__login">
-												<input id="input__login" name="login" placeholder="логин" type="text">
-											</label>
-											<label for="input__email">
-												<input id="input__email" name="email" placeholder="Email" type="email">
-											</label>
-
-											<label for="input__pass">
-												<input id="input__pass" name="pass" placeholder="Пароль"
-													type="password">
-											</label>
-
-											<label for="input__checkbox" class="checkbox">
-												<input id="input__checkbox" name="checkbox" type="checkbox">
-												<span class="fake-checkbox"></span>
-												<span class="read__rules"> Я принимаю правила сайта</span>
-											</label>
-											<span class="agree__rules">читать Правила</span>
-											<button class="btn btn-primary btn-reg disabled"
-												disabled>Регистрация</button>
-										</form>
-									</div>
-								</div>
-							</div>
-							<div class="modal-right">
-								<div class="row">
-									<div class="col-lg-12 ">
-										<a href="#" name="top" id="top">Договор Оферты</a>
-										<p>1. Термины и определения</p>
-										<p>Оферта – настоящий документ Оферта на оказание консультационных услуг,
-											опубликованный в сети Интернет по адресу: smartbets.com.ua</p>
-										<p>Акцепт Оферты – полное безоговорочное принятие Оферты путём осуществления
-											действий, указанных в разделе 6 Оферты. Акцептом Оферты заключается Договор.
-										</p>
-										<p>Договор – возмездный договор между Заказчиком и Исполнителем на оказание
-											консультационных услуг, который заключается путём Акцепта Оферты.</p>
-										<p>Заказчик – лицо, осуществившее акцепт Оферты, и являющееся таким образом
-											Заказчиком услуг Исполнителя по заключенному Договору.</p>
-										<p>Прейскурант цен – действующий перечень платных услуг, оказываемых
-											Исполнителем с ценами, публикуемый в сети Интернет по адресу:
-											http://smartbets.com.ua</p>
-										<p>2. Предмет Договора</p>
-										<p>1. Предметом Договора является возмездное оказание Исполнителем Заказчику
-											консультативных услуг в виде прогнозов результатов спортивных событий на
-											условиях Оферты.</p>
-										<p>3. Условия оказания услуг</p>
-										<p>1. Использование результатов оказания консультативных услуг в виде прогнозов
-											спортивных событий не гарантирует на 100% получение прибыли Заказчиком
-											посредством использования данных прогнозов. Не бывает абсолютно точных
-											прогнозов. Те, кто пишет о 100% проходимости - мошенники.</p>
-										<p>2. Предоставленная Заказчику Исполнителем информация в виде прогноза является
-											субъективной точкой зрения авторов прогноза, прогноз может не совпасть с
-											реальным итоговым результатом спортивного мероприятия.</p>
-										<p>3. Прогнозы появляются на сайте по мере составления их авторами прогноза.
-											Заключение настоящего Договора не гарантирует Заказчику поступление
-											ежедневных прогнозов.</p>
-										<p>Если в какой-то с дней нет прогноза - мы добавляем +1 день к подписке всем
-											пользователям.</p>
-										<p>4. Совершая Акцепт настоящей Оферты, Заказчик подтверждает, что ознакомился с
-											положением о рисках, размещенным по ссылке
-											http://smartbets.com.ua/dogovor.php,
-											и согласен с тем, что Исполнитель не несёт ответственности за убытки
-											Заказчика и никаким образом их не компенсирует. Если случается такое, что по
-											итогам подписки заказчик остается в минусе, мы добавляем пару дней к
-											подписке,</p>
-										<p>5. Заказчик не имеет право публиковать и распространять в интернете
-											полученную от исполнителя информацию, а так же использовать её для
-											коммерческих целей. Если заказчик нарушает это правило - мы имеем полное
-											право отказать ему в предоставлении услуг. Заказчик не имеет права сообщать
-											о публично, что он пользуется/пользовался платными услугами.</p>
-										<p>4. Стоимость услуг и порядок получения прогнозов</p>
-										<p>1. Стоимость услуг определяется в соответствии с ценами, указанными в
-											Прейскуранте цен, размещаемом в сети Интернет по адресу:
-											http://smartbets.com.ua
-										</p>
-										<p>2. Оказание услуг осуществляется в полном объеме при условии их 100% (сто
-											процентов) оплаты их Заказчиком. Оплата Заказчиком услуг осуществляется на
-											сайте http://smartbets.com.ua при помощи системы приема электронных
-											платежей.
-										</p>
-										<p>3. При покупке подписки на любой срок заказчик автоматически вступает в
-											закрытую группу и с момента оплаты начинает получать прогнозы.</p>
-										<p>4. При покупке экспресса получение прогноза осуществовляется сразу же, в
-											автоматическом режиме. После оплаты экспресс Вы получаете в личном кабинете,
-											если он готов.</p>
-										<p>5. Стоимость услуг может меняться. Изменения стоимости услуг вступают в силу
-											с момента опубликования нового Прейскуранта цен.</p>
-										<p>5. Политика возврата денежных средств</p>
-										<p>1. В случае ошибочности прогноза, деньги, уплаченные за данный прогноз,
-											Заказчику не возвращаются.</p>
-										<p>2. В случае отказа, Заказчиком, от получения оплаченных услуг в полном
-											объеме, деньги, уплаченные за данные услуги, Заказчику не возвращаются.</p>
-										<p>6. Акцепт Оферты и заключение Договора</p>
-										<p>1. Заказчик производит Акцепт Оферты путём предварительной оплаты услуг
-											Исполнителя в отношении которых заключается Договор.</p>
-										<p>7. Политика конфиденциальности</p>
-										<p>1. Любая информация о Заказчике, которую получает Исполнитель, используется
-											исключительно в целях оказания услуг и повышения их качества, а также для
-											того, чтобы сделать сервис прогнозов спортивных событий более простыми и
-											удобными в использовании.</p>
-										<p>2. Совершая Акцепт настоящей Оферты, Заказчик соглашается с тем, что
-											Исполнитель вправе направлять Заказчику информацию, в том числе рекламного
-											характера, посредством отправки электронных сообщений. Заказчик вправе
-											отказаться от получения такой информации посредством направления Исполнителю
-											электронного письма на адрес электронной почты Исполнителя.</p>
-										<p>3. Исполнитель обеспечивает принятие необходимых и достаточных
-											организационных и технических мер для защиты информации Заказчика от
-											неправомерного или случайного доступа, уничтожения, изменения, блокирования,
-											копирования, распространения, а также от иных неправомерных действий со
-											стороны третьих лиц.</p>
-										<p>4. При обработке информации Заказчика Исполнитель руководствуется действующим
-											законодательством Great Britain.</p>
-										<p>8. Срок действия и изменение условий Оферты</p>
-										<p>1. Оферта вступает в силу с момента размещения в сети Интернет по адресу
-											http://smartbets.com.ua и действует до момента отзыва Оферты Исполнителем.
-										</p>
-										<p>2. Исполнитель оставляет за собой право внести изменения в Оферту или
-											отозвать Оферту в любой момент по своему усмотрению. В случае внесения
-											Исполнителем изменений в Оферту, такие изменения вступают в силу с момента
-											размещения измененного текста Оферта в сети Интернет по указанному в п. 8.1.
-											адресу, если иной срок вступления изменений в силу не определен
-											дополнительно при таком размещении.</p>\
-										<p>9. Срок действия и изменение Договора</p>
-										<p>1. Акцепт Оферты Заказчиком, произведенный согласно части 6 Оферты, создаёт
-											Договор на условиях Оферты.</p>
-										<p>2. Договор вступает в силу с момента Акцепта Оферты Заказчиком и действует:
-											а) до момента исполнения Сторонами обязательств по Договору, либо б) до
-											момента расторжения Договора</p>
-										<p>3. Заказчик соглашается и признает, что внесение изменений в Оферту влечет за
-											собой внесение этих изменений в заключенный и действующий между Заказчиком и
-											Исполнителем Договор, и эти изменения в Договор вступают в силу одновременно
-											с такими изменениями в Оферту.</p>
-										<p>10. Расторжение Договора</p>
-										<p>1. По соглашению Сторон в любое время. 2. По инициативе любой из Сторон в
-											случае нарушения другой Стороной условий Договора с письменным уведомлением
-											другой Стороны.</p>
-										<p>11. Гарантии</p>
-										<p>1. Соглашаясь с условиями и принимая условия настоящей Оферты путём Акцепта
-											Оферты, Заказчик заверяет Исполнителя и гарантирует, что Заказчик: а)
-											полностью ознакомился с условиями Оферты б) полностью понимает предмет
-											Оферты и Договора в) полностью понимает значение и последствия своих
-											действий в отношении заключения и исполнения Договора.</p>
-										<p>12. Прочие условия</p>
-										<p>1. Любые уведомления по Договору могут направляться одной Стороной другой
-											Стороне по электронной почте. 2. В случае если одно или более положений
-											Оферты является по какой-либо причине недействительными, не имеющими
-											юридической силы, такая недействительность не оказывает влияние на
-											недействительность любого другого положения Оферты (Договора), которые
-											остаются в силе.</p>
-										<p class="go__back">Назад</p><a href="#top">Наверх</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- модальные окна вход -->
-
-	<div class="wrap-login wrap-registr hide" id="login">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="modal-login modal-stop">
-						<div class="row">
-							<div class="col-lg-12">
-								<button aria-label="Close" class="close btn-close btn-close-2" data-window="#registr"
-									type="button"><span aria-hidden="true">&times;</span></button>
-								<p class="form-title text-center">Вход</p>
-								<form class="form-login text-center d-flex flex-column" id="form-login"
-									name="form-login">
-
-									<label for="login__name">
-										<input id="login__name" name="login" placeholder="Логин" type="text">
-									</label>
-									<label for="login__pass">
-										<input id="login__pass" name="login-pass" placeholder="Пароль" type="password"
-											value="">
-									</label>
-									<div class="col-lg-12 text-center">
-										<button class="btn btn-primary btn-login">Войти</button>
-									</div>
-									<a href="#" class="forget-pass text-center">Забыли пароль?</a>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 
 
-	<script src="/js/main.js">
-	</script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-	</script>
+    <!-- info -->
+
+    <div class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="info-section main-text wow animate__animated animate__shakeY main-text--mt  ">
+                        <p class="info-section__text main-text__lines lines ">Высокоточные прогнозы.</p>
+                        <p class="info-section__text main-text__lines lines ">Быстрая регистрация.</p>
+                        <p class="info-section__text main-text__lines lines ">
+                            Рекомендации топовых аналитиков.</p>
+                        <p class="info-section__text main-text__lines lines ">
+                            Качество выше цены.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="info-service">
+                        <h1 class="info-service__title text-center animate__animated animate__bounce">Прогнозы на спорт
+                        </h1>
+                        <form action="/buy">
+                            <button class="info-service__btn-buy wow animate__animated animate__swing">Оформить
+                                подписку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="info-bg  wow animate__animated animate__fadeInUp">
+                        <div class="info-bg__slogan slogan">
+                            <h3 class="slogan__title ">Аналитика</h3>
+                            <p class="slogan__text">Вы можете быть уверенны в нашем профессионализме и идти вперед
+                                вместе с нами!</p>
+                        </div>
+                        <img class="info-bg__img" src="/images/stadium.webp" alt="stadium">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="main-slogan text-center wow animate__animated animate__fadeInUp" id="our-rate">Цены на
+                        прогнозы
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 tabs-wrapper">
+                    <div class="tabs-body wow animate__animated animate__fadeInLeft">
+                        <a href="#tab-1" class="tabs-body__tab tab">Стандарт</a>
+                        <a href="#tab-2" class="tabs-body__tab tab">Стандарт++</a>
+                        <a href="#tab-3" class="tabs-body__tab tab">Главный</a>
+                        <a href="#tab-4" class="tabs-body__tab tab">Супер Экспресс</a>
+                    </div>
+                    <div class="tabs-wrapper__content tabs-content">
+                        <div id="tab-1" class="tabs-content__content content ">
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">Цена</h3>
+                                <p class="content-rates__text content-rates__text--price">400 &#8381</p>
+                            </div>
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">1.75-2.0</h3>
+                                <p class="content-rates__text">Коэффициент данного тарифа составляет 1.75-2.0</p>
+                            </div>
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">90%</h3>
+                                <p class="content-rates__text">Проходимость данного прогноза составляет примерно 90%</p>
+                            </div>
+                            <div class="btn-buy">
+                                <a class="btn-pay btn-pay--bg" href="/card?price=400&rate=Старт%20">Купить
+                                    Прогноз</a>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tabs-content__content content ">
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">Цена</h3>
+                                <p class="content-rates__text content-rates__text--price">850 &#8381</p>
+                            </div>
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">2.5-3.0</h3>
+                                <p class="content-rates__text">Коэффициент тарифа</p>
+                            </div>
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">80-85%</h3>
+                                <p class="content-rates__text">Проходимость прогноза</p>
+                            </div>
+                            <div class="btn-buy">
+                                <a class="btn-pay btn-pay--bg" href="/card?price=850&rate=Плюс%20">Купить
+                                    Прогноз</a>
+                            </div>
+                        </div>
+
+                        <div id="tab-3" class="tabs-content__content content ">
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">Цена</h3>
+                                <p class="content-rates__text content-rates__text--price">1200 &#8381</p>
+                            </div>
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">4.2 - 5.0</h3>
+                                <p class="content-rates__text">Коэффициент тарифа</p>
+                            </div>
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">73-77%</h3>
+                                <p class="content-rates__text">Проходимость прогноза</p>
+                            </div>
+                            <div class="btn-buy">
+                                <a class="btn-pay btn-pay--bg" href="/card?price=1200&rate=Бомба%20">Купить
+                                    Прогноз </a>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tabs-content__content content">
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">Цена</h3>
+                                <p class="content-rates__text price content-rates__text--price">12000 &#8381</p>
+                            </div>
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">10 - 12</h3>
+                                <p class="content-rates__text">Коэффициент тарифа</p>
+                            </div>
+                            <div class="content-rates">
+                                <h3 class="content-rates__title">60-62%</h3>
+                                <p class="content-rates__text">Проходимость прогноза</p>
+                            </div>
+                            <div class="btn-buy">
+                                <a class="btn-pay btn-pay--big" href="/card?price=12000&rate=Cупер%20Экспресс">Купить
+                                    Прогноз</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-section main-text  ">
+                        <p class="main-section__text main-text__lines lines wow animate__animated animate__fadeInUp">На
+                            нашем ресурсе.</p>
+                        <p class="main-section__text main-text__lines lines wow animate__animated animate__fadeInUp "
+                            data-wow-duration="1s">Грамотная аналитика.</p>
+                        <p class="main-section__text main-text__lines lines wow animate__animated animate__fadeInUp"
+                            data-wow-duration="2s">
+                            Большая команда.</p>
+                        <p class="main-section__text main-text__lines lines wow animate__animated animate__fadeInUp "
+                            data-wow-duration="2.5s">
+                            Высокий процент прохода.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our team -->
+
+    <div class="our-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="team-title text-center wow animate__animated animate__fadeInUp" data-wow-duration="2s">
+                        Наша команда</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="workers-box  d-flex justify-content-between text-center">
+                        <div class="workers-box__worker worker worker--bottom wow animate__animated animate__fadeInLeft"
+                            data-wow-duration="1s">
+                            <div class="worker__bg worker-img">
+                                <img src="/images/we-min.jpg" alt="worker" class="worker-img__img">
+                            </div>
+                            <p class="worker__name">Игорь Кравченко</p>
+                            <p class="worker__text">главный аналитик</p>
+                        </div>
+                        <div class="workers-box__worker worker wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1s">
+                            <div class="worker__bg worker-img">
+                                <img src="/images/chair-min.jpg" alt="worker" class="worker-img__img">
+                            </div>
+                            <p class="worker__name">Владимир Борисов </p>
+                            <p class="worker__text"> Основатель Smart Bet</p>
+                        </div>
+                        <div class="workers-box__worker worker worker--bottom wow animate__animated animate__fadeInRight"
+                            data-wow-duration="1s">
+                            <div class="worker__bg worker-img">
+                                <img src="/images/unnamed-min.jpg" alt="worker" class="worker-img__img">
+                            </div>
+                            <p class="worker__name">Андрей Гончар</p>
+                            <p class="worker__text">аналитик</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rewiev -->
+
+    <div class="review">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="review-text wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+                        Статистика работы
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="review-section main-text  ">
+                        <p class="review-section__text main-text__lines lines wow animate__animated animate__fadeInUp">
+                            <span class="review-section__span review-span">41 803</span>-Выиграли на сайте.
+                        </p>
+                        <p class="review-section__text main-text__lines lines wow animate__animated animate__fadeInUp "
+                            data-wow-duration="1s"><span class="review-section__span review-span">250%-</span>Cредняя
+                            прибыль наших клиентов в первые месяци сотрудничиства!
+                        </p>
+                        <p class="review-section__text main-text__lines lines wow animate__animated animate__fadeInUp"
+                            data-wow-duration="2s">60%-клиентов открыло свой личный бизнесс
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-review">
+                <div class="col-lg-12">
+                    <h3 class="customers-rewiev text-center">Отзывы</h3>
+                </div>
+            </div>
+            <div class="row row row-review">
+                <div class="col-lg-12">
+                    <div id="review" class="review-slider-wrap">
+                        <div class="review-slider__slider review-slider d-flex flex-column align-items-center">
+                            <blockquote>
+                                <p class="review-slider__text text-center"> Я очень люблю спорт,но самостоятельно
+                                    заработать с помощью ставок мне было очень трудно я часто уходил в минус.Мне
+                                    посоветовали хорошего каппера Игоря Кравченка!Результат превзошел мои ожидания:доход
+                                    за первый месяц получился
+                                    не скромный примерно 110% и это при том,что другие капперы присылали провальные
+                                    прогнозы и я терпел не мало неудач.Планирую и дальше работать со Smartbets
+                                </p>
+                            </blockquote>
+                            <div class="review-slider__img review-photo">
+                                <img alt="user" class="review-photo__img" src="/images/us-min.jpg">
+                                <p class="review-photo__name">Егор</p>
+                            </div>
+                            <div class="review-slider__star star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star star--white" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="review-slider__slider  review-slider  d-flex flex-column align-items-center">
+
+                            <blockquote>
+                                <p class="review-slider__text">Довольно давно покупаю подписку в данной конторе,
+                                    услугами пользуюсь года два. Ни чего плохого не вижу в том, что люди обращаються к
+                                    специалистом в данной отрасли. Сейчас я выплачиваю банку третий кредит, мои друзья и
+                                    знакомые
+                                    также выплачивают кредит и все остались довольны. Бывало не проходил прогноз, но
+                                    после всегда повзло выигрывать в данный момент в плюсе,с выйгрыша открыл небольшое
+                                    кафе.</p>
+                            </blockquote>
+                            <div class="review-slider__img review-photo">
+                                <img alt="user" class="review-photo__img" src="/images/user3-min.jpg">
+                                <p class="review-photo__name text-center">Владислав</p>
+                            </div>
+                            <div class="review-slider__star star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star " aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="review-slider__slider  review-slider  d-flex flex-column align-items-center">
+                            <blockquote>
+                                <p class="review-slider__text">Очень трудно самому держать свой банк в плюсе.Победы
+                                    чередовались с проигрошами,но после того как подписался на подписку подписку банк
+                                    начал немного расти,но справедливости ради ставлю небольшие сумы.Ну а так дело
+                                    каждого
+                                    кто хочет сам ставит,а кто пользуеться услугами компании!</p>
+                            </blockquote>
+                            <div class="review-slider__img review-photo">
+                                <img alt="user" class="review-photo__img" src="/images/user4-min.jpg">
+                                <p class="review-photo__name text-center ">Карен</p>
+                            </div>
+                            <div class="review-slider__star star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star  star--white" aria-hidden="true"></i>
+                                <i class="fa fa-star star--white" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+                        <div class="review-slider__slider  review-slider  d-flex flex-column align-items-center">
+                            <blockquote>
+                                <p class="review-slider__text">Ставил всегда исключительно по фану и в основном на
+                                    события которые популярные и небольшие сумы,но я хотел зарабатывать больше и с
+                                    минимальным риском!Мне один из друзей посоветовал команду капперов и теперь для меня
+                                    это
+                                    хороший пассивный доход!
+                                </p>
+                            </blockquote>
+                            <div class="review-slider__img review-photo">
+                                <img alt="user" class="review-photo__img" src="/images/user2-min.jpg">
+                                <p class="review-photo__name text-center">Женя</p>
+                            </div>
+                            <div class="review-slider__star star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ask -->
+
+    <div class="ask">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="ask-text text-center">Ответы на частые Вопросы</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="ask-section">
+                        <input type="checkbox" id="spoiler">
+                        <label class="ask-section__label d-flex flex-column" for="spoiler">Должен ли я
+                            регистрироваться на
+                            сайте? <i class="fa fa-arrow-down " aria-hidden="true"></i>
+                        </label>
+
+                        <div class="ask-section__spoiler">Да без этого никак!Регистрируясь на сайте, у вас есть
+                            возможность купить прогноз!</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="ask-section ">
+                        <input type="checkbox" id="spoiler--second">
+                        <label class="  ask-section__label d-flex flex-column" for="spoiler--second">Если я забыл
+                            свой пароль?
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        </label>
+
+                        <div class=" ask-section__spoiler">Функция восстановления пароля расположена в окне входа на
+                            сайт.</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="ask-section ">
+                        <input type="checkbox" id="spoiler--third">
+                        <label class="  ask-section__label d-flex flex-column" for="spoiler--third">Ставите ли Вы
+                            сами по
+                            своим прогнозам?
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        </label>
+
+                        <div class=" ask-section__spoiler">Конечно, мы делаем ставки по своим прогнозам ,это наш
+                            основной бизнесс! Проблемы с выводом средств в букмекерских конторах, подтолкнули нас к
+                            созданию нашего сервиса!</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+
+                    <div class="ask-section ">
+                        <input type="checkbox" id="spoiler--four">
+                        <label class="  ask-section__label d-flex flex-column" for="spoiler--four">Какие гарантии на
+                            ваши
+                            прогнозы?
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        </label>
+
+                        <div class=" ask-section__spoiler">Мы очень дорожим своей репутацией и стараемся выдавать
+                            максимально точный прогноз!У вас есть возможность запросить замену бесплатную замену!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contacts -->
+
+    <div class="contacts">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="contact-title text-center">Наши контакты</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 d-flex flex-column-sm justify-content-between  contacts-body">
+                    <div class="contacts-body__contact-box contact-box">
+                        <p class="contact-box__text text-center d-flex flex-column"><i class="fa fa-mobile"
+                                aria-hidden="true"></i> +38 (097 003 03 33)</p>
+                    </div>
+                    <div class="contacts-body__contact-box contact-box">
+                        <p class="contact-box__text text-center d-flex flex-column"> <i class="fa fa-map-marker"
+                                aria-hidden="true"></i>г.Киев ул. Ломоносова, 20</p>
+                    </div>
+                    <div class="contacts-body__contact-box contact-box">
+                        <p class="contact-box__text  text-center d-flex flex-column"><i class="fa fa-envelope-o"
+                                aria-hidden="true"></i> smartsbetstrue@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="map">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-body d-flex flex-column align-items-center">
+                        <p class="footer-body__text">. Информация носит информационный характер. 18+</p>
+                        <p class="footer-body__copy text-center">&copy;2019
+                            <a class="footer-body__link" href="index.html">smartbets.su</a>
+                        </p>
+                        <p class="footer-body__text footer-body__text--color text-center">Наши партнеры</p>
+                        <div class="footer-body__logo logo-partners  d-flex justify-content-between">
+                            <img alt="partner" src="/images/2017-10-23-logo-refresh.png" class="logo-partners__img">
+                            <img alt="partner" src="/images/logo-temp.png" class="logo-partners__img">
+                            <img alt="partner" src="/images/blokt-logo-no-tagline-light-bg-1200x250px1.png"
+                                class="logo-partners__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/jq/jquery-3.5.1.min.js"></script>
+    <script src="/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_-Vj8-glTydO0agxAuVu4rXVkE1_9pCk&callback=initMap">
+        </script>
+
 </body>
 
 </html>

@@ -1,0 +1,61 @@
+.footer{
+    opacity: 0.8;
+   .footer-body {
+       padding-top: 3%;
+      
+       &__text{
+          @include  fonts(15px,#000,$ff6);
+          margin-top: 1%;
+          font-variant: small-caps;
+
+          @media(max-width:576px){
+           font-size: 12px;
+       }
+       }
+   
+       &__copy{
+          @include  fonts(13px,#000,$ff4);
+          margin-top: 1%;
+          font-variant: small-caps;
+
+          @media(max-width:576px){
+           font-size: 11px;
+       }
+       }
+
+       &__link{
+          @include  fonts(14px,#267df4,$ff2);
+       
+          @media(max-width:576px){
+          font-size: 11px;
+       }
+
+          &:hover{
+              color: #959395;
+          }
+       }
+   
+       &__text--color{
+          @include  fonts(12px,#c2e900,$ff4);
+          text-transform: uppercase;
+       }
+   
+       .logo-partners{
+           margin-top: 1%;
+           max-width:400px;
+           width: 100%;
+           padding-bottom: 2%;
+  
+           @media(max-width:576px){
+              max-width: 200px;
+          }
+   
+          &__img{
+              width: 25%;
+              height: 100%;
+              object-fit: cover;
+          }
+       }
+   
+   }
+}

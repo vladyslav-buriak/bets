@@ -1,0 +1,238 @@
+/* header */
+
+.header-row{
+    @media(max-width:768px){
+        height: 50px;
+    }
+}
+
+.menu{
+    margin: 0;
+    width: 550px;
+
+    @media(max-width:992px){
+        margin-top: 4%;
+    }
+
+    @media(max-width:768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0%;
+        position: fixed;
+        top: -100%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        transition: all ease 1s;
+        padding-top: 10%;
+    }
+
+    &__item  {
+        margin-right: 20px;
+        padding: 10px 0;
+        border-radius: 6px;
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+  
+    @media(max-width:768px){
+        margin-right: 0;
+        margin-top: 2%;
+    }
+    }  
+    .menu__link{
+     
+        &:before{
+            content: "";
+            width: 0%;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transition: all ease 0.5s;
+        }
+        &:hover{
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.menu.active{
+    top: 0;
+}
+
+ .menu__item a {
+    @include  fonts($fz,#474747,$ff6);
+
+    text-decoration: none;
+    z-index: 9;
+    position: relative;
+
+    @media(max-width:768px){
+        @include fonts(16px, #4a4a4a, $ff5);
+    }
+
+}
+
+
+.logo-img {
+    max-width: 100px;
+    position: relative;
+    z-index: 4;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+.burger{
+    width: 20px;
+    height: 13px;
+    position: relative;
+    display: flex;
+    align-self: center;
+    display: none;
+
+    @media(max-width:768px){
+         display: block;
+         z-index: 999;
+    }
+
+    &__span{
+        width: 100%;
+        height: 1px;
+        background-color: #474747;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);  
+    }
+
+    &:before{
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        content: "";
+        top: 0;
+        left: 0;
+        background-color: #474747;
+    }
+
+    &:after{
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        content: "";
+        bottom: 0;
+        left: 0;
+        background-color: #474747;
+    }
+}
+
+.burger.active{
+      &:before{
+          transform: rotate(45deg);
+          top: 5px;
+          transition: all ease 1s;
+      }
+
+      &:after{
+        transform: rotate(-45deg);
+        bottom: 7px;
+        transition: all ease 1s;
+
+    }
+}
+
+.burger.active .burger__span{
+      transform: scale(0);
+}
+
+.subscrip-title{
+	margin: 10% 0 5%;
+}
+
+.subscrip-photo{
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+
+	&__img{
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.subscrip-text{
+	max-width: 500px;
+	background-color: #267df4;
+	@include  fonts($fz,#fff,$ff3);
+	padding: 10px;
+	line-height: 22px;
+}
+
+.form-subscrip{
+
+	&__price{
+	   @include  fonts($fz + 3px,#267df4,$ff2);
+	}
+
+	&__label{
+	  @include  fonts($fz,#c0c6c8,$ff2);
+	  margin-top: 2%;
+	}
+
+	&__btn{
+		background-color: #267df4;
+		@include  fonts($fz,#fff,$ff2);
+		padding: 15px 10px;
+		margin-top: 3%;
+
+		&:hover{
+			text-decoration: none;
+			color: #c0c6c8;
+		}
+	}
+}
+
+#input-radio,#input-radio-2{
+	display: none;
+}
+
+.fake{
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   border: 1px solid #c0c6c8;
+   ;
+   border-radius: 50%;
+   position: relative;
+   top: 2px;
+}
+
+.fake::before{
+   content: '';
+   position: absolute;
+   display: block;
+   width: 10px;
+   height: 10px;
+   top: 50%;
+   left: 50%;
+   background-color:steelblue;
+   transform: translate(-50%,-50%);
+   border-radius: 50%;
+   opacity: 0;
+   transition: all ease 1s;
+}
+
+#input-radio:checked+ .fake::before,#input-radio-2:checked+ .fake::before{
+	opacity: 1;
+}
